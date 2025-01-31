@@ -1,12 +1,16 @@
 import React from 'react'
-import { Hero } from './hero'
+import { HeroComponent } from './hero.component'
 import { About } from '@/components/shared/Pages/About'
+import { ProductPresentationComponent } from './productPresentation.component'
+import { FooterComponent } from '@/components/shared/Footer'
 
-export function HomeComponent() {
+export const HomeComponent = () => {
     return (
-        <>
-            <Hero />
+        <div className='flex flex-col gap-36 mt-20'>
+            <HeroComponent />
             <About />
-        </>
+            <ProductPresentationComponent />
+            <FooterComponent/> 
+        </div>
     )
 }

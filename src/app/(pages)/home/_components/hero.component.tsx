@@ -13,9 +13,9 @@ const images = [
     { src: logo2, alt: "Imagem 3" },
 ]
 
-export function Hero() {
+export const HeroComponent = () => {
     return (
-        <div className='w-full py-24 flex flex-col flex-1 items-center'>
+        <div className='w-full flex flex-col flex-1 items-center'>
             <header className='flex flex-1 items-center max-w-3xl'>
                 <Title
                     align='center'
