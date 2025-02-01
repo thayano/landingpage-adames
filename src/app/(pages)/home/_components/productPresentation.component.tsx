@@ -1,39 +1,42 @@
+import { ImageCardComponent } from "@/components/shared/ImageCard"
 import { Title } from "@/components/shared/Title"
-import { Card } from "@/components/ui/card"
+import cavalo from "../../../../../public/cavalo.jpg"
+import ovelha from "../../../../../public/ovelha.jpg"
+import clube_das_vacas from "../../../../../public/clube_das_vacas.jpg"
+import bezerro from "../../../../../public/bezerro.jpg"
+import Image from "next/image"
 
 export const ProductPresentationComponent = () => {
     return (
         <div className="px-32">
             <header className="py-2">
-                <Title 
+                <Title
                     text="Nossos Produtos"
-                    subTitle="Lorem ipsum dolor sit amet consectetur."    
+                    subTitle="Lorem ipsum dolor sit amet consectetur."
                     align="center"
                 />
             </header>
-            <section className="grid grid-cols-3 mt-20 h-[600] gap-6">
+            <section className="grid grid-cols-3 grid-rows-[1fr] mt-20 h-[600px] gap-6">
                 <div className="flex flex-col gap-6">
-                    {/* <div className="border-2 flex-grow rounded-2xl">cavalo</div> */}
-                    <Card className="flex-grow transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-                        ovelha
-                    </Card>
-                    <Card className="flex-grow transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-                        ovelha
-                    </Card>
-                    {/* <div className="border-2 flex-grow rounded-2xl">ovelha</div> */}
+                    <ImageCardComponent title="Cavalo" link={'#'}>
+                        <Image src={cavalo} alt="Cavalo" fill style={{ objectFit: 'cover' }} priority />
+                    </ImageCardComponent>
+                    <ImageCardComponent title="ovelha" link={'#'}>
+                        <Image src={ovelha} alt="ovelha" fill style={{ objectFit: 'cover' }} priority />
+                    </ImageCardComponent>
                 </div>
-                <div>
-                    <Card className="flex-grow h-full transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-                        ovelha
-                    </Card>
+                <div className="h-full flex">
+                    <ImageCardComponent title="gado de corte e leite" link={'#'}>
+                        <Image src={clube_das_vacas} fill alt="clube_das_vacas" style={{ objectFit: 'cover'}} priority />
+                    </ImageCardComponent>
                 </div>
                 <div className="flex flex-col gap-6">
-                    <Card className="flex-grow transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-                        ovelha
-                    </Card>
-                    <Card className="flex-grow transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-                        ovelha
-                    </Card>
+                    <ImageCardComponent title="bezerro" link={'#'}>
+                        <Image src={bezerro} alt="bezerro" fill style={{ objectFit: 'cover' }} priority />
+                    </ImageCardComponent>
+                    <ImageCardComponent title="bezerro" link={'#'}>
+                        <div className="h-full bg-black"></div>
+                    </ImageCardComponent>
                 </div>
             </section>
         </div>
