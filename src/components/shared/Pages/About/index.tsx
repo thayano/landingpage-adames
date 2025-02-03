@@ -4,7 +4,7 @@ import logo from '../../../../../public/logo_adames.svg'
 import image_empresa from '../../../../../public/image1.png'
 import { Title } from '../../Title'
 
-export const About = () => {
+export const HeroAboutComponent = () => {
     return (
         <div className='flex justify-between px-32'>
             <div className='flex flex-col gap-10 w-1/3'>

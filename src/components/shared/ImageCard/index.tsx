@@ -22,9 +22,9 @@ export const ImageCardComponent: React.FC<IImageCardComponentProps> = ({title, c
                             <LuArrowUpRight />
                         </button>
                     </div>
-                    <div>
+                    {title && (
                         <h3 className="text-2xl font-bold uppercase">{title}</h3>
-                    </div>
+                    )}
                 </div>
             </Link>
 
