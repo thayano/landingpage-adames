@@ -37,7 +37,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ErrorBoundary>
-            <div className="flex justify-center items-center ">
+            <div className="flex justify-center items-center bg-gray-50">
               <main className="max-w-screen-2xl flex-grow px-4 md:px-8 lg:px-4">
                 <NavBar />
                 {children}
