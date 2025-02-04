@@ -1,17 +1,15 @@
 'use client'
 
 import { Title } from "@/components/shared/Title"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import cavalo from '../../../../../public/cavalo.jpg'
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import Link from "next/link"
 import { CardProductComponent } from "@/components/shared/CardProduct"
 
 export interface IHeroProduct {
     title: string,
-    image: any,
+    image: StaticImageData,
     types: string[]
 
 }
