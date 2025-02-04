@@ -27,7 +27,6 @@ export const ImageCardComponent: React.FC<IImageCardComponentProps> = ({title, c
                     )}
                 </div>
             </Link>
-
         </Card>
     )
 } 

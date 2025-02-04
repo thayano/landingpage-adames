@@ -4,48 +4,50 @@ import "../../styles/globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { NavBar } from "@/components/shared/NavBar";
 import ErrorBoundary from "@/components/utils/error-boundary";
+import { FooterComponent } from "@/components/shared/Footer";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+	variable: "--font-geist-sans",
+	subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+	variable: "--font-geist-mono",
+	subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Adames",
-  description: "...",
+	title: "Adames",
+	description: "...",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="ligth"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <ErrorBoundary>
-            <div className="flex justify-center items-center bg-gray-50">
-              <main className="max-w-screen-2xl flex-grow px-4 md:px-8 lg:px-4">
-                <NavBar />
-                {children}
-              </main>
-            </div>
-          </ErrorBoundary>
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en" suppressHydrationWarning>
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
+			>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="ligth"
+					enableSystem
+					disableTransitionOnChange
+				>
+					<ErrorBoundary>
+						<div className="flex flex-col min-h-screen">
+								<main className="container mx-auto flex-1 px-4 md:px-8 lg:px-4 max-w-screen-2xl">
+									<NavBar />
+									{children}
+								</main>
+							<FooterComponent />
+						</div>
+					</ErrorBoundary>
+				</ThemeProvider>
+			</body>
+		</html>
+	);
 }

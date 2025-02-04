@@ -1,5 +1,5 @@
 import { Title } from '@/components/shared/Title'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import React from 'react'
 import logo from '../../../../../public/home.jpg'
 import logo1 from '../../../../../public/home1.jpg'
@@ -43,8 +43,7 @@ export const HeroComponent = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+
             </Carousel>
         </div>
     )

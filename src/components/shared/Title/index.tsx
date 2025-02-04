@@ -7,7 +7,7 @@ export const Title: React.FC<ITitleProps> = ({ text, align = 'left', subTitle })
             <h1 className={cn(`font-semibold text-5xl`)}>
                 {text}
             </h1>
-            {subTitle && <p className="font-semibold text-lg opacity-40 px-16">{subTitle}</p>}
+            {subTitle && <p className="font-semibold text-lg opacity-40">{subTitle}</p>}
         </div>
     )
 }

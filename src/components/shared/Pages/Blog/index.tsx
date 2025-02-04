@@ -4,7 +4,7 @@ import Image from "next/image"
 import mini_vaca from "../../../../../public/mini_vaca.jpg"
 import { ImageCardComponent } from "../../ImageCard"
 
-export const HeroBlogComponent = () => {
+export const CardBlogComponent = () => {
     return (
         <div>
             <Title text="Destaques" align="center" />

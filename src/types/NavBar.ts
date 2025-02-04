@@ -1,3 +1,4 @@
 export interface INavBar {
-    menu: string
+    menu: string,
+    href: string
 }
