@@ -8,7 +8,7 @@ const usefulLinks = [
 
 export const FooterComponent = () => {
     return (
-        <footer className="mt-40 py-20 bg-gray-900 text-white w-full"> 
+        <footer className="mt-40 py-20 bg-gray-900 text-white w-full px-10"> 
             <div className="container mx-auto max-w-screen-2xl"> 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 "> 
                     <div className="flex justify-center md:justify-start">

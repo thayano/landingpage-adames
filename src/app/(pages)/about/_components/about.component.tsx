@@ -5,7 +5,7 @@ import { MapsComponent } from '@/components/shared/Maps'
 
 export const AboutComponent = () => {
     return (
-        <div className='mt-44 flex flex-col px-32 gap-32'>
+        <div className='mt-44 flex flex-col md:px-16 lg:px-32 px-4 gap-32'>
             <HeroAboutComponent/>
             <ContentAboutComponent />
             <MapsComponent />

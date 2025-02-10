@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { Button } from '../../ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '../../ui/sheet'
 import { Menu } from 'lucide-react'
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 
 export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -30,9 +31,28 @@ export const NavBar = () => {
                     ))}
                 </div>
                 <div className="hidden md:block">
-                    <Button variant="default" className="bg-[#0E3463] hover:bg-[#0c2d56] rounded-full px-6 text-white font-semibold">
-                        Contato
-                    </Button>
+                    <Popover>
+                        <PopoverTrigger asChild>
+                            <Button variant="default" className="bg-[#0E3463] hover:bg-[#0c2d56] rounded-full px-6 text-white font-semibold">
+                                Contato
+                            </Button>
+                        </PopoverTrigger>
+                        <PopoverContent className="w-80">
+                            <div className="grid gap-4">
+                                <div className="space-y-2">
+                                    <h4 className="font-semibold leading-none">Contatos</h4>
+                                    <p className="text-sm text-muted-foreground">
+                                        <span className='font-semibold'>Vamos conversar! </span>Escolha sua forma preferida de contato
+                                    </p>
+                                </div>
+                                <div className="grid gap-2">
+                                    <div className="grid grid-cols-3 items-center gap-4">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </PopoverContent>
+                    </Popover>
                 </div>
 
                 <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -54,7 +74,7 @@ export const NavBar = () => {
                                     {item.menu}
                                 </Link>
                             ))}
-                            
+
                         </nav>
                     </SheetContent>
                 </Sheet>

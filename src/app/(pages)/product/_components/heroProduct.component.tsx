@@ -1,87 +1,102 @@
 'use client'
 
 import { Title } from "@/components/shared/Title"
-import Image, { StaticImageData } from "next/image"
-import cavalo from '../../../../../public/cavalo.jpg'
-import { useState } from "react"
+import Image from "next/image"
+import { useState, useMemo } from "react"
 import { Button } from "@/components/ui/button"
 import { CardProductComponent } from "@/components/shared/CardProduct"
+import { listTypesProduct, IHeroProduct, typesDescript, products } from '../_data/data'
+import { useSearchParams } from "next/navigation"
 
-export interface IHeroProduct {
-    title: string,
-    image: StaticImageData,
-    types: string[]
-
-}
 export const HeroProductComponent = () => {
-    const listTypesProduct: IHeroProduct[] = [
-        {
-            title: 'Bovinos de corte',
-            image: cavalo,
-            types: ['Mineral Aditivado', 'Racao', 'Nucleo', 'Proteico Energetico', 'Mineral']
-        },
-        {
-            title: 'Bovinos de leite',
-            image: cavalo,
-            types: []
-        },
-        {
-            title: 'Bezerros',
-            image: cavalo,
-            types: []
-        },
-        {
-            title: 'Ovelhas',
-            image: cavalo,
-            types: []
-        },
-        {
-            title: 'Cavalos',
-            image: cavalo,
-            types: []
-        }
-    ]
-    const [selectProduct, setSelectProduct] = useState<IHeroProduct>(listTypesProduct[0]);
+    const searchParams = useSearchParams();
+    const initialProductKey = searchParams.get('prod');
 
-    function setProductSelect(product: IHeroProduct) {
-        setSelectProduct(product)
-    }
+    const initialProduct = useMemo(() => {
+        return initialProductKey
+            ? listTypesProduct.find(p => p.key === initialProductKey) || listTypesProduct[0]
+            : listTypesProduct[0];
+    }, [initialProductKey]);
+
+
+    const [selectedProduct, setSelectedProduct] = useState<IHeroProduct>(initialProduct);
+    const [selectedCategory, setSelectedCategory] = useState<typesDescript>({ name: '', key: 'todos' });
+    const [showAll, setShowAll] = useState(true);
+
+    const handleProductSelect = (product: IHeroProduct) => {
+        setShowAll(true);
+        setSelectedProduct(product);
+    };
+
+    const handleCategorySelect = (category: typesDescript) => {
+        setShowAll(false);
+        setSelectedCategory(category);
+    };
+
+    const filteredProducts = useMemo(() => {
+        const productList = products[selectedProduct.key] || [];
+
+        if (showAll || selectedCategory?.key === 'todos') {
+            return productList;
+        } else {
+            return productList.filter(product => product.type === selectedCategory?.key);
+        }
+    }, [selectedProduct, selectedCategory, showAll, products]);
+
 
     return (
-        <div className=''>
+        <div>
             <Title
                 text="Nossos Produtos"
                 subTitle="Lorem ipsum dolor sit amet consectetur"
                 align="center"
+                className="text-4xl"
             />
-            <section className="w-full flex flex-col items-center mt-20">
-                <div className="flex justify-between w-full">
+            <section className="w-full mt-20">
+                <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 lg:px-44 gap-8">
                     {listTypesProduct.map((product) => (
-                        <div key={product.title} className="flex flex-col items-center gap-8" onClick={() => setProductSelect(product)}>
-                            <div className="w-32 h-32 rounded-full overflow-hidden">
-                                <Image src={product.image || "/placeholder.svg"} alt={product.title} width={64} height={64} className="object-cover w-full h-full" />
+                        <button
+                            key={product.title}
+                            className="flex flex-col gap-4 items-center cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 overflow-hidden"
+                            onClick={() => handleProductSelect(product)}
+                        >
+                            <div className="w-28 h-28 rounded-full overflow-hidden">
+                                <Image src={product.image || "/placeholder.svg"} alt={product.title} width={100} height={100} className="object-cover w-full h-full" />
                             </div>
-                            <h3 className="text-center font-semibold">{product.title}</h3>
-                        </div>
+                            <h3 className="text-center font-semibold text-muted-foreground">{product.title}</h3>
+                        </button>
                     ))}
                 </div>
-                <div className="flex justify-between w-full mt-20">
-                    {selectProduct && selectProduct.types.map((item) => (
-                        <div key={item} className="">
-                            <Button className="rounded-full px-8 py-6 font-semibold text-lg" variant={"outline"}>{item}</Button>
+                <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 mt-20 md:gap-4 gap-2">
+                    {selectedProduct.types.map((item) => (
+                        <div key={item.name} className="flex justify-center">
+                            <Button
+                                className="rounded-full w-full px-4 font-semibold bg-transparent delay-50 duration-200 ease-in-out text-muted-foreground hover:bg-blue-950 hover:text-white"
+                                variant={"outline"}
+                                onClick={() => handleCategorySelect(item)}
+                            >
+                                {item.name}
+                            </Button>
                         </div>
                     ))}
-                    <div className="">
-                        <Button className="rounded-full px-6 py-6 font-semibold text-lg" variant={"default"}>Ver Todos</Button>
+                    <div className="flex justify-center">
+                        <Button className="rounded-full w-full px-4 font-semibold" variant={"default"} onClick={() => setShowAll(true)}>
+                            Ver Todos
+                        </Button>
                     </div>
                 </div>
             </section>
-            <section className="mt-20 grid grid-cols-3 gap-20">
-               <CardProductComponent/> 
-               <CardProductComponent/> 
-               <CardProductComponent/> 
-               
+            <Title text={showAll ? 'Todos' : selectedCategory.name} align="center" className="mt-20 text-2xl" />
+            <section className="mt-20 grid md:grid-cols-3 grid-cols-1 lg:gap-20 gap-4">
+                {filteredProducts.map(product => (
+                    <CardProductComponent
+                        key={product.name}
+                        title={product.name}
+                        description={product.description}
+                        image={product.image}
+                    />
+                ))}
             </section>
         </div>
-    )
-}
+    );
+};

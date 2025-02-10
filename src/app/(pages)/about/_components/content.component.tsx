@@ -6,7 +6,7 @@ import { Title } from '@/components/shared/Title'
 export const ContentAboutComponent = () => {
     return (
         <main>
-            <div className='grid grid-cols-2 gap-28'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-28'>
                 <Image src={images_adames} alt='imagens da empresa' />
                 <div className='flex flex-col gap-10'>
                     <Title text='Titulo de teste'></Title>
@@ -18,17 +18,17 @@ export const ContentAboutComponent = () => {
                 <div className=''>
                     <Title text='Lorem ipsum dolor sit amet consectetur'></Title>
                 </div>
-                <div className='grid grid-cols-3 mt-20 gap-20'>
+                <div className='grid grid-cols-1 md:grid-cols-3 mt-20 gap-20'>
                     <div>
-                        <Title text='Lorem'></Title>
+                        <Title text='Lorem' className='text-2xl'></Title>
                         <p className='text-justify'>Nós somos um time de especialistas em tecnologia nutricional, focados em proporcionar aos nossos clientes a melhor experiência e a garantir que todos os seus animais possam alcançar os melhores resultados.</p>
                     </div>
                     <div>
-                        <Title text='Lorem'></Title>
+                        <Title text='Lorem' className='text-2xl'></Title>
                         <p className='text-justify'>Nós somos um time de especialistas em tecnologia nutricional, focados em proporcionar aos nossos clientes a melhor experiência e a garantir que todos os seus animais possam alcançar os melhores resultados.</p>
                     </div>
                     <div>
-                        <Title text='Lorem'></Title>
+                        <Title text='Lorem' className='text-2xl'></Title>
                         <p className='text-justify'>Nós somos um time de especialistas em tecnologia nutricional, focados em proporcionar aos nossos clientes a melhor experiência e a garantir que todos os seus animais possam alcançar os melhores resultados.</p>
                     </div>
                 </div>

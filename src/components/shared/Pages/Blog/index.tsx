@@ -7,8 +7,8 @@ import { ImageCardComponent } from "../../ImageCard"
 export const CardBlogComponent = () => {
     return (
         <div>
-            <Title text="Destaques" align="center" />
-            <section className="grid grid-cols-3 gap-20 h-[800px] mt-20">
+            <Title text="Destaques" align="center" className="text-4xl"/>
+            <section className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-20 h-[800px] mt-20">
                 <Card className="flex flex-col border-0 gap-6">
                     <ImageCardComponent title="" link={'#'}>
                         <Image src={mini_vaca} alt="" fill style={{ objectFit: 'cover' }} />

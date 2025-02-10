@@ -11,7 +11,7 @@ export const HomeComponent = () => {
         <div className='mt-20'>
             <HeroComponent />
             <main className='flex flex-col gap-36 mt-44'>
-                <div className='px-32'>
+                <div className='lg:px-32 px-4 md:16'>
                     <HeroAboutComponent/>
                 </div>
                 <ProductPresentationComponent />

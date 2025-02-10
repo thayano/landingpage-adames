@@ -17,8 +17,8 @@ export const HeroAboutComponent = () => {
         return false
     }
     return (
-        <div className='flex justify-between'>
-            <div className='flex flex-col gap-10 w-1/3'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-20'>
+            <div className='flex flex-col gap-10 md:w-4/5'>
                 <Image src={logo} width={250} height={150} alt='logo' />
                 <Title align='left' text='Conheca nossa historia' />
                 <p className='font-semibold'>Sempre sonhando, inovando e empreendendo a fim de oferecer as melhores fórmulas e produtos para todas as raças e portes.</p>
@@ -30,7 +30,7 @@ export const HeroAboutComponent = () => {
                 )}
                 
             </div>
-            <div className=''>
+            <div className='flex items-center justify-center'>
                 <Image src={image_empresa} alt='imagens da empresa' width={500} height={800} />
             </div>
         </div>
