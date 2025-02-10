@@ -1,6 +1,5 @@
 import { Title } from "@/components/shared/Title"
 import { Card } from "@/components/ui/card"
-import { CardProductComponent } from "@/components/shared/CardProduct"
 
 export const RelatedProductComponent = () => {
     return (
@@ -9,9 +8,9 @@ export const RelatedProductComponent = () => {
                 <Title text="Produtos Relacionadas"></Title>
             </Card>
             <main className="grid grid-cols-3 gap-20 py-10 px-20">
+                {/* <CardProductComponent/>
                 <CardProductComponent/>
-                <CardProductComponent/>
-                <CardProductComponent/>
+                <CardProductComponent/> */}
             </main>
         </div>
     )
