@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { sendMail } from "@/lib/sendMail";
+// import { sendMail } from "@/lib/sendMail";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast"
 
@@ -20,6 +20,7 @@ const contactFormSchema = z.object({
 });
 
 export const ContentContactComponent = () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { toast } = useToast()
     const form = useForm<z.infer<typeof contactFormSchema>>({
         resolver: zodResolver(contactFormSchema),
@@ -32,20 +33,21 @@ export const ContentContactComponent = () => {
     });
 
     // const isLoading = form.formState.isSubmitting;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
-        const mailText = `Nome: ${values.name}\nEmail: ${values.email}\nTelefone: ${values.phone}\nDescricao: ${values.message}`;
-        const response = await sendMail({
-            email: values.email,
-            subject: 'New Contact Us Form',
-            text: mailText,
-        });
-        if (response) {
-            toast({
-                title: "Scheduled: Catch up",
-                description: "Friday, February 10, 2023 at 5:57 PM",
-              })
-        } else {
-        }
+        // const mailText = `Nome: ${values.name}\nEmail: ${values.email}\nTelefone: ${values.phone}\nDescricao: ${values.message}`;
+        // const response = await sendMail({
+        //     email: values.email,
+        //     subject: 'New Contact Us Form',
+        //     text: mailText,
+        // });
+        // if (response) {
+        //     toast({
+        //         title: "Scheduled: Catch up",
+        //         description: "Friday, February 10, 2023 at 5:57 PM",
+        //       })
+        // } else {
+        // }
     };
 
     return (
