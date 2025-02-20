@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { CardProductComponent } from "@/components/shared/CardProduct"
 import { listTypesProduct, IHeroProduct, typesDescript, products } from '../_data/data'
 import { useSearchParams } from "next/navigation"
+import { cn } from "@/lib/utils"
 
 export const HeroProductComponent = () => {
     const searchParams = useSearchParams();
@@ -41,8 +42,25 @@ export const HeroProductComponent = () => {
         } else {
             return productList.filter(product => product.type === selectedCategory?.key);
         }
-    }, [selectedProduct, selectedCategory, showAll, products]);
+    }, [selectedProduct, selectedCategory, showAll]);
 
+    function handlerOptionProductSelect(option : string){
+        if(option == selectedProduct.key){
+            return 'scale-110 -translate-y-1 text-gray-700 font-semibold'
+        }
+    }
+
+    function handlerBtnProduct(option : string){
+        if(option == selectedProduct.key){
+            return 'border-2 border-gray-300'
+        }
+    }
+
+    function handlerOptionCategorySelect(option: string){
+        if(option == selectedCategory.key && !showAll){
+            return 'bg-blue-950 text-white'
+        }
+    }
 
     return (
         <div>
@@ -53,17 +71,17 @@ export const HeroProductComponent = () => {
                 className="text-4xl"
             />
             <section className="w-full mt-20">
-                <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 lg:px-44 gap-8">
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:px-44 gap-8">
                     {listTypesProduct.map((product) => (
                         <button
                             key={product.title}
-                            className="flex flex-col gap-4 items-center cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 overflow-hidden"
+                            className={cn("flex flex-col gap-4 items-center cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 overflow-hidden text-gray-500", handlerOptionProductSelect(product.key))}
                             onClick={() => handleProductSelect(product)}
                         >
-                            <div className="w-28 h-28 rounded-full overflow-hidden">
+                            <div className={cn("w-28 h-28 rounded-full overflow-hidden p-1", handlerBtnProduct(product.key))}>
                                 <Image src={product.image || "/placeholder.svg"} alt={product.title} width={100} height={100} className="object-cover w-full h-full" />
                             </div>
-                            <h3 className="text-center font-semibold text-muted-foreground">{product.title}</h3>
+                            <h3 className="text-center ">{product.title}</h3>
                         </button>
                     ))}
                 </div>
@@ -71,7 +89,7 @@ export const HeroProductComponent = () => {
                     {selectedProduct.types.map((item) => (
                         <div key={item.name} className="flex justify-center">
                             <Button
-                                className="rounded-full w-full px-4 font-semibold bg-transparent delay-50 duration-200 ease-in-out text-muted-foreground hover:bg-blue-950 hover:text-white"
+                                className={cn("rounded-full w-full px-4 font-semibold bg-transparent delay-50 duration-150 ease-in-out text-muted-foreground hover:bg-blue-950 hover:text-white", handlerOptionCategorySelect(item.key))}
                                 variant={"outline"}
                                 onClick={() => handleCategorySelect(item)}
                             >
@@ -80,16 +98,20 @@ export const HeroProductComponent = () => {
                         </div>
                     ))}
                     <div className="flex justify-center">
-                        <Button className="rounded-full w-full px-4 font-semibold" variant={"default"} onClick={() => setShowAll(true)}>
-                            Ver Todos
+                        <Button className={cn("rounded-full w-full px-4 font-semibold hover:text-white", 
+                            showAll ? 'bg-[#B62234]' : 'bg-gray-300 text-gray-800')} 
+                            variant={"default"} 
+                            onClick={() => setShowAll(true)}>
+                                Ver Todos
                         </Button>
                     </div>
                 </div>
             </section>
             <Title text={showAll ? 'Todos' : selectedCategory.name} align="center" className="mt-20 text-2xl" />
-            <section className="mt-20 grid md:grid-cols-3 grid-cols-1 lg:gap-20 gap-4">
+            <section className="mt-20 grid md:grid-cols-4 grid-cols-1 lg:gap-20 gap-4">
                 {filteredProducts.map(product => (
                     <CardProductComponent
+                        link={`product/${product.id}?type=${selectedProduct.key}&id=${product.id}&category=${product.type}`}
                         key={product.name}
                         title={product.name}
                         description={product.description}

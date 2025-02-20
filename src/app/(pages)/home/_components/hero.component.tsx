@@ -20,7 +20,7 @@ export const HeroComponent = () => {
                 <Title
                     align='center'
                     text='Tradição, inovação e confiança em nutrição animal'
-                    subTitle='Desde 1983, nós, da Adames, temos o compromisso em atender nossos parceiros por meio da nutrição animal'
+                    subTitle='Desde 1985 apoiando a pecuária que alimenta, nós, da Adames, temos o compromisso em atender nossos parceiros por meio da nutrição animal'
                 />
             </header>
             <Carousel className="w-full mx-auto py-14">

@@ -1,10 +1,13 @@
+'use client'
 import React from 'react'
 import { HeroComponent } from './hero.component'
 import { ProductPresentationComponent } from './productPresentation.component'
 import { ProductAdvantagesComponent } from './productAdvantages.component'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { CardBlogComponent } from '@/components/shared/Pages/Blog'
 import { DoubtComponent } from './doubt.component'
 import { HeroAboutComponent } from '@/components/shared/Pages/About'
+import { Title } from '@/components/shared/Title'
 
 export const HomeComponent = () => {
     return (
@@ -16,7 +19,10 @@ export const HomeComponent = () => {
                 </div>
                 <ProductPresentationComponent />
                 <ProductAdvantagesComponent />
-                <CardBlogComponent />
+                <div>
+                    <Title text="Destaques" align="center" className="text-4xl" />
+                    {/* <CardBlogComponent /> */}
+                </div>
                 <DoubtComponent />
             </main>
         </div>

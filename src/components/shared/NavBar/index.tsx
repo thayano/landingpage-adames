@@ -38,12 +38,13 @@ export const NavBar = () => {
                             </Button>
                         </PopoverTrigger>
                         <PopoverContent className="w-80">
-                            <div className="grid gap-4">
+                            <div className="grid text-sm text-muted-foreground">
                                 <div className="space-y-2">
-                                    <h4 className="font-semibold leading-none">Contatos</h4>
-                                    <p className="text-sm text-muted-foreground">
-                                        <span className='font-semibold'>Vamos conversar! </span>Escolha sua forma preferida de contato
+                                    <p className="">
+                                        <strong className='font-semibold'>Vamos conversar! </strong>Escolha sua forma preferida de contato
                                     </p>
+                                    <p className='pt-2'><strong>Telefone:</strong> 67 3378-2100</p>
+                                    <p><strong>Email:</strong> contato_adames@gmail.com</p>
                                 </div>
                                 <div className="grid gap-2">
                                     <div className="grid grid-cols-3 items-center gap-4">

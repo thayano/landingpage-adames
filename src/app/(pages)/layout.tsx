@@ -6,6 +6,8 @@ import { NavBar } from "@/components/shared/NavBar";
 import ErrorBoundary from "@/components/utils/error-boundary";
 import { FooterComponent } from "@/components/shared/Footer";
 import { FloatingButton } from "@/components/shared/FloatingButton";
+import { Toaster } from "@/components/ui/toaster";
+import { CommoditiesComponent } from "@/components/shared/Commodities";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -39,9 +41,11 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					<ErrorBoundary>
+						<Toaster />
 						<FloatingButton />
 						<div className="flex flex-col min-h-screen">
-							<main className="container mx-auto flex-1 px-4 md:px-8 lg:px-4 max-w-screen-2xl">
+							<CommoditiesComponent />
+							<main className="container mx-auto flex-1 px-4 md:px-8 lg:px-4 max-w-screen-2xl mt-20">
 								<NavBar />
 								{children}
 							</main>

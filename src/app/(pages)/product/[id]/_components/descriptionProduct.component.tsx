@@ -1,25 +1,41 @@
-import Image from "next/image"
-import produto from '../../../../../../public/home1.jpg'
+import Image, { StaticImageData } from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Title } from "@/components/shared/Title"
+import { typesProducts } from "../../_data/data"
 
-export const DescriptionProductComponent = () => {
+interface DescriptionProductComponentProps {
+    title: string,
+    image: StaticImageData,
+    description: string,
+    type?: string,
+    category?: string,
+    badge: typesProducts,
+}
+
+const titleCategory: Record<typesProducts, string> = {
+    mineral_aditivado: 'Mineral Aditivado',
+    racoes: 'Rações',
+    nucleos: 'Núcleos',
+    proteico_energetico: 'Proteíco Energético',
+    mineral: 'Mineral',
+    todos: 'Todos',
+}
+
+export const DescriptionProductComponent: React.FC<DescriptionProductComponentProps> = ({ title, image, description, badge }) => {
     return (
         <div className='mt-40'>
-            <main className="grid grid-cols-2 gap-20">
-                <div>
-                    <Image src={produto} alt="product description"></Image>
+            <main className="grid grid-cols-1 md:grid-cols-2 gap-20">
+                <div className="flex justify-center items-center">
+                    <Image src={image} alt="product description"></Image>
                 </div>
                 <div className="flex justify-center">
                     <article className="flex flex-col gap-4 w-4/5">
                         <div>
-                            <Badge variant="outline">Racao</Badge>
+                            <Badge variant="default" className="bg-red-500">{titleCategory[badge]}</Badge>
                         </div>
-                        <Title text="Potencial A Prime Beef Pro@"/>
-                        <p className="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar, quam ut tristique faucibus, velit velit cursus velit, a ultricies lectus velit id turpis. Sed et consectetur neque, vel consectetur diam. Sed nec velit nec felis fermentum vestibulum vitae in velit.</p>
-                        <p className="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar, quam ut tristique faucibus, velit velit cursus velit, a ultricies lectus velit id turpis. Sed et consectetur neque, vel consectetur diam. Sed nec velit nec felis fermentum vestibulum vitae in velit.</p>
+                        <Title text={title} />
+                        <p className="text-justify">{description}</p>
                     </article>
-
                 </div>
             </main>
         </div>

@@ -1,3 +1,5 @@
+'use client'
+
 import { Card } from "@/components/ui/card"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
@@ -7,11 +9,12 @@ interface CardProductComponentProps {
     image: StaticImageData,
     title: string,
     description: string,
+    link: string 
 }
 
-export const CardProductComponent: React.FC<CardProductComponentProps> = ({ image, title, description }) => {
+export const CardProductComponent: React.FC<CardProductComponentProps> = ({ image, title, description, link }) => {
     return (
-        <Link href={'#'}>
+        <Link href={link}>
             <Card className="flex flex-col items-center gap-4 bg-transparent border-0 hover:bg-white md:p-8 p-4">
                 <Image src={image} alt='teste' width={250} height={100} />
                 <h2 className="text-xl font-semibold">{title}</h2>

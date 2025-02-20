@@ -1,4 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { CardBlogComponent } from "@/components/shared/Pages/Blog"
+import { Title } from "@/components/shared/Title"
 import { Button } from "@/components/ui/button"
 
 export const ContentBlogComponent = () => {
@@ -9,8 +11,8 @@ export const ContentBlogComponent = () => {
                 <Button className="rounded-full px-6">Noticias</Button>
                 <Button className="rounded-full px-6">Ver Todas</Button>
             </div>
-            <CardBlogComponent/>
-            <CardBlogComponent/>
+            <Title text="Destaques" align="center" className="text-4xl" />
+            {/* <CardBlogComponent/> */}
         </div>
 
     )

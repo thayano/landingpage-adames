@@ -1,20 +1,16 @@
-import { Button } from "@/components/ui/button"
-import { MessageCircle } from "lucide-react"
-import Link from "next/link"
 
-interface FloatingButtonProps {
-    onClick?: () => void
-  }
+import Image from "next/image"
+import Link from "next/link"
+import wpp from '../../../../public/whatsapp.png'
+
+// interface FloatingButtonProps {
+//     onClick?: () => void
+//   }
   
-  export function FloatingButton({ onClick }: FloatingButtonProps) {
+  export function FloatingButton() {
     return (
-      <Link href='#' target="_blank">
-        <Button
-          className="fixed z-50 bottom-4 right-4 rounded-full p-0 size-14 shadow-lg hover:shadow-xl transition-shadow bg-[#128c7e]"
-          onClick={onClick}
-        >
-          <MessageCircle style={{ width: '20px', height: '20px' }} />
-        </Button>
+      <Link href='https://wa.me/5511999998888?text=Olá, gostaria de saber mais sobre os seus produtos' target="_blank" className="">
+        <Image src={wpp} alt="wpp" className="fixed z-50 bottom-2 right-2 size-24 opacity-60 hover:opacity-100 hover:scale-110 transition-transform"></Image>
       </Link>
     )
   }
