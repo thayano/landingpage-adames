@@ -21,10 +21,10 @@ export const DoubtComponent = () => {
             <div className="absolute inset-0 flex items-end justify-center py-10 md:py-20 px-5 md:px-20"> 
                 <div className="bg-[#222222] w-full md:w-3/4 rounded-3xl p-5 md:p-10 lg:p-10 flex flex-col lg:flex-row gap-5 md:gap-10"> 
                     <div className=" flex justify-center md:justify-start items-center"> 
-                        <Image src={simgleLogo} alt="logo" width={200} height={50} priority /> 
+                        <Image src={simgleLogo} alt="logo" width={200} height={50} className="md:h-52 h-22 w-16 md:w-44" /> 
                     </div>
                     <div className="flex-1 flex flex-col text-white gap-10"> 
-                        <Title text="Alguma Duvida?" className="text-4xl"/> 
+                        <Title text="Alguma Duvida?" className="text-2xl"/> 
                         <p className=" text-sm md:text-base text-justify">
                             Lorem ipsum dolor sit amet consectetur. Urna hendrerit consectetur libero
                             ac pharetra turpis massa malesuada mollis. Dignissim eu commodo sagittis

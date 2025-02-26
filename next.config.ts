@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
   },
   reactStrictMode: true, // If you're using strict mode
   images: {
-    domains: ['scontent.cdninstagram.com'], // Add the Instagram CDN domain
+    domains: ['scontent.cdninstagram.com', 'instagram.fmgf7-1.fna.fbcdn.net'], // Add the Instagram CDN domain
   },
 };
 

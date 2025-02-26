@@ -4,12 +4,15 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { ImageCardComponent } from "../../ImageCard";
 import { useEffect, useState } from 'react';
+import axios from "axios";
 import { usePathname } from "next/navigation";
 
 interface InstagramPost {
     id: string;
     caption: string;
     media_url: string;
+    media_type: string;
+    timestamp: string;
     permalink: string;
 }
 
@@ -18,19 +21,13 @@ export const CardBlogComponent = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | undefined>(undefined);
     const path = usePathname()
-    console.log(path)
 
     useEffect(() => {
         async function fetchInstagramFeed() {
             setIsLoading(true);
             try {
-                const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,timestamp,permalink&access_token=`;
-                const response = await fetch(url);
-                if (!response.ok) {
-                    throw new Error("Failed to fetch Instagram feed");
-                }
-                const data = await response.json();
-                setInstagramFeed(lengthInstagramFeed(data.data))
+                const response = await axios.post('api/blog', { media_type: 'IMAGE', quantity: validPath() });
+                setInstagramFeed(response.data)
             } catch (err) {
                 console.error("Error fetching Instagram feed:", err);
                 setError('error fetching Instagram feed');
@@ -40,38 +37,38 @@ export const CardBlogComponent = () => {
         }
 
         fetchInstagramFeed();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
     if (isLoading) {
-        return <div>Loading Instagram Feed...</div>;
+        return <div>Carregando Instagram Feed...</div>;
     }
 
     if (error) {
         return <div>Error: {error}</div>;
     }
 
-    function lengthInstagramFeed(data:[]) {
-        if(path != '/blog') {
-            return data.slice(0, 3);
+    function validPath() {
+        if (path.includes('/blog')) {
+            return 9
         }
-        return data
+        return 3
     }
 
     return (
-        <section className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-20 mt-20">
+        <section className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-20">
             {instagramFeed && instagramFeed.length > 0 ? (
                 instagramFeed.map((post) => (
-                    <Card key={post.id} className="flex flex-col border-0 h-96 gap-6 bg-transparent">
-                        <ImageCardComponent title="" link={post.permalink}>
-                            <Image src={post.media_url} alt={post.caption} fill style={{ objectFit: 'cover' }} />
+                    <Card key={post.id} className="flex flex-col border-0 gap-6 bg-transparent h-[540px]">
+                        <ImageCardComponent title="" link={post.permalink} >
+                            <Image src={post.media_url} alt={post.caption} width={540} height={400} style={{ objectFit: 'contain' }} />
                         </ImageCardComponent>
-                        <h3 className="uppercase font-semibold">{post.caption.split(' ')[0]}</h3>
-                        <p className="text-justify line-clamp-4 text-muted-foreground font-medium">{post.caption}</p>
+                        <h3 className="uppercase font-semibold">{post.caption.split(' ').slice(0, 4).join(' ')}</h3>
+                        <p className="text-justify line-clamp-3 text-muted-foreground font-medium">{post.caption}</p>
                     </Card>
                 ))
             ) : (
-                <div>No Instagram posts available.</div>
+                <div>Imagens indisponíveis no momento.</div>
             )}
         </section>
     );
