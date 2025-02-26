@@ -61,7 +61,7 @@ export const CardBlogComponent = () => {
                 instagramFeed.map((post) => (
                     <Card key={post.id} className="flex flex-col border-0 gap-6 bg-transparent h-[540px]">
                         <ImageCardComponent title="" link={post.permalink} >
-                            <Image src={post.media_url} alt={post.caption} width={540} height={400} style={{ objectFit: 'contain' }} />
+                            <Image src={post.media_url} unoptimized={true} alt={post.caption} width={540} height={400} style={{ objectFit: 'contain' }} />
                         </ImageCardComponent>
                         <h3 className="uppercase font-semibold">{post.caption.split(' ').slice(0, 4).join(' ')}</h3>
                         <p className="text-justify line-clamp-3 text-muted-foreground font-medium">{post.caption}</p>
