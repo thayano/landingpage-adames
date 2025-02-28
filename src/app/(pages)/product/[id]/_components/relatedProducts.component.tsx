@@ -15,7 +15,7 @@ export const RelatedProductComponent: React.FC<RelatedProductComponentProps> = (
             <main className="grid grid-cols-1 md:grid-cols-3 gap-20 py-10 px-20">
                 {productList.map((product: ICategoryProduct) => (
                     <CardProductComponent
-                        link={`product/${product.id}?type=boi_corte&id=${product.id}&category=${product.type}`}
+                        link={`${product.id}?type=boi_corte&id=${product.id}&category=${product.type}`}
                         key={product.name}
                         title={product.name}
                         description={product.description}

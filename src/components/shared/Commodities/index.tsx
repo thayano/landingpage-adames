@@ -79,7 +79,7 @@ export const CommoditiesComponent = () => {
                 ))}
             </div>
             <div className="text-[10px]">
-                <p className="text-muted-foreground">
+                <div className="text-muted-foreground">
                     Fonte:
 
                     <HoverCard>
@@ -88,12 +88,8 @@ export const CommoditiesComponent = () => {
                         </HoverCardTrigger>
                         <HoverCardContent className="w-80">
                             <div className="flex justify-between space-x-4">
-                                {/* <Avatar>
-                                    <AvatarImage src="https://github.com/vercel.png" />
-                                    <AvatarFallback>VC</AvatarFallback>
-                                </Avatar> */}
                                 <div className="space-y-1">
-                                    <h4 className="text-xs font-semibold">
+                                    <div className="text-xs font-semibold">
                                         Fonte: 
                                         <Link
                                             href="https://www.cepea.esalq.usp.br/br"
@@ -101,7 +97,7 @@ export const CommoditiesComponent = () => {
                                             className="underline px-1">
                                             CEPEA
                                         </Link>
-                                    </h4>
+                                    </div>
                                     <p className="text-xs text-gray-800">
                                         Informações de cotação obtidas diretamente da base de dados da Cepea.
                                     </p>
@@ -115,7 +111,7 @@ export const CommoditiesComponent = () => {
                             </div>
                         </HoverCardContent>
                     </HoverCard>
-                </p>
+                </div>
             </div>
         </div>
     )

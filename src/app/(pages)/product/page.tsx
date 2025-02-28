@@ -3,8 +3,8 @@ import { ProductComponent } from "./_components/product.component";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Produtos - Adames",
-	description: "...",
+    title: "Produtos - Adames",
+    description: "...",
 };
 
 export default function Product() {

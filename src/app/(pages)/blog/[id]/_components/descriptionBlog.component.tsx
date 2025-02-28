@@ -1,11 +1,15 @@
 import { GenericHero } from "@/components/shared/GenericHero"
 import { DescriptionBlogContentComponent } from "./descriptionBlogContent.component"
 
-export const DescriptionBlogComponent = () => {
+interface DescriptionBlogComponentProps {
+    post_id: string
+}
+
+export const DescriptionBlogComponent = ({ post_id }: DescriptionBlogComponentProps) => {
     return (
         <div className='w-full'>
-           <GenericHero />
-           <DescriptionBlogContentComponent />
+            <GenericHero />
+            <DescriptionBlogContentComponent post_id={post_id} />
         </div>
     )
 }

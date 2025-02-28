@@ -9,7 +9,7 @@ import racao_cavalo from '../../../../../public/racao_cavalo.jpg'
 import { StaticImageData } from "next/image";
 
 export type typesProducts = 'mineral_aditivado' | 'racoes' | 'nucleos' | 'proteico_energetico' | 'mineral' | 'todos'
-export type typesCategory = 'boi_corte' | 'boi_leite' | 'bezerros' | 'ovinos' | 'equinos'
+export type typesCategory = 'boi_corte' | 'boi_leite' | 'bezerros' | 'equinos'
 
 export interface typesDescript {
     name: string;
@@ -88,356 +88,366 @@ export const listTypesProduct: IHeroProduct[] = [
 ]
 
 export interface ICategoryProduct {
-    name: string,
-    description: string,
-    type: typesProducts,
-    image: StaticImageData,
-    id: number,
+    name: string
+    description: string
+    list: string[]
+    type: typesProducts
+    indication: string
+    image: StaticImageData
+    id: number
 }
 
 
 export const products: Record<typesCategory, ICategoryProduct[]> = {
     boi_corte: [
         {
-            name: 'Potencial A Prime Beef Pro@',
-            description: 'Suplemento mineral enriquecido com minerais orgânicos de alta disponibilidade, Levedura viva e Narasina, indicado para suprir as necessidades minerais',
+            name: 'POTENCIAL A PRIME BEEF PRO@',
+            description: 'Nutrição estratégica para recria e engorda em pastos de alta qualidade. ',
+            list: ['Ideal para ILP.', 'Contém um blend de aditivos e minerais orgânicos para maximizar o ganho de peso.'],
             type: 'mineral_aditivado',
+            indication: 'Bovinos em fase de crescimento e terminação.',
             image: embalagem,
             id: 1
         },
         {
-            name: 'Potencial A Prime Beef',
-            description: 'Suplemento mineral com ureia protegida, enriquecido com minerais orgânicos de alta disponibilidade e Levedura viva, indicado para suprir as necessidad',
+            name: 'POTENCIAL A PRIME BEEF',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Contém um blend de aditivos, com uma mistura exclusiva de fontes de nitrogênio.', 'Melhora a digestibilidade das fibras da pastagem.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'mineral_aditivado',
             image: embalagem,
             id: 2
         },
         {
-            name: 'Potencial A Nutrigen',
-            description: 'Suplemento mineral com ureia protegida, enriquecido com minerais orgânicos de alta disponibilidade e Levedura viva, indicado para suprir as necessidad',
+            name: 'POTENCIAL A NUTRIGEN',
+            description: 'Nutrição estratégica para cria.',
+            list: ['Contém um blend de aditivos, com uma mistura exclusiva de fontes de nitrogênio.', 'Melhora a digestibilidade das fibras da pastagem.'],
+            indication: 'Bovinos em fase de cria.',
             type: 'mineral_aditivado',
             image: embalagem,
             id: 3
         },
         {
-            name: 'Adames Cria Sacc',
-            description: 'Suplemento mineral com Levedura, indicado para suprir as necessidades minerais de bovinos de corte na fase de cria, recria e engorda.',
+            name: 'ADAMES CRIA SACC',
+            description: 'Nutrição estratégica para cria.',
+            list: ['Suplemento mineral enriquecido com levedura viva.', 'Favorece a digestibilidade da fibra e melhora o desempenho.'],
+            indication: 'Bovinos em fase de cria.',
             type: 'mineral_aditivado',
             image: embalagem,
             id: 4,
 
         },
         {
-            name: 'Adames Beef Sacc',
-            description: 'Suplemento mineral com Levedura, indicado para suprir as necessidades minerais de bovinos de corte na fase de recria e engorda.',
+            name: 'ADAMES BEEF SACC',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento mineral enriquecido com levedura viva', 'Favorece a digestibilidade da fibra e melhora o desempenho.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'mineral_aditivado',
             image: embalagem,
             id: 5
         },
         {
-            name: 'Adames Amireia Engorda',
-            description: 'Suplemento mineral com ureia extrusada, indicado para suprir as necessidades minerais de bovinos de corte na fase de recria e engorda',
+            name: 'ADAMES AMIREIA ENGORDA',
+            description: 'Nutrição estratégica para engorda.',
+            list: ['Suplemento mineral enriquecido com ureia extrusada.'],
+            indication: 'Bovinos em fase de terminação.',
             type: 'mineral_aditivado',
             image: embalagem,
             id: 6
         },
         {
-            name: 'Adames Amireia Cria',
-            description: 'Suplemento mineral com ureia extrusada, indicado para suprir as necessidades minerais de bovinos de corte na fase de cria, recria e engorda.',
+            name: 'ADAMES AMIREIA CRIA',
+            description: 'Nutrição estratégica para cria',
+            list: ['Suplemento mineral enriquecido com ureia extrusada.'],
+            indication: 'Bovinos em fase de cria.',
             type: 'mineral_aditivado',
             image: embalagem,
             id: 7
         },
         {
-            name: 'Adames 3D RE 30',
-            description: 'Suplemento mineral com ureia protegida, indicado para suprir as necessidades minerais de bovinos de corte na fase de recria e engorda.',
+            name: 'ADAMES 3D PRO @',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento mineral enriquecido com aditivo melhorador de desempenho e uma mistura exclusiva de fontes de nitrogênio'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'mineral_aditivado',
             image: embalagem,
             id: 8
         },
         {
-            name: 'Adames 3D PRO @',
-            description: 'Suplemento mineral com ureia protegida e Narasina, indicado para suprir as necessidades minerais de bovinos de corte na fase de cria, recria e engorda',
+            name: 'ADAMES 3D INVERT CRIA',
+            description: 'Nutrição estratégica para cria.',
+            list: ['Suplemento mineral enriquecido com próbioticos e uma mistura exclusiva de fontes de nitrogênio.'],
+            indication: 'Bovinos em fase de cria.',
             type: 'mineral_aditivado',
             image: embalagem,
             id: 9
         },
         {
-            name: 'Adames 3D Invert Cria',
-            description: 'Suplemento mineral com ureia protegida, indicado para suprir as necessidades minerais de bovinos de corte na fase de cria, recria e engorda.',
+            name: 'ADAMES 3D INVERT',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento mineral enriquecido com próbioticos e uma mistura exclusiva de fontes de nitrogênio.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'mineral_aditivado',
             image: embalagem,
             id: 10
         },
         {
-            name: 'Adames 3D Invert',
-            description: 'Suplemento mineral com ureia protegida, indicado para suprir as necessidades minerais de bovinos de corte na fase de recria e engorda',
-            type: 'mineral_aditivado',
-            image: embalagem,
-            id: 11
-        },
-        {
-            name: 'Adames 3D CR 30',
-            description: 'Suplemento mineral com ureia protegida, indicado para suprir as necessidades minerais de bovinos de corte na fase de cria, recria e engorda.',
-            type: 'mineral_aditivado',
-            image: embalagem,
-            id: 12
-        },
-        {
-            name: 'Adames Touro 18',
-            description: 'Produto indicado para reprodutores.',
+            name: 'ADAMES CONFINA A PASTO',
+            description: 'Nutrição estratégica para engorda.',
+            list: ['Ração de pronto uso para bovinos de corte.'],
+            indication: 'Bovinos em fase de terminação.',
             type: 'racoes',
             image: racao,
             id: 13
         },
         {
-            name: 'Adames Touro 14',
-            description: 'Produto indicado para reprodutores.',
+            name: 'ADAMES 18',
+            description: 'Nutrição estratégica para engorda.',
+            list: ['Ração de pronto uso para bovinos de corte.'],
+            indication: 'Bovinos em fase de terminação.',
             type: 'racoes',
             image: racao,
             id: 14
         },
         {
-            name: 'Adames N25',
-            description: 'Produto indicado para bovinos de corte em semiconfinamento na fase de terminação.',
+            name: 'ADAMES 14',
+            description: 'Nutrição estratégica para engorda.',
+            list: ['Ração de pronto uso para bovinos de corte.'],
+            indication: ' Bovinos em fase de terminação.',
             type: 'racoes',
             image: racao,
             id: 15
         },
         {
-            name: 'Adames N18',
-            description: 'Produto indicado para bovinos de corte em semiconfinamento na fase de terminação.',
+            name: 'ADAMES 16',
+            description: 'Nutrição estratégica para engorda.',
+            list: ['Ração de pronto uso para bovinos de corte.'],
+            indication: ' Bovinos em fase de terminação.',
             type: 'racoes',
             image: racao,
-            id: 16
+            id: 15
         },
         {
-            name: 'Adames N14',
-            description: 'Produto indicado para bovinos de corte em semiconfinamento na fase de terminação.',
-            type: 'racoes',
-            image: racao,
-            id: 17
-        },
-        {
-            name: 'Adames Confina a Pasto',
-            description: 'Produto indicado para bovinos de corte em semiconfinamento na fase de terminação.',
-            type: 'racoes',
-            image: racao,
-            id: 18
-        },
-        {
-            name: 'Adames 18',
-            description: 'Produto indicado para bovinos de corte em semiconfinamento na fase de terminação.',
-            type: 'racoes',
-            image: racao,
-            id: 19
-        },
-        {
-            name: 'Adames 16',
-            description: 'Produto indicado para bovinos de corte em semiconfinamento na fase de terminação.',
-            type: 'racoes',
-            image: racao,
-            id: 20
-        },
-        {
-            name: 'Adames 14',
-            description: 'Produto indicado para bovinos de corte em semiconfinamento na fase de terminação.',
-            type: 'racoes',
-            image: racao,
-            id: 21
-        },
-        {
-            name: 'Adames Núcleo Pro@',
-            description: 'Suplemento mineral para mistura. Exclusivo para formulação de rações, proteicos ou concentrados para bovinos de corte em regime de pastejo.',
+            name: 'ADAMES NUCLEO PRO@',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Núcleo ideal para produção de suplementos proteicos e proteicos energeticos.', 'Enriquecido com blend de aditivos que garantem o melhor aproveitamento do alimento e a maximização do ganho de peso.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 22
         },
         {
-            name: 'Adames Núcleo Confinamento 300 MV',
-            description: 'Indicado para bovinos de corte na fase de terminação em confinamento.',
+            name: 'ADAMES NUCLEO CONFINAMENTO 300 MV',
+            description: 'Nutrição estratégica para engorda.',
+            list: ['Nucleo ideal para produção de dietas de confinamento e rações de terminação.', 'TIP', 'Enriquecido com blend de aditivos e vitaminas que garantem o máximo desempenho com segurança.'],
+            indication: 'Bovinos em fase de terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 23
         },
         {
-            name: 'Adames Núcleo Confinamento 300',
-            description: 'Indicado para bovinos de corte na fase de terminação em confinamento.',
+            name: 'ADAMES NUCLEO CONFINAMENTO 300',
+            description: 'Nutrição estratégica para engorda.',
+            list: ['Nucleo ideal para produção de dietas de confinamento e rações de terminação.', 'Enriquecido com blend de aditivos e vitaminas que garantem o máximo desempenho com segurança.', 'TIP'],
+            indication: 'Bovinos em fase de terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 24
         },
         {
-            name: 'Adames Núcleo Confina a Pasto',
-            description: 'Concentrado proteico, mineral, para preparo de rações para bovinos de corte em semiconfinamento.',
+            name: 'ADAMES NUCLEO CONFINA A PASTO',
+            description: 'Nutrição estratégica para engorda.',
+            list: ['Nucleo que contém minerais, aditivos e fonte proteica para produção de ração usando apenas fonte energética.'],
+            indication: 'Bovinos em fase de terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 25
         },
         {
-            name: 'Adames Núcleo Beef Mix OP',
-            description: 'Suplemento mineral com uréia e uréia protegida para mistura. Exclusivo para formulação de rações, proteicos ou concentrados para bovinos de corte em',
+            name: 'ADAMES NUCLEO CONFINA A PASTO 300',
+            description: 'Nutrição estratégica para engorda.',
+            list: ['Nucleo ideal para produção de dietas de confinamento e rações de terminação.', 'Enriquecido com blend de aditivos que garantem o maximo desempenho com segurança.', 'TIP'],
+            indication: 'Bovinos em fase de terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 26
         },
         {
-            name: 'Adames Núcleo Beef Mix N',
-            description: 'Suplemento mineral com uréia para mistura. Exclusivo para formulação de rações, proteicos ou concentrados  para bovinos de corte em regime de pastejo.',
+            name: 'ADAMES NUCLEO BEEF MIX N',
+            description: 'Nutrição estratégica para recria e engorda. ',
+            list: ['Nucleo que contém minerais, aditivos e ureia para a formulação de rações para bovinos de corte.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 27
         },
         {
-            name: 'Adames Núcleo Beef Mix',
-            description: 'Suplemento mineral para mistura. Exclusivo para formulação de rações, proteicos ou concentrados para bovinos de corte em regime de pastejo.',
+            name: 'ADAMES NUCLEO BEEF MIX',
+            description: 'Nutrição estratégica para recria e engorda. ',
+            list: ['Nucleo que contém minerais e aditivos para a formulação de rações para bovinos de corte.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 28
         },
         {
-            name: 'Adames Proteico Creep- Feeding Master',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bezerros de corte em aleitamento.',
+            name: 'ADAMES PROTEICO CREEP-FEEDING MASTER',
+            description: 'Nutrição estratégica para bezerros em aleitamento.',
+            list: ['Suplemento proteico energetico para auxiliar o aumento de peso na desmama.'],
+            indication: 'Bovinos em fase de cria (bezerros).',
             type: 'proteico_energetico',
             image: energetico,
             id: 29
         },
         {
-            name: 'Adames Proteico 40 Amireia',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte na fase de cria, recria e engorda no período da sec',
+            name: 'ADAMES PROTEICO 35',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento proteico energetico para maximizar o ganho de peso em época de seca.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
             id: 30
         },
         {
-            name: 'Adames Proteico 35',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte nas fases de recria e engorda.',
+            name: 'ADAMES PROENERG 20',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento proteico energetico para maximizar o ganho de peso.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
             id: 31
         },
         {
-            name: 'Adames Proteico 30 Amireia',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte na fase de cria, recria e engorda no período de tra',
+            name: 'ADAMES PRO@30',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento proteico energetico para maximizar o ganho de peso.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
             id: 32
         },
         {
-            name: 'Adames Proenerg 20',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte na fase de recria e engorda.',
+            name: 'ADAMES PRO@20',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento proteico energetico enriquecido com minerais orgânicos para maximizar o ganho de peso.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
             id: 33
         },
         {
-            name: 'Adames Pro@ 30',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte na fase de cria, recria e engorda.',
+            name: 'ADAMES PRO@10',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento proteico para maximizar o ganho de peso.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
             id: 34
         },
         {
-            name: 'Adames Pro@ 20',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte na fase de recria e engorda',
+            name: 'ADAMES K1 ÁGUAS',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento proteico energetico para maximizar o ganho de peso.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
             id: 35
         },
         {
-            name: 'Adames Pro@ 10',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte na fase de cria, recria e engorda.',
+            name: 'ADAMES K1 ENERGY',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento proteico energetico enriquecido com gordura protegida para maximizar o ganho de peso.'],
+            indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
             id: 36
         },
         {
-            name: 'Adames K1 Águas',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte na fase de recria e engorda.',
+            name: 'ADAMES K1 TRANS',
+            description: 'Nutrição estratégica para recria e engorda.',
+            list: ['Suplemento proteico energetico para maximizar o ganho de peso em épocas de transição.'],
+            indication: ' Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
             id: 37
         },
         {
-            name: 'Adames K1 Energy',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte na fase de terminação. Contêm Gordura Protegida',
-            type: 'proteico_energetico',
-            image: energetico,
-            id: 38
-        },
-        {
-            name: 'Adames Energético VM',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte na fase de cria, recria e engorda',
-            type: 'proteico_energetico',
-            image: energetico,
-            id: 39
-        },
-        {
-            name: 'Adames Energético',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bovinos de corte na fase de cria, recria e engorda.',
-            type: 'proteico_energetico',
-            image: energetico,
-            id: 40
-        },
-        {
-            name: 'Adames Zn 72',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de bovinos de corte nas fases de cria,recria e engorda.',
+            name: 'ADAMES ZN 72',
+            description: 'Nutrição estratégica para cria, recria e engorda.',
+            list: ['Suplemento mineral com 72 gramas de fósforo', 'Concentração maior de zinco.'],
+            indication: 'Bovinos em fase de cria, crescimento e terminação.',
             type: 'mineral',
             image: embalagem,
             id: 41
         },
         {
-            name: 'Adames Reprodução',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de bovinos de corte (touros e matrizes) durante o período reprodutivo.',
+            name: 'ADAMES REPRODUÇÃO',
+            description: 'Nutrição estratégica para cria.',
+            list: ['Suplemento mineral com 90 gramas de fósforo.'],
+            indication: 'Bovinos em fase de cria.',
             type: 'mineral',
             image: embalagem,
             id: 42
         },
         {
-            name: 'Adames Recria 65',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de bovinos de corte na fase de recria.',
+            name: 'ADAMES RECRIA 65',
+            description: 'Nutrição estratégica para recria.',
+            list: ['Suplemento mineral com 65 gramas de fósforo.'],
+            indication: 'Bovinos em fase de crescimento.',
             type: 'mineral',
             image: embalagem,
             id: 43
         },
         {
-            name: 'Adames Recria 60',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de bovinos de corte na fase de recria.',
+            name: 'ADAMES RECRIA 60',
+            description: 'Nutrição estratégica para recria.',
+            list: ['Suplemento mineral com 60 gramas de fósforo.'],
+            indication: 'Bovinos em fase de crescimento.',
             type: 'mineral',
             image: embalagem,
             id: 44
         },
         {
-            name: 'Adames Engorda 40',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de bovinos de corte na fase de engorda',
+            name: 'ADAMES ENGORDA 40',
+            description: 'Nutrição estratégica para engorda.',
+            list: ['Suplemento mineral com 40 gramas de fósforo.'],
+            indication: 'Bovinos em fase de terminação.',
             type: 'mineral',
             image: embalagem,
             id: 45
         },
         {
-            name: 'Adames Cria 87',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de bovinos de corte nas fases de cria.',
+            name: 'ADAMES CRIA 80',
+            description: 'Nutrição estratégica para cria.',
+            list: ['Suplemento mineral com 80 gramas de fósforo.'],
+            indication: 'Bovinos em fase de cria.',
             type: 'mineral',
             image: embalagem,
             id: 46
         },
         {
-            name: 'Adames Concentrado 160',
-            description: 'Produto Concentrado, indicado par suprir as necessidades de minerais de bovinos de corte nas fases de cria, recria e engorda',
+            name: 'ADAMES CRIA 87',
+            description: 'Nutrição estratégica para cria.',
+            list: ['Suplemento mineral com 87 gramas de fósforo.'],
+            indication: 'Bovinos em fase de cria.',
             type: 'mineral',
             image: embalagem,
             id: 47
         },
         {
-            name: 'Adames Concentrado 130',
-            description: 'Produto Concentrado, indicado par suprir as necessidades de minerais de bovinos de corte nas fases de cria,recria e engorda.',
+            name: 'ADAMES CONCENTRADO 160',
+            description: 'Nutrição estratégica para cria, recria e engorda.',
+            list: ['Suplemento mineral para mistura com fonte de sódio.'],
+            indication: 'Bovinos em fase de cria, crescimento e terminação.',
             type: 'mineral',
             image: embalagem,
             id: 48
         },
         {
-            name: 'ADAMES CRIA 80',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de bovinos de corte nas fases de cria.',
+            name: 'ADAMES CONCENTRADO 130',
+            description: 'Nutrição estratégica para cria, recria e engorda.',
+            list: ['Suplemento mineral para mistura com fonte de sódio.'],
+            indication: 'Bovinos em fase de cria, crescimento e terminação.',
             type: 'mineral',
             image: embalagem,
             id: 49
@@ -445,22 +455,28 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
     ],
     boi_leite: [
         {
-            name: 'Adames Leite',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de bovinos de corte na fase de leite.',
+            name: 'ADAMES LEITE 22',
+            description: 'Nutrição estratégica para bovinos de leite.',
+            list: ['Ração de pronto uso para bovinos de leite.'],
+            indication: 'Bovinos de leite.',
             type: 'mineral',
             image: embalagem,
             id: 50
         },
         {
-            name: 'Adames Leite 22',
-            description: 'Produto indicado para bovinos de leite.',
+            name: 'ADAMES LEITE 18',
+            description: 'Nutrição estratégica para bovinos de leite.',
+            list: ['Ração de pronto uso para bovinos de leite.'],
+            indication: 'Bovinos de leite.',
             type: 'racoes',
             image: racao,
             id: 51
         },
         {
-            name: 'Adames Leite 18',
-            description: 'Produto indicado para bovinos de leite.',
+            name: 'ADAMES LEITE',
+            description: 'Nutrição estratégica para bovinos de leite.',
+            list: ['Suplemento mineral indicado para suprir as necessidades de bovinos de leite.', 'Essencial para a produção eficiente de leite.'],
+            indication: 'Bovinos de leite.',
             type: 'racoes',
             image: racao,
             id: 52
@@ -468,84 +484,67 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
     ],
     bezerros: [
         {
-            name: 'Adames Desmama Precoce',
-            description: 'Produto indicado para bezerros desmamados precocemente.',
+            name: 'ADAMES CREEP',
+            description: 'Nutrição estratégica para bezerros em fase de aleitamento.',
+            list: ['Indicado para manejo no sistema creep-feeding.'],
+            indication: 'Bovinos em fase de cria (bezerros).',
             type: 'todos',
             image: embalagem,
             id: 53
 
         },
         {
-            name: 'Adames Creep VT5',
-            description: 'Produto indicado para bezerros em aleitamento.',
+            name: 'ADAMES BEZERRO',
+            description: 'Nutrição estratégica para bezerros em fase de aleitamento ou pós-aleitamento.',
+            list: ['Indicado para manejo no sistema creep-feeding.'],
+            indication: 'Bovinos em fase de cria (bezerros).',
             type: 'todos',
             image: embalagem,
             id: 54
-        },
-        {
-            name: 'Adames Creep',
-            description: 'Produto indicado para bezerros em aleitamento.',
-            type: 'todos',
-            image: embalagem,
-            id: 55
-        },
-        {
-            name: 'Adames Bezerro',
-            description: 'Produto indicado para bezerros em aleitamento ou pós aleitamento.',
-            type: 'todos',
-            image: embalagem,
-            id: 56
-        },
-        {
-            name: 'Adames Proteico Creep- Feeding Master',
-            description: 'Produto indicado para suprir as necessidades minerais, proteicas e energéticas de bezerros de corte em aleitamento.',
-            type: 'todos',
-            image: embalagem,
-            id: 57
-        },
-
-    ],
-    ovinos: [
-        {
-            name: 'Adames Ovinos',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de ovinos.',
-            type: 'todos',
-            image: embalagem,
-            id: 58
-        },
+        }
     ],
     equinos: [
         {
-            name: 'Adames Tropa Peletizada',
-            description: 'Ração peletizada, indicada para animais de trabalho.',
+            name: 'ADAMES TROPA PELETIZADA',
+            list: ['Ração peletizada.'],
+            description: 'Nutrição estratégica que garante energia e vitalidade para equinos utilizados para trabalho.',
+            indication: '',
             type: 'todos',
             image: racao_cavalo,
             id: 59
         },
         {
-            name: 'Adames Tropa 12 Mel',
-            description: 'Ração peletizada, indicada para animais de trabalho.',
+            name: 'ADAMES TROPA 12 MEL',
+            description: 'Nutrição estratégica que garante energia e vitalidade para equinos utilizados para trabalho.',
+            list: ['Ração peletizada.'],
+            indication: '',
             type: 'todos',
             image: racao_cavalo,
             id: 60
         },
         {
-            name: 'Adames Tropa',
-            description: 'Ração Farelada, indicada para animais de trabalho.',
+            name: 'ADAMES TROPA',
+            description: 'Nutrição estratégica que garante energia e vitalidade para equinos utilizados para trabalho.',
+            list: ['Ração peletizada.'],
+            indication: '',
             type: 'todos',
             image: racao_cavalo,
             id: 61
         },
         {
-            name: 'Adames Master Equinos',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de equinos.',
+            name: 'ADAMES MASTER EQUINOS',
+            description: 'Nutrição estratégica para suprir as necessidades minerais de equinos.',
+            list: ['Suplemento mineral.'],
+            indication: '',
             type: 'todos',
             image: embalagem,
             id: 62
         },
         {
-            name: 'Adames Equinos',
-            description: 'Suplemento mineral indicado para suprir as necessidades minerais de equinos.',
+            name: 'ADAMES EQUINOS',
+            description: 'Nutrição estratégica para suprir as necessidades minerais de equinos.',
+            list: ['Suplemento mineral.'],
+            indication: '',
             type: 'todos',
             image: embalagem,
             id: 63

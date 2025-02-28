@@ -10,6 +10,8 @@ interface DescriptionProductComponentProps {
     type?: string,
     category?: string,
     badge: typesProducts,
+    list: string[]
+    indication: string
 }
 
 const titleCategory: Record<typesProducts, string> = {
@@ -21,7 +23,7 @@ const titleCategory: Record<typesProducts, string> = {
     todos: 'Todos',
 }
 
-export const DescriptionProductComponent: React.FC<DescriptionProductComponentProps> = ({ title, image, description, badge }) => {
+export const DescriptionProductComponent: React.FC<DescriptionProductComponentProps> = ({ title, image, description, badge, list, indication }) => {
     return (
         <div className='mt-40'>
             <main className="grid grid-cols-1 md:grid-cols-2 gap-20">
@@ -35,6 +37,10 @@ export const DescriptionProductComponent: React.FC<DescriptionProductComponentPr
                         </div>
                         <Title text={title} />
                         <p className="text-justify">{description}</p>
+                        {list.map((item) => {
+                            return <span key={Math.random()} className="text-sm">✔️ {item}</span>
+                        })}
+                        <p className="text-justify text-sm"><span className="font-semibold">Indicado para:</span> {indication}</p>
                     </article>
                 </div>
             </main>

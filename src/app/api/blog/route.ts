@@ -1,5 +1,5 @@
 import axios from "axios";
-import {  } from "next";
+import { } from "next";
 
 interface InstagramMedia {
     id: string;
@@ -15,7 +15,7 @@ export async function POST(
 ) {
     const { media_type, quantity } = await req.json()
 
-    if (!media_type || !quantity || typeof quantity != 'number') {
+    if (!quantity || typeof quantity != 'number') {
         return Response.json({ error: 'Parâmetros inválidos.' });
     }
 
@@ -28,10 +28,17 @@ export async function POST(
                 }
             });
 
-        const data = await response.data;
+        const { data } = await response.data;
 
-        const filteredData = data.data.filter((item: InstagramMedia) => item.media_type == media_type).slice(0, quantity);
+        if(media_type) {
+            const filteredData = data.filter((item: InstagramMedia) => item.media_type == media_type).slice(0, quantity);
+            return Response.json(filteredData);
+        }
+
+        const filteredData = data.slice(0, quantity);
         return Response.json(filteredData);
+
+
     }
     catch (error) {
         console.error(error);

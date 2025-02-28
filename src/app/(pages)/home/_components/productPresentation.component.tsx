@@ -42,7 +42,7 @@ export const ProductPresentationComponent = () => {
                         <div className="absolute px-4 py-2 md:p-8">
                             <p className="md:text-2xl text-md font-semibold text-white">Veja todos nossos</p>
                             <p className="md:text-2xl text-md font-semibold text-white">produtos</p>
-                            <Button className="mt-2 rounded-full px-6 bg-[#0E3463] font-medium" size={"sm"}>Veja mais</Button>
+                            <Button className="mt-2 rounded-full px-6 bg-[#0E3463] font-medium">Veja mais</Button>
                         </div>
                     </div>
                     <div className="md:hidden py-4">

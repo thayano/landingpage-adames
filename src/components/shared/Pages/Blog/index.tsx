@@ -3,9 +3,12 @@
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { ImageCardComponent } from "../../ImageCard";
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import axios from "axios";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { BlogContext } from "@/app/(pages)/blog/context/blog.context";
 
 interface InstagramPost {
     id: string;
@@ -21,12 +24,14 @@ export const CardBlogComponent = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | undefined>(undefined);
     const path = usePathname()
+    const { option } = useContext(BlogContext);
 
     useEffect(() => {
         async function fetchInstagramFeed() {
             setIsLoading(true);
             try {
-                const response = await axios.post('api/blog', { media_type: 'IMAGE', quantity: validPath() });
+                const data = { media_type: option, quantity: validPath() }
+                const response = await axios.post('api/blog', data);
                 setInstagramFeed(response.data)
             } catch (err) {
                 console.error("Error fetching Instagram feed:", err);
@@ -35,10 +40,9 @@ export const CardBlogComponent = () => {
                 setIsLoading(false);
             }
         }
-
         fetchInstagramFeed();
-
-    }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [option]);
 
     if (isLoading) {
         return <div>Carregando Instagram Feed...</div>;
@@ -56,20 +60,46 @@ export const CardBlogComponent = () => {
     }
 
     return (
-        <section className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-20">
-            {instagramFeed && instagramFeed.length > 0 ? (
-                instagramFeed.map((post) => (
-                    <Card key={post.id} className="flex flex-col border-0 gap-6 bg-transparent h-[540px]">
-                        <ImageCardComponent title="" link={post.permalink} >
-                            <Image src={post.media_url} unoptimized={true} alt={post.caption} width={540} height={400} style={{ objectFit: 'contain' }} />
-                        </ImageCardComponent>
-                        <h3 className="uppercase font-semibold">{post.caption.split(' ').slice(0, 4).join(' ')}</h3>
-                        <p className="text-justify line-clamp-3 text-muted-foreground font-medium">{post.caption}</p>
-                    </Card>
-                ))
-            ) : (
-                <div>Imagens indisponíveis no momento.</div>
-            )}
-        </section>
+        <div>
+            <section className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-20">
+                {instagramFeed && instagramFeed.length > 0 ? (
+                    instagramFeed.map((post) => (
+                        <Card key={post.id} className="flex flex-col border-0 gap-6 bg-transparent mb-20">
+                            {post.media_type == 'IMAGE' ? (
+                                <ImageCardComponent title="" link={`blog/${post.id}`} className="max-h-[440px]">
+                                    <Image
+                                        src={post.media_url}
+                                        unoptimized={true}
+                                        alt={post.caption}
+                                        width={540} height={500}
+                                    />
+                                </ImageCardComponent>
+                            ) : (
+                                <video width="500" height="570" controls>
+                                    <source src={post.media_url} type="video/mp4" />
+                                    <track
+                                        src="/path/to/captions.vtt"
+                                        kind="subtitles"
+                                        srcLang="en"
+                                        label="English"
+                                    />
+                                    Your browser does not support the video tag.
+                                </video>
+                            )}
+                            <p className="line-clamp-3 text-muted-foreground font-medium mt-8">{post.caption}</p>
+                        </Card>
+                    ))
+                ) : (
+                    <div>Imagens indisponíveis no momento.</div>
+                )}
+            </section>
+            <div className="flex justify-center">
+                {path.includes('/home') && (
+                    <Link href="/blog" className="" >
+                        <Button className="rounded-full bg-gray-800 px-6">Veja mais</Button>
+                    </Link>
+                )}
+            </div>
+        </div>
     );
 };

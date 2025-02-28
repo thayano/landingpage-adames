@@ -13,15 +13,15 @@ export const ContainerComponent = () => {
     const type = searchParams.get('type') as typesCategory;
 
     const product = useMemo(() => {
-        if (!type || !id) { 
+        if (!type || !id) {
             return null;
         }
         return products[type]?.find(p => p.id === id);
-    }, [type, id]); 
+    }, [type, id]);
 
     const relatedProducts = useMemo(() => {
-        if (!type) return []; 
-        const allProducts = [...products[type]]; 
+        if (!type) return [];
+        const allProducts = [...products[type]];
         return allProducts.slice(0, 3);
     }, [type]);
 
@@ -36,9 +36,11 @@ export const ContainerComponent = () => {
                 title={product.name}
                 image={product.image}
                 description={product.description}
+                list={product.list}
+                indication={product.indication}
                 badge={category}
             />
-            <RelatedProductComponent productList={relatedProducts} /> 
+            <RelatedProductComponent productList={relatedProducts} />
         </div>
     );
 };
