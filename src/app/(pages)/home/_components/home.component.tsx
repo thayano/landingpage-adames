@@ -8,6 +8,7 @@ import { CardBlogComponent } from '@/components/shared/Pages/Blog'
 import { DoubtComponent } from './doubt.component'
 import { HeroAboutComponent } from '@/components/shared/Pages/About'
 import { Title } from '@/components/shared/Title'
+import CookieConsent from '@/components/shared/CookieConsent'
 
 export const HomeComponent = () => {
     return (
@@ -19,6 +20,7 @@ export const HomeComponent = () => {
                 </div>
                 <ProductPresentationComponent />
                 <ProductAdvantagesComponent />
+                <CookieConsent />
                 <div>
                     <Title text="Destaques" align="center" className="text-4xl mb-32" />
                     <CardBlogComponent />

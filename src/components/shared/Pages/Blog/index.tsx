@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BlogContext } from "@/app/(pages)/blog/context/blog.context";
+import { news } from "@/app/(pages)/blog/_data/data";
 
 interface InstagramPost {
     id: string;
@@ -27,22 +28,25 @@ export const CardBlogComponent = () => {
     const { option } = useContext(BlogContext);
 
     useEffect(() => {
-        async function fetchInstagramFeed() {
-            setIsLoading(true);
-            try {
-                const data = { media_type: option, quantity: validPath() }
-                const response = await axios.post('api/blog', data);
-                setInstagramFeed(response.data)
-            } catch (err) {
-                console.error("Error fetching Instagram feed:", err);
-                setError('error fetching Instagram feed');
-            } finally {
-                setIsLoading(false);
-            }
+        if (option != 'NEWS') {
+            fetchInstagramFeed()
         }
-        fetchInstagramFeed();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [option]);
+
+    async function fetchInstagramFeed() {
+        setIsLoading(true);
+        try {
+            const data = { media_type: option, quantity: validPath() }
+            const response = await axios.post('api/blog', data);
+            setInstagramFeed(response.data)
+        } catch (err) {
+            console.error("Error fetching Instagram feed:", err);
+            setError('error fetching Instagram feed');
+        } finally {
+            setIsLoading(false);
+        }
+    }
 
     if (isLoading) {
         return <div>Carregando Instagram Feed...</div>;
@@ -54,7 +58,7 @@ export const CardBlogComponent = () => {
 
     function validPath() {
         if (path.includes('/blog')) {
-            return 9
+            return 24
         }
         return 3
     }
@@ -62,36 +66,47 @@ export const CardBlogComponent = () => {
     return (
         <div>
             <section className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-20">
-                {instagramFeed && instagramFeed.length > 0 ? (
-                    instagramFeed.map((post) => (
-                        <Card key={post.id} className="flex flex-col border-0 gap-6 bg-transparent mb-20">
-                            {post.media_type == 'IMAGE' ? (
-                                <ImageCardComponent title="" link={`blog/${post.id}`} className="max-h-[440px]">
-                                    <Image
-                                        src={post.media_url}
-                                        unoptimized={true}
-                                        alt={post.caption}
-                                        width={540} height={500}
-                                    />
-                                </ImageCardComponent>
-                            ) : (
-                                <video width="500" height="570" controls>
-                                    <source src={post.media_url} type="video/mp4" />
-                                    <track
-                                        src="/path/to/captions.vtt"
-                                        kind="subtitles"
-                                        srcLang="en"
-                                        label="English"
-                                    />
-                                    Your browser does not support the video tag.
-                                </video>
-                            )}
-                            <p className="line-clamp-3 text-muted-foreground font-medium mt-8">{post.caption}</p>
-                        </Card>
-                    ))
-                ) : (
-                    <div>Imagens indisponíveis no momento.</div>
-                )}
+                {option != 'NEWS' ?
+                    instagramFeed && instagramFeed.length > 0 ? (
+                        instagramFeed.map((post) => (
+                            <Card key={post.id} className="flex flex-col border-0 gap-6 bg-transparent mb-20">
+                                {post.media_type == 'IMAGE' || post.media_type == 'CAROUSEL_ALBUM' ? (
+                                    <ImageCardComponent title="" link={`blog/${post.id}`} className="max-h-[440px]">
+                                        <Image
+                                            src={post.media_url}
+                                            unoptimized={true}
+                                            alt={post.caption}
+                                            width={540} height={500}
+                                        />
+                                    </ImageCardComponent>
+                                ) : (
+                                    <video width="500" height="570" controls>
+                                        <source src={post.media_url} type="video/mp4" />
+                                        <track
+                                            src="/path/to/captions.vtt"
+                                            kind="subtitles"
+                                            srcLang="en"
+                                            label="English"
+                                        />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                )}
+                                <p className="line-clamp-3 text-muted-foreground font-medium mt-8">{post.caption}</p>
+                            </Card>
+                        ))
+                    ) : (
+                        <div>Imagens indisponíveis no momento.</div>
+                    ) :
+                    news.map((item, index) => (
+                        <Link href={`blog/${item.id}`} key={index} className="p-6 hover:bg-gray-100 rounded-2xl">
+                            <div >
+                                <div className="text-lg font-semibold py-2">{item.title}</div>
+                                <div dangerouslySetInnerHTML={{ __html: item.content }}
+                                    className="line-clamp-2 text-muted-foreground"></div>
+                            </div>
+                        </Link>
+                    )
+                    )}
             </section>
             <div className="flex justify-center">
                 {path.includes('/home') && (

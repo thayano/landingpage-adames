@@ -6,8 +6,8 @@ import { Title } from '@/components/shared/Title'
 import ClientMap from '../../../../components/shared/Maps/DynamicMap'
 
 export const AboutComponent = () => {
-    const locationMS: LatLngExpression = [-20.519206, -54.715653]
-    const locationMT: LatLngExpression = [-2.949650, -60.033057]
+    const locationMS: LatLngExpression = [-20.55191267569932, -54.669450350283306]
+    const locationMT: LatLngExpression = [-15.260242926646013, -59.322473097666204]
     return (
         <div className='mt-44 flex flex-col md:px-16 lg:px-32 px-4 gap-32'>
             <HeroAboutComponent/>

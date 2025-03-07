@@ -33,9 +33,10 @@ export const HeroComponent = () => {
                                         <Image
                                             src={image.src || "/placeholder.svg"}
                                             alt="hero image"
-                                            width={2000}
-                                            height={800}
+                      
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                             className="rounded-3xl"
+                                            style={{ 'objectFit': "cover" }}
                                         />
                                     </CardContent>
                                 </Card>

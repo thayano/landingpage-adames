@@ -22,7 +22,7 @@ export const HeroAboutComponent = () => {
                 <Image src={logo} width={250} height={150} alt='logo' />
                 <Title align='left' text='Conheca nossa historia' />
                 <p className='font-semibold'>Sempre sonhando, inovando e empreendendo a fim de oferecer as melhores fórmulas e produtos para todas as raças e portes.</p>
-                <p>Desde 1983, nós, da Adames, temos o compromisso em atender nossos parceiros por meio da nutrição animal. Sempre sonhando, inovando e empreendendo a fim de oferecer as melhores fórmulas e produtos para todas as raças e portes.</p>
+                <p>Desde 1985 apoiando a pecuária que alimenta, nós, da Adames, temos o compromisso em atender nossos parceiros por meio da nutrição animal. Sempre sonhando, inovando e empreendendo a fim de oferecer as melhores fórmulas e produtos para todas as raças e portes.</p>
                 {!verifyPath() && (
                     <Link href='/about'>
                         <Button className='px-6 rounded-full font-bold opacity-80 hover:opacity-100'>Saiba mais</Button>

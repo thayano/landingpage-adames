@@ -22,8 +22,8 @@ export const ContentBlogComponent = () => {
             <div className="w-full flex justify-center gap-10">
                 <div className="max-w-2xl md:max-w-4xl flex md:gap-8 gap-2">
                     <Button className="rounded-full px-6" onClick={() => getBlogContext('VIDEO')}>Videos</Button>
-                    <Button className="rounded-full px-6" onClick={() => getBlogContext('IMAGE')}>Noticias</Button>
-                    <Button className="rounded-full px-6" onClick={() => getBlogContext('tudo')}>Ver Todas</Button>
+                    <Button className="rounded-full px-6" onClick={() => getBlogContext('IMAGE')}>Posts</Button>
+                    <Button className="rounded-full px-6" onClick={() => getBlogContext('NEWS')}>Noticias</Button>
                 </div>
             </div>
             <CardBlogComponent />

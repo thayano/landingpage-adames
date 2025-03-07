@@ -31,7 +31,7 @@ async function getValue(incicador: string) {
         const $ = cheerio.load(response.data);
         const elementos = $('.imagenet-table > tbody');
         const primeiraLinha = elementos.find('tr:first-child');
-        const value = primeiraLinha.find('td').eq(4).text();
+        const value = primeiraLinha.find('td').eq(1).text();
         const percent = primeiraLinha.find('td').eq(2).text();
         const numericPart = parseFloat(percent.replace('%', ''))
         const color = Math.sign(numericPart) == 1 ? 'green' : 'red';

@@ -16,6 +16,14 @@ interface MediaItem {
     media_url: string;
     caption: string
     timestamp: string
+    permalink: string
+    children: childrenMediaData[]
+}
+
+interface childrenMediaData {
+    id: number
+    media_type: string
+    media_url: string
 }
 
 export const DescriptionBlogContentComponent = ({ post_id }: DescriptionBlogContentComponentProps) => {
@@ -80,15 +88,15 @@ export const DescriptionBlogContentComponent = ({ post_id }: DescriptionBlogCont
         <div className="grid grid-cols-1 mx-auto md:w-3/4 gap-6 md:mt-40 mt-20">
             {content && (
                 <>
-                    <Title text={setTitle(content.caption)} className="md:text-4xl text-lg"/>
+                    <Title text={setTitle(content.caption)} className="md:text-4xl text-lg" />
                     <p className="mt-10">{content.caption}</p>
                     <div className="flex items-center justify-between pt-14">
                         <div className="text-sm text-muted-foreground">
                             Atualizado: <span className="">{dateFormat(content.timestamp)}</span>
                         </div>
                         <div>
-                            <Link href={content.media_url}>
-                                <Image src={insta_logo_color} alt="insta logo" width={20} height={20} quality={100}/>
+                            <Link href={content.permalink} target="_blank">
+                                <Image src={insta_logo_color} alt="insta logo" width={20} height={20} quality={100} />
                             </Link>
                         </div>
                     </div>
@@ -102,6 +110,21 @@ export const DescriptionBlogContentComponent = ({ post_id }: DescriptionBlogCont
                             alt="image"
                             className="rounded-2xl py-10"
                         />
+
+                    </section>
+                    <section className="grid md:grid-cols-4 grid-cols-1 gap-2">
+                        {content.children.length > 0 ? content.children.map((filho) => (
+                            <Image
+                                key={filho.media_url}
+                                src={filho.media_url}
+                                unoptimized={true}
+                                width={400}
+                                height={400}
+                                alt="image"
+                                className="rounded-2xl py-10"
+                            />
+                        )) : ''
+                        }
 
                     </section>
                 </>

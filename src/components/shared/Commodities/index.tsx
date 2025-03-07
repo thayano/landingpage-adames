@@ -20,7 +20,7 @@ export const CommoditiesComponent = () => {
     const [commodities, setCommodities] = useState<Item[]>([])
 
     useEffect(() => {
-        const hasCommodities = localStorage.getItem('commodities');
+        const hasCommodities = sessionStorage.getItem('commodities');
         if (!hasCommodities) {
             fetchCommodities();
         } else {
@@ -32,7 +32,7 @@ export const CommoditiesComponent = () => {
 
     function getIndices() {
         const result = list.map((item) => {
-            const jsonString = localStorage.getItem(item);
+            const jsonString = sessionStorage.getItem(item);
             if (jsonString) {
                 try {
                     return JSON.parse(jsonString);
@@ -54,8 +54,9 @@ export const CommoditiesComponent = () => {
             if (!response.ok) throw new Error('Falha ao buscar commodities');
             const data: Item[] = await response.json();
 
-            data.forEach(item => localStorage.setItem(item.indice, JSON.stringify(item)));
-            localStorage.setItem('commodities', 'true');
+
+            data.forEach(item => sessionStorage.setItem(item.indice, JSON.stringify(item)));
+            sessionStorage.setItem('commodities', 'true');
 
             setCommodities(data);
         } catch (error) {
@@ -71,7 +72,7 @@ export const CommoditiesComponent = () => {
             <div className="flex ">
                 {commodities && commodities.map((item) => (
                     <div className="text-gray-200 text-xs px-8 flex gap-4 font-semibold uppercase" key={item.percent + item.value}>
-                        <span>@{item.indice}</span>
+                        <span>{item.indice == 'boi-gordo' ? `@${item.indice}` : item.indice}</span>
                         <span>{item.value}</span>
                         <span className={cn(item.color == 'red' ? 'text-red-500 rotate-180' : 'text-green-500')}>&#9652;</span>
                         <span className={cn(item.color == 'red' ? 'text-red-500' : 'text-green-500')}>{item.percent}</span>

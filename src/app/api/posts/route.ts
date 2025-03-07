@@ -10,7 +10,8 @@ export async function POST(
         return Response.json({ error: 'Parâmetros inválidos.' });
     }
 
-    const url = `https://graph.instagram.com/v22.0/${post_id}?fields=id,media_type,media_url,owner,timestamp,caption&access_token`
+    const url = `https://graph.instagram.com/v22.0/${post_id}?fields=id,media_type,media_url,owner,timestamp,caption,permalink,children{id,media_type,media_url}&access_token`;
+
     try {
         const response = await axios.get(`${url}=${process.env.INSTAGRAM_ACCESS_TOKEN}`,
             {
@@ -20,7 +21,8 @@ export async function POST(
             });
 
         const data = await response.data;
-        return Response.json(data);
+        const childrenData = data.children?.data || [];
+        return Response.json({ ...data, children: childrenData });
     }
     catch (error) {
         console.error(error);

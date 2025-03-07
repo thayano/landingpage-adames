@@ -19,6 +19,16 @@ export async function POST(
         return Response.json({ error: 'Parâmetros inválidos.' });
     }
 
+    const media = [media_type]
+
+    if (media_type == 'IMAGE') {
+        media.push('CAROUSEL_ALBUM')
+    }
+
+    if (media_type == 'VIDEO') {
+        media.push('REELS')
+    }
+
     const url = 'https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,timestamp,permalink&access_token'
     try {
         const response = await axios.get(`${url}=${process.env.INSTAGRAM_ACCESS_TOKEN}`,
@@ -30,8 +40,8 @@ export async function POST(
 
         const { data } = await response.data;
 
-        if(media_type) {
-            const filteredData = data.filter((item: InstagramMedia) => item.media_type == media_type).slice(0, quantity);
+        if (media_type) {
+            const filteredData = data.filter((item: InstagramMedia) => media.includes(item.media_type)).slice(0, quantity);
             return Response.json(filteredData);
         }
 
