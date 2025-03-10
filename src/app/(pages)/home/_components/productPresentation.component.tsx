@@ -24,12 +24,12 @@ export const ProductPresentationComponent = () => {
                     <ImageCardComponent title="Equinos" link={'product?prod=equinos'}>
                         <Image src={cavalo} alt="Cavalo" fill style={{ objectFit: 'cover' }} className="h-24" />
                     </ImageCardComponent>
-                    <ImageCardComponent title="gado de leite" link={'product?prod=boi_leite'}>
+                    <ImageCardComponent title="bovinos de leite" link={'product?prod=boi_leite'}>
                         <Image src={mini_vaca} alt="mini_vaca" fill style={{ objectFit: 'cover' }} className="h-24" />
                     </ImageCardComponent>
                 </div>
                 <div className="h-full flex">
-                    <ImageCardComponent title="gado de corte" link={'product?prod=boi_corte'}>
+                    <ImageCardComponent title="bovinos de corte" link={'product?prod=boi_corte'}>
                         <Image src={clube_das_vacas} fill alt="clube_das_vacas" style={{ objectFit: 'cover' }} className="h-24" />
                     </ImageCardComponent>
                 </div>

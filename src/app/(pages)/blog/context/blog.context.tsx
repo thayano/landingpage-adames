@@ -18,6 +18,7 @@ export const BlogContext = createContext<BlogContextType>({
 
 export const BlogProvider = ({ children }: BlogProviderProps) => {
     const [option, setOption] = useState('IMAGE');
+    console.log(option)
 
     const updateOption = (value: string) => {
         setOption(value)

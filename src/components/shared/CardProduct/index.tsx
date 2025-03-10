@@ -14,10 +14,10 @@ interface CardProductComponentProps {
 
 export const CardProductComponent: React.FC<CardProductComponentProps> = ({ image, title, description, link }) => {
     return (
-        <Link href={link}>
-            <Card className="flex flex-col items-center gap-4 bg-transparent border-0 hover:bg-white md:p-8 p-4">
+        <Link href={link} className="bg-gray-100 rounded-3xl hover:bg-white transition-all">
+            <Card className="flex flex-col items-center gap-4 bg-transparent border-0 md:p-8 px-4">
                 <Image src={image} alt='teste' width={250} height={100} />
-                <h2 className="text-xl font-semibold">{title}</h2>
+                <h2 className="text-xl font-semibold text-start">{title}</h2>
                 <p className="text-justify text-muted-foreground font-medium">{description}</p>
             </Card>
         </Link>

@@ -5,6 +5,8 @@ import { DescriptionProductComponent } from "./descriptionProduct.component";
 import { RelatedProductComponent } from "./relatedProducts.component";
 import { products, typesCategory, typesProducts } from '../../_data/data'
 import { useMemo } from "react";
+import Image from "next/image";
+import banner from '../../../../../../public/banner.png'
 
 export const ContainerComponent = () => {
     const searchParams = useSearchParams();
@@ -31,7 +33,7 @@ export const ContainerComponent = () => {
     }
 
     return (
-        <div className="flex flex-col gap-40">
+        <div className="flex flex-col rounded-b-3xl gap-20">
             <DescriptionProductComponent
                 title={product.name}
                 image={product.image}
@@ -40,6 +42,9 @@ export const ContainerComponent = () => {
                 indication={product.indication}
                 badge={category}
             />
+            <div className="w-full h-fit flex justify-center">
+            <Image src={banner} alt="banner" />
+            </div>
             <RelatedProductComponent productList={relatedProducts} />
         </div>
     );

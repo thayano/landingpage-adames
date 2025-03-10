@@ -38,6 +38,7 @@ export const CardBlogComponent = () => {
         setIsLoading(true);
         try {
             const data = { media_type: option, quantity: validPath() }
+            console.log(option, 'oi')
             const response = await axios.post('api/blog', data);
             setInstagramFeed(response.data)
         } catch (err) {
