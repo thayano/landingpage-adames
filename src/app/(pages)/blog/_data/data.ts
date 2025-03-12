@@ -1,6 +1,112 @@
+import image01 from '../../../../../public/blog/image01.jpg';
+// import image02 from '../../../../../public/blog/image02.jpg';
+import image03 from '../../../../../public/blog/image03.svg';
+// import image04 from '../../../../../public/blog/image04.jpg';
+// import image05 from '../../../../../public/blog/image05.jpg';
+// import image06 from '../../../../../public/blog/image06.jpg';
+// import image07 from '../../../../../public/blog/image07.jpg';
+// import image08 from '../../../../../public/blog/image08.jpg';
+// import image09 from '../../../../../public/blog/image09.jpg';
+// import image10 from '../../../../../public/blog/image10.jpg';
+// import image11 from '../../../../../public/blog/image11.jpg';
+// import image12 from '../../../../../public/blog/image12.jpg';
+// import image13 from '../../../../../public/blog/image13.jpg';
+// import image14 from '../../../../../public/blog/image14.jpg';
+// import image15 from '../../../../../public/blog/image15.jpg';
+// import image16 from '../../../../../public/blog/image16.jpg';
+// import image17 from '../../../../../public/blog/image17.jpg';
+// import image18 from '../../../../../public/blog/image18.jpg';
+// import image19 from '../../../../../public/blog/image19.jpg';
+// import image20 from '../../../../../public/blog/image20.jpg';
+// import image21 from '../../../../../public/blog/image21.jpg';
+// import image22 from '../../../../../public/blog/image22.jpg';
+// import image23 from '../../../../../public/blog/image23.jpg';
+// import image24 from '../../../../../public/blog/image24.jpg';
+// import image25 from '../../../../../public/blog/image25.jpg';
+// import image26 from '../../../../../public/blog/image26.jpg';
+// import image27 from '../../../../../public/blog/image27.jpg';
+// import image28 from '../../../../../public/blog/image28.jpg';
+// import image29 from '../../../../../public/blog/image29.jpg';
+// import image30 from '../../../../../public/blog/image30.jpg';
+// import image31 from '../../../../../public/blog/image31.jpg';
+// import image32 from '../../../../../public/blog/image32.jpg';
+// import image33 from '../../../../../public/blog/image33.jpg';
+// import image34 from '../../../../../public/blog/image34.jpg';
+// import image35 from '../../../../../public/blog/image35.jpg';
+// import image36 from '../../../../../public/blog/image36.jpg';
+// import image37 from '../../../../../public/blog/image37.jpg';
+// import image38 from '../../../../../public/blog/image38.jpg';
+// import image39 from '../../../../../public/blog/image39.jpg';
+// import image40 from '../../../../../public/blog/image40.jpg';
+// import image41 from '../../../../../public/blog/image41.jpg';
+// import image42 from '../../../../../public/blog/image42.jpg';
+// import image43 from '../../../../../public/blog/image43.jpg';
+// import image44 from '../../../../../public/blog/image44.jpg';
+// import image45 from '../../../../../public/blog/image45.jpg';
+// import image46 from '../../../../../public/blog/image46.jpg';
+// import image47 from '../../../../../public/blog/image47.jpg';
+// import image48 from '../../../../../public/blog/image48.jpg';
+// import image49 from '../../../../../public/blog/image49.jpg';
+// import image50 from '../../../../../public/blog/image50.jpg';
+// import image51 from '../../../../../public/blog/image51.jpg';
+// import image52 from '../../../../../public/blog/image52.jpg';
+// import image53 from '../../../../../public/blog/image53.jpg';
+// import image54 from '../../../../../public/blog/image54.jpg';
+// import image55 from '../../../../../public/blog/image55.jpg';
+// import image56 from '../../../../../public/blog/image56.jpg';
+// import image57 from '../../../../../public/blog/image57.jpg';
+// import image58 from '../../../../../public/blog/image58.jpg';
+// import image59 from '../../../../../public/blog/image59.jpg';
+// import image60 from '../../../../../public/blog/image60.jpg';
+// import image61 from '../../../../../public/blog/image61.jpg';
+// import image62 from '../../../../../public/blog/image62.jpg';
+// import image63 from '../../../../../public/blog/image63.jpg';
+// import image64 from '../../../../../public/blog/image64.jpg';
+// import image65 from '../../../../../public/blog/image65.jpg';
+// import image66 from '../../../../../public/blog/image66.jpg';
+// import image67 from '../../../../../public/blog/image67.jpg';
+// import image68 from '../../../../../public/blog/image68.jpg';
+// import image69 from '../../../../../public/blog/image69.jpg';
+// import image70 from '../../../../../public/blog/image70.jpg';
+// import image71 from '../../../../../public/blog/image71.jpg';
+// import image72 from '../../../../../public/blog/image72.jpg';
+// import image73 from '../../../../../public/blog/image73.jpg';
+// import image74 from '../../../../../public/blog/image74.jpg';
+// import image75 from '../../../../../public/blog/image75.jpg';
+// import image76 from '../../../../../public/blog/image76.jpg';
+// import image77 from '../../../../../public/blog/image77.jpg';
+// import image78 from '../../../../../public/blog/image78.jpg';
+// import image79 from '../../../../../public/blog/image79.jpg';
+// import image80 from '../../../../../public/blog/image80.jpg';
+// import image81 from '../../../../../public/blog/image81.jpg';
+// import image82 from '../../../../../public/blog/image82.jpg';
+// import image83 from '../../../../../public/blog/image83.jpg';
+// import image84 from '../../../../../public/blog/image84.jpg';
+// import image85 from '../../../../../public/blog/image85.jpg';
+// import image86 from '../../../../../public/blog/image86.jpg';
+// import image87 from '../../../../../public/blog/image87.jpg';
+// import image88 from '../../../../../public/blog/image88.jpg';
+// import image89 from '../../../../../public/blog/image89.jpg';
+// import image90 from '../../../../../public/blog/image90.jpg';
+// import image91 from '../../../../../public/blog/image91.jpg';
+// import image92 from '../../../../../public/blog/image92.jpg';
+// import image93 from '../../../../../public/blog/image93.jpg';
+// import image94 from '../../../../../public/blog/image94.jpg';
+// import image95 from '../../../../../public/blog/image95.jpg';
+// import image96 from '../../../../../public/blog/image96.jpg';
+// import image97 from '../../../../../public/blog/image97.jpg';
+// import image98 from '../../../../../public/blog/image98.jpg';
+// import image99 from '../../../../../public/blog/image99.jpg';
+// import image100 from '../../../../../public/blog/image100.jpg';
+// import image101 from '../../../../../public/blog/image101.jpg';
+// import image102 from '../../../../../public/blog/image102.jpg';
+// import image103 from '../../../../../public/blog/image103.jpg';
+// import image104 from '../../../../../public/blog/image104.jpg';
 
-export const news = [{
+export const news = [
+{
     id: 1,
+    image: image01,
     title: 'Walter Adames recebe “Medalha Tereza Cristina” na Câmara de Campo Grande em uma noite de homenagem e reconhecimento a vários profissionais do agronegócio',
     content: `<article class="view-article">
 <p>Os vereadores da Câmara Municipal de Campo Grande realizaram, na noite de sexta-feira (6), sessão solene de outorga da Medalha Tereza Cristina de Liderança no Agronegócio. A comenda é outorgada a líderes empresariais, pesquisadores ou profissionais que se destacaram por sua liderança e visão estratégica no âmbito do agronegócio, promovendo o crescimento e a modernização do setor em Campo Grande.</p>
@@ -18,6 +124,8 @@ export const news = [{
 </article>`,
 }, {
     id: 2,
+    image:image03,
+    // image:image02,
     title: 'Sequestro de Bezerros',
     content: `<article class="view-article">
 <p>               A estratégia intitulada “sequestro de bezerros” é uma prática que consiste na retirada dos bezerros da pastagem para inseri-los em áreas sem acesso ao pasto. Sendo confinamentos ou semi-intensivos com acesso a cocho e bebedouros, por cerca de 90 a 120 dias. Geralmente, essa prática é realizada no período de transição entre a seca e o período das chuvas.</p>
@@ -39,6 +147,8 @@ export const news = [{
 },
 {
     id: 3,
+    image:image03,
+    // image:image03,
     title: 'Estatística da pecuária (Campo Grande – Mato Grosso do Sul)',
     content: `<article class="view-article">
 <h3 class="wp-block-heading has-small-font-size"><em><br></em><strong>Scott Consultoria <sub>| </sub>por&nbsp;<a href="https://www.scotconsultoria.com.br/noticias/autor-ver/400/rafaela-facchina/">Rafaela Facchina</a>. Domingo, 30 de junho de 2024 –&nbsp;06h00</strong></h3>
@@ -50,6 +160,8 @@ export const news = [{
 </article>`
 }, {
     id: 4,
+    image:image03,
+    // image:image04,
     title: 'Suplementação Proteica no Período Seco',
     content: `<article class="view-article">
 <p class="has-text-align-left">O período seco desafia significativamente a pecuária brasileira, com reduções na qualidade e quantidade de forragens disponíveis. Devido a isso, o desempenho dos bovinos tende a ser insatisfatório quando não recebem suplementação adequada de proteínas, energia e minerais. Neste artigo, discutiremos como a suplementação proteica pode ajudar a superar os desafios nutricionais da estação seca.</p>
@@ -68,6 +180,8 @@ export const news = [{
 </article>`
 }, {
     id: 5,
+    image:image03,
+    // image:image05,
     title: 'Portaria da Iagro prorroga até 31 de dezembro prazo para declarar rebanhos',
     content: `<article class="view-article">
 <p>Quem não declarar até 30 de novembro ficará bloqueado automaticamente até que a declaração seja entregue </p>
@@ -84,6 +198,8 @@ export const news = [{
 },
 {
     id: 6,
+    image:image03,
+    // image:image06,
     title: 'Mercado e gestão de carbono: boas práticas que garantem retorno financeiro',
     content: `<article class="view-article">
 <h5 class="wp-block-heading"><em>por&nbsp;<a href="https://www.scotconsultoria.com.br/noticias/autor-ver/377/mariana-guimar%C3%A3es/">Mariana Guimarães</a></em> – Scot Consultoria</h5>
@@ -118,6 +234,8 @@ export const news = [{
 },
 {
     id: 7,
+    image:image03,
+    // image:image07,
     title: 'Energia Limpa – ADAMES comprometida com ESG e o Meio Ambiente!',
     content: `<article class="view-article">
 <p>Com as mudanças climáticas cada vez mais impactantes, a energia solar ganha destaque nas discussões sobre práticas ambientais no ESG. 💡♻</p>
@@ -130,6 +248,8 @@ export const news = [{
 </article>`
 }, {
     id: 8,
+    image:image03,
+    // image:image08,
     title: 'O que é ESG?',
     content: `<article class="view-article">
 <p>ESG é a sigla, em inglês, para Environmental, Social and Governance (Ambiental, Social e Governança). De modo geral, o ESG mostra o quanto um negócio está buscando maneiras de minimizar os seus impactos no meio ambiente, de construir um mundo mais justo e responsável e de manter os melhores processos de administração. O termo ESG surgiu pela primeira vez em um relatório de 2004, da&nbsp; Organização das Nações Unidas (ONU), chamado&nbsp;<a href="https://d306pr3pise04h.cloudfront.net/docs/issues_doc%2FFinancial_markets%2Fwho_cares_who_wins.pdf" target="_blank" rel="noreferrer noopener"><em>Who Cares Wins</em></a>&nbsp;(Ganha quem se importa). </p>
@@ -142,6 +262,8 @@ export const news = [{
 </article>`
 }, {
     id: 9,
+    image:image03,
+    // image:image09,
     title: 'Sistema digestivo dos bovinos: conheça a anatomia e fisiologia',
     content: `<article class="view-article">
 <p>O&nbsp;<strong>sistema digestivo dos bovinos</strong>&nbsp;compreende boca, faringe, esôfago, pré-estômagos (rúmen, retículo, omaso), abomaso (estômago verdadeiro ou glandular), intestino delgado, intestino grosso, reto e ânus. Os órgãos acessórios são: dentes, língua, glândulas salivares, fígado e pâncreas.</p>
@@ -166,6 +288,8 @@ https://rehagro.com.br/blog/sistema-digestivo-dos-bovinos/
 </article>`
 }, {
     id: 10,
+    image:image03,
+    // image:image10,
     title: 'Cuidados com o pasto: confira as dicas fundamentais para o início das águas',
     content: `<article class="view-article">
 <p>Confira os detalhes na entrevista com o engenheiro agrônomo Lélis Amaral, consultor de desenvolvimento de mercado da UPL Brasil</p>
@@ -187,6 +311,8 @@ https://rehagro.com.br/blog/sistema-digestivo-dos-bovinos/
 </article>`
 }, {
     id: 11,
+    image:image03,
+    // image:image11,
     title: 'A tendência é que a arroba volte a subir após a virada do mês, diz analista',
     content: `<article class="view-article">
 <p>Em meio a uma estabilização em seus preços, a arroba do boi deve voltar a subir após a virada do mês.</p>
@@ -201,6 +327,8 @@ https://rehagro.com.br/blog/sistema-digestivo-dos-bovinos/
 </article>`
 }, {
     id: 12,
+    image:image03,
+    // image:image12,
     title: 'Projeção: consumo de carnes no Brasil deve ser recorde em 2024',
     content: `<article class="view-article">
 <h2 class="wp-block-heading"><sub>Segundo a Consultoria Cogo Inteligência Agro, o consumo per capita de carnes no Brasil atingirá um recorde de 103 kg por habitante em 2024</sub></h2>
@@ -218,6 +346,8 @@ https://rehagro.com.br/blog/sistema-digestivo-dos-bovinos/
 </article>`
 }, {
     id: 13,
+    image:image03,
+    // image:image13,
     title: 'PERÍODO DE TRANSIÇÃO SECA – ÁGUAS',
     content: `<article class="view-article">
 <p><sub>Orientações para alcançar um desempenho excelente durante esse período.</sub></p>
@@ -229,6 +359,8 @@ https://rehagro.com.br/blog/sistema-digestivo-dos-bovinos/
 </article>`
 }, {
     id: 14,
+    image:image03,
+    // image:image14,
     title: 'Redução do ICMS para venda de gado entre estados é aprovada',
     content: `<article class="view-article">
 <p><sub>MATO GROSSO: Solicitação da redução do imposto foi realizada pela Acrimat ao Conselho Deliberativo dos Programas de Desenvolvimento</sub></p>
@@ -244,6 +376,8 @@ https://www.canalrural.com.br/nacional/mato-grosso/condeprodemat-aprova-reducao-
 </article>`
 }, {
     id: 15,
+    image:image03,
+    // image:image15,
     title: 'A suplementação mineral',
     content: `<article class="view-article">
 <h3 class="wp-block-heading">Como fornecer o suplemento de forma eficiente?</h3>
@@ -273,6 +407,8 @@ https://www.canalrural.com.br/nacional/mato-grosso/condeprodemat-aprova-reducao-
 </article>`
 }, {
     id: 16,
+    image:image03,
+    // image:image16,
     title: 'Suplementação Mineral: qualidade de vida para o seu rebanho',
     content: `<article class="view-article">
 <p><sup>Por Cristiano Rossini – Rehagro Blog</sup></p>
@@ -317,6 +453,8 @@ https://www.canalrural.com.br/nacional/mato-grosso/condeprodemat-aprova-reducao-
 </article>`
 }, {
     id: 17,
+    image:image03,
+    // image:image17,
     title: 'A importância da água para o seu rebanho!',
     content: `<article class="view-article">
 <p>Post pelo Instagram da ADAMES NUTRIÇÃO ANIMAL – em 28/09/2023<br></p>
@@ -328,6 +466,8 @@ https://www.canalrural.com.br/nacional/mato-grosso/condeprodemat-aprova-reducao-
 </article>`
 }, {
     id: 18,
+    image:image03,
+    // image:image18,
     title: 'Governo faz cooperação técnica para impulsionar melhoramento genético do rebanho de MS',
     content: `<article class="view-article">
 <p>Leia mais em: https://www.acrissul.com.br/noticias/governo-faz-cooperacao-tecnica-para-impulsionar-melhoramento-genetico/23706/</p>
@@ -347,6 +487,8 @@ https://www.canalrural.com.br/nacional/mato-grosso/condeprodemat-aprova-reducao-
 </article>`
 }, {
     id: 19,
+    image:image03,
+    // image:image19,
     title: 'Calor extremo: como altas temperaturas impactam o trabalhador rural',
     content: `<article class="view-article">
 <p><sub>Saiba quais são os principais impactos à saúde e produtividade em condições de calor extremo e como evitar os sintomas</sub></p>
@@ -375,6 +517,8 @@ https://www.canalrural.com.br/tempo/calor-extremo-como-altas-temperaturas-impact
 </article>`
 }, {
     id: 20,
+    image:image03,
+    // image:image20,
     title: 'Estabilização no preço do boi gordo e tendências | De olho no mercado',
     content: `<article class="view-article">
 <h5 class="wp-block-heading"><em>por&nbsp;<a href="https://www.scotconsultoria.com.br/noticias/autor-ver/301/canal-do-criador/">Canal do Criador</a></em> – Quinta-feira, 21 de setembro de 2023 –&nbsp;17h00</h5>
@@ -389,6 +533,8 @@ https://www.canalrural.com.br/tempo/calor-extremo-como-altas-temperaturas-impact
 </article>`
 }, {
     id: 21,
+    image:image03,
+    // image:image21,
     title: 'Estatística da pecuária (Campo Grande – MS)',
     content: `<article class="view-article">
 <h3 class="wp-block-heading"><em>por&nbsp;<a href="https://www.scotconsultoria.com.br/noticias/autor-ver/377/mariana-guimar%C3%A3es/">Mariana Guimarães</a></em></h3>
@@ -404,6 +550,8 @@ https://www.canalrural.com.br/tempo/calor-extremo-como-altas-temperaturas-impact
 </article>`
 }, {
     id: 22,
+    image:image03,
+    // image:image22,
     title: '13 de setembro é o Dia Mundial do Agrônomo',
     content: `<article class="view-article">
 <h5 class="wp-block-heading">Palmas meritórias a essa categoria que há séculos transpira para reverter o quadro de fome do planeta. As conquistas são muitas, assim como os desafios por sustentabilidade e produção com as mudanças climáticas. </h5>
@@ -420,6 +568,8 @@ https://www.canalrural.com.br/tempo/calor-extremo-como-altas-temperaturas-impact
 </article>`
 }, {
     id: 23,
+    image:image03,
+    // image:image23,
     title: 'Abate de bovinos cresce no Brasil no 2º trimestre',
     content: `<article class="view-article">
 <p>Os produtores brasileiros abateram 8,36 milhões de cabeças de bovinos sob algum tipo de serviço de inspeção sanitária no 2º trimestre de 2023</p>
@@ -436,6 +586,8 @@ https://www.canalrural.com.br/tempo/calor-extremo-como-altas-temperaturas-impact
 </article>`
 }, {
     id: 24,
+    image:image03,
+    // image:image24,
     title: 'Passos fundamentais para atingir a eficiência no manejo de pastagens',
     content: `<article class="view-article">
 <h4 class="wp-block-heading"><em>Entrevista com a engenheira agrônoma, mestre, doutora e pesquisadora da Embrapa Gado de Corte,&nbsp;<a href="https://www.scotconsultoria.com.br/noticias/entrevistas/ver-entrevistado/211">Fabrícia Zimermann Vilela Torres</a></em></h4>
@@ -457,6 +609,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 </article>`
 }, {
     id: 25,
+    image:image03,
+    // image:image25,
     title: 'Rotina no Confinamento: Você está preparado?',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="768" src="https://adames.com.br/wp-content/uploads/2022/06/rotina-conf-1024x768.jpeg" alt="" class="wp-image-1112" srcset="https://adames.com.br/wp-content/uploads/2022/06/rotina-conf-1024x768.jpeg 1024w, https://adames.com.br/wp-content/uploads/2022/06/rotina-conf-300x225.jpeg 300w, https://adames.com.br/wp-content/uploads/2022/06/rotina-conf-768x576.jpeg 768w, https://adames.com.br/wp-content/uploads/2022/06/rotina-conf-1536x1152.jpeg 1536w, https://adames.com.br/wp-content/uploads/2022/06/rotina-conf-500x375.jpeg 500w, https://adames.com.br/wp-content/uploads/2022/06/rotina-conf.jpeg 1600w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>3ª dia de adaptação em confinamento em Anaurilândia – MS </figcaption></figure>
@@ -475,6 +629,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 </article>`
 }, {
     id: 26,
+    image:image03,
+    // image:image26,
     title: 'Fisiologia das Plantas no Período de Seca: Entenda a Importância da Suplementação',
     content: `<article class="view-article">
 <p>Todo ano devemos estar atentos às consequências que o período de seca pode trazer no sistema produtivo. Entenda um pouco da fisiologia das plantas nesse período e a importância de uma suplementação adequada.</p>
@@ -489,6 +645,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 </article>`
 }, {
     id: 27,
+    image:image03,
+    // image:image27,
     title: 'Dia de Campo Adames – Fazenda 1º de Maio',
     content: `<article class="view-article">
 <p>No dia 30 de abril de 2022 aconteceu o nosso dia de campo na Fazenda 1º de Maio, em parceria com nosso grande amigo e cliente Habib Rezek Junior. Confira abaixo como foi o evento:</p>
@@ -499,6 +657,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 </article>`
 }, {
     id: 28,
+    image:image03,
+    // image:image28,
     title: 'Carne Baixo Carbono: Produção mais eficiente e com menos emissão de gases',
     content: `<article class="view-article">
 <p>Com as constantes mudanças climáticas sofridas pelo planeta ao decorrer dos anos, estratégias para minimizar a emissão dos gases de efeito estufa e na pecuária isso não e diferente, nos últimos anos vem-se estudando maneiras de desenvolver uma produção mais eficiente e com menos emissão de gás carbônico.</p>
@@ -511,6 +671,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 </article>`
 }, {
     id: 29,
+    image:image03,
+    // image:image29,
     title: 'Planejamento Confinamento 2022',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="578" src="https://adames.com.br/wp-content/uploads/2022/04/Thi-01-1024x578.jpg" alt="" class="wp-image-1024" srcset="https://adames.com.br/wp-content/uploads/2022/04/Thi-01-1024x578.jpg 1024w, https://adames.com.br/wp-content/uploads/2022/04/Thi-01-300x169.jpg 300w, https://adames.com.br/wp-content/uploads/2022/04/Thi-01-768x433.jpg 768w, https://adames.com.br/wp-content/uploads/2022/04/Thi-01-1536x867.jpg 1536w, https://adames.com.br/wp-content/uploads/2022/04/Thi-01.jpg 1749w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Confinamento em Ribas do Rio Pardo – Cliente Adames (novembro 2020)</figcaption></figure>
@@ -530,6 +692,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 </article>`
 }, {
     id: 30,
+    image:image03,
+    // image:image30,
     title: 'Benefícios da Desmama Precoce',
     content: `<article class="view-article">
 <div class="wp-block-image"><figure class="aligncenter size-full"><img fetchpriority="high" decoding="async" width="768" height="1024" src="https://adames.com.br/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-17-at-14.37.23.jpeg" alt="" class="wp-image-1019" srcset="https://adames.com.br/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-17-at-14.37.23.jpeg 768w, https://adames.com.br/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-17-at-14.37.23-225x300.jpeg 225w" sizes="(max-width: 768px) 100vw, 768px"></figure></div>
@@ -546,6 +710,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 </article>`
 }, {
     id: 31,
+    image:image03,
+    // image:image31,
     title: 'O Planejamento da Seca Começa AGORA',
     content: `<article class="view-article">
 <p>Estamos no início de março, e é de extrema importância iniciar o planejamento da seca AGORA! Confira algumas estratégias:</p>
@@ -562,6 +728,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 32,
+    image:image03,
+    // image:image32,
     title: 'Problemas Com Ganho de Peso na Recria: Como Evitar?',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="768" height="1024" src="https://adames.com.br/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-13.28.55-768x1024.jpeg" alt="" class="wp-image-1002" srcset="https://adames.com.br/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-13.28.55-768x1024.jpeg 768w, https://adames.com.br/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-13.28.55-225x300.jpeg 225w, https://adames.com.br/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-13.28.55-1152x1536.jpeg 1152w, https://adames.com.br/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-22-at-13.28.55.jpeg 1200w" sizes="(max-width: 768px) 100vw, 768px"></figure>
@@ -579,6 +747,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 33,
+    image:image03,
+    // image:image33,
     title: 'A Importância da Reserva de Volumosos',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="576" src="https://adames.com.br/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-27-at-09.39.58-1024x576.jpeg" alt="" class="wp-image-994" srcset="https://adames.com.br/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-27-at-09.39.58-1024x576.jpeg 1024w, https://adames.com.br/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-27-at-09.39.58-300x169.jpeg 300w, https://adames.com.br/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-27-at-09.39.58-768x432.jpeg 768w, https://adames.com.br/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-27-at-09.39.58-1536x864.jpeg 1536w, https://adames.com.br/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-27-at-09.39.58.jpeg 1600w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Processo de preparo de reserva de volumoso, acompanhado por técnico da Adames Nutrição Animal</figcaption></figure>
@@ -594,6 +764,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 34,
+    image:image03,
+    // image:image34,
     title: 'Manejo de Pastagens',
     content: `<article class="view-article">
 <p>As pastagens são fundamentais em sistemas de produção de bovinos no Brasil, seja qual for o modelo: cria, recria, engorda ou produção de leite, com cerca de 87% dos animais nascidos no Brasil produzidos à pasto (ABIEC,2019). É importante lembrar que as pastagens são fontes de fibras e minerais imprescindíveis no desenvolvimento animal, além disso o Brasil apresenta características tropicais que são ideais para a maioria das espécies forrageiras e utilização dessas plantas é uma estratégia eficaz na pecuária nacional.</p>
@@ -607,6 +779,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 35,
+    image:image03,
+    // image:image35,
     title: 'Planejamento Anual da Fazenda em 2022. Por onde começar?',
     content: `<article class="view-article">
 <figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="753" height="683" src="https://adames.com.br/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-13-at-14.49.02.jpeg" alt="" class="wp-image-987" srcset="https://adames.com.br/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-13-at-14.49.02.jpeg 753w, https://adames.com.br/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-13-at-14.49.02-300x272.jpeg 300w" sizes="(max-width: 753px) 100vw, 753px"><figcaption>Imagem aérea de fazenda de um cliente Adames. Mato Grosso do Sul</figcaption></figure>
@@ -626,6 +800,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 36,
+    image:image03,
+    // image:image36,
     title: 'Período das Águas: Principais Doenças que Acometem os Bovinos',
     content: `<article class="view-article">
 <p><br>No período das águas existem algumas principais doenças que acometem os bovinos. Confira um pouco sobre elas:</p>
@@ -645,6 +821,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 37,
+    image:image03,
+    // image:image37,
     title: 'Por que fazer Sequestro de Bezerros?',
     content: `<article class="view-article">
 <figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="768" height="1024" src="https://adames.com.br/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-03-at-14.08.01.jpeg" alt="" class="wp-image-975" srcset="https://adames.com.br/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-03-at-14.08.01.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-03-at-14.08.01-225x300.jpeg 225w" sizes="(max-width: 768px) 100vw, 768px"><figcaption>Imagem de sequestro de bezerros de um cliente Adames.</figcaption></figure>
@@ -658,6 +836,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 38,
+    image:image03,
+    // image:image38,
     title: 'Benefícios do Uso da Ureia',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large is-resized"><img fetchpriority="high" decoding="async" src="https://adames.com.br/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-19-at-14.24.38-1024x1024.jpeg" alt="" class="wp-image-969" width="653" height="653" srcset="https://adames.com.br/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-19-at-14.24.38-1024x1024.jpeg 1024w, https://adames.com.br/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-19-at-14.24.38-300x300.jpeg 300w, https://adames.com.br/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-19-at-14.24.38-150x150.jpeg 150w, https://adames.com.br/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-19-at-14.24.38-768x768.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-19-at-14.24.38-200x200.jpeg 200w, https://adames.com.br/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-19-at-14.24.38.jpeg 1080w" sizes="(max-width: 653px) 100vw, 653px"></figure>
@@ -671,6 +851,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 39,
+    image:image03,
+    // image:image39,
     title: 'O uso de aditivos nas águas',
     content: `<article class="view-article">
 <p></p>
@@ -695,6 +877,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 40,
+    image:image03,
+    // image:image40,
     title: 'Dicas de prevenção a intoxicação no uso de ureia',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="1024" src="https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-28-at-14.06.55-1024x1024.jpeg" alt="" class="wp-image-957" srcset="https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-28-at-14.06.55-1024x1024.jpeg 1024w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-28-at-14.06.55-300x300.jpeg 300w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-28-at-14.06.55-150x150.jpeg 150w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-28-at-14.06.55-768x768.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-28-at-14.06.55-200x200.jpeg 200w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-28-at-14.06.55.jpeg 1080w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
@@ -719,6 +903,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 41,
+    image:image03,
+    // image:image41,
     title: 'Importância dos minerais na eficiência reprodutiva',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="961" height="1024" src="https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-22-at-14.23.53-961x1024.jpeg" alt="" class="wp-image-952" srcset="https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-22-at-14.23.53-961x1024.jpeg 961w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-22-at-14.23.53-281x300.jpeg 281w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-22-at-14.23.53-768x819.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-22-at-14.23.53.jpeg 1243w" sizes="(max-width: 961px) 100vw, 961px"></figure>
@@ -738,6 +924,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 42,
+    image:image03,
+    // image:image42,
     title: 'Adames Reprodução',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="1024" src="https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-18-at-15.29.32-1024x1024.jpeg" alt="" class="wp-image-948" srcset="https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-18-at-15.29.32-1024x1024.jpeg 1024w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-18-at-15.29.32-300x300.jpeg 300w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-18-at-15.29.32-150x150.jpeg 150w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-18-at-15.29.32-768x768.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-18-at-15.29.32-200x200.jpeg 200w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-18-at-15.29.32.jpeg 1080w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
@@ -749,6 +937,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 43,
+    image:image03,
+    // image:image43,
     title: 'Período de transição seca-águas',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="768" height="1024" src="https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-14-at-14.13.51.jpeg" alt="" class="wp-image-943" srcset="https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-14-at-14.13.51.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-14-at-14.13.51-225x300.jpeg 225w" sizes="(max-width: 768px) 100vw, 768px"></figure>
@@ -764,6 +954,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 44,
+    image:image03,
+    // image:image44,
     title: 'Nutrição na Estação de Monta: Qual a importância?',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="684" src="https://adames.com.br/wp-content/uploads/2021/04/DSC_2514-1024x684.jpg" alt="" class="wp-image-732" srcset="https://adames.com.br/wp-content/uploads/2021/04/DSC_2514-1024x684.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/04/DSC_2514-300x200.jpg 300w, https://adames.com.br/wp-content/uploads/2021/04/DSC_2514-768x513.jpg 768w, https://adames.com.br/wp-content/uploads/2021/04/DSC_2514-1536x1026.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/04/DSC_2514.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
@@ -781,6 +973,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 45,
+    image:image03,
+    // image:image45,
     title: 'Estação de Monta: Por que é importante?',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="1024" src="https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-17-at-14.05.46-1024x1024.jpeg" alt="" class="wp-image-917" srcset="https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-17-at-14.05.46-1024x1024.jpeg 1024w, https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-17-at-14.05.46-300x300.jpeg 300w, https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-17-at-14.05.46-150x150.jpeg 150w, https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-17-at-14.05.46-768x768.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-17-at-14.05.46-200x200.jpeg 200w, https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-17-at-14.05.46.jpeg 1080w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
@@ -800,6 +994,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 46,
+    image:image03,
+    // image:image46,
     title: 'Confinamento: Índices e Métricas',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="621" src="https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-09-at-15.33.45-1024x621.jpeg" alt="" class="wp-image-909" srcset="https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-09-at-15.33.45-1024x621.jpeg 1024w, https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-09-at-15.33.45-300x182.jpeg 300w, https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-09-at-15.33.45-768x466.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-09-at-15.33.45-1536x931.jpeg 1536w, https://adames.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-09-at-15.33.45.jpeg 1600w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Animal em confinamento consumindo Núcleo Adames</figcaption></figure>
@@ -827,6 +1023,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 47,
+    image:image03,
+    // image:image47,
     title: 'Proteinado: Como fornecer?',
     content: `<article class="view-article">
 <p>Já vimos quando e por quê fornecer o proteinado. Agora trouxemos dicas de como fornecer. Confira! </p>
@@ -840,6 +1038,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 48,
+    image:image03,
+    // image:image48,
     title: 'Proteinado: Quando e por que fornecer?',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large is-resized"><img fetchpriority="high" decoding="async" src="https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-27-at-08.11.15-1024x1024.jpeg" alt="" class="wp-image-896" width="543" height="543" srcset="https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-27-at-08.11.15-1024x1024.jpeg 1024w, https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-27-at-08.11.15-300x300.jpeg 300w, https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-27-at-08.11.15-150x150.jpeg 150w, https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-27-at-08.11.15-768x768.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-27-at-08.11.15-200x200.jpeg 200w, https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-27-at-08.11.15.jpeg 1080w" sizes="(max-width: 543px) 100vw, 543px"></figure>
@@ -867,6 +1067,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 49,
+    image:image03,
+    // image:image49,
     title: 'Por que é importante a nutrição pós parto?',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="684" src="https://adames.com.br/wp-content/uploads/2021/07/DSC_2331-1024x684.jpg" alt="" class="wp-image-834" srcset="https://adames.com.br/wp-content/uploads/2021/07/DSC_2331-1024x684.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2331-300x200.jpg 300w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2331-768x513.jpg 768w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2331-1536x1026.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2331.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Animais suplementados com Adames. 2021</figcaption></figure>
@@ -882,6 +1084,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 50,
+    image:image03,
+    // image:image50,
     title: 'Medidas a ser tomada após o nascimento dos bezerros',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="1024" src="https://adames.com.br/wp-content/uploads/2021/08/texto-técnico-13_08-1-copiar-1024x1024.jpg" alt="" class="wp-image-888" srcset="https://adames.com.br/wp-content/uploads/2021/08/texto-técnico-13_08-1-copiar-1024x1024.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/08/texto-técnico-13_08-1-copiar-300x300.jpg 300w, https://adames.com.br/wp-content/uploads/2021/08/texto-técnico-13_08-1-copiar-150x150.jpg 150w, https://adames.com.br/wp-content/uploads/2021/08/texto-técnico-13_08-1-copiar-768x768.jpg 768w, https://adames.com.br/wp-content/uploads/2021/08/texto-técnico-13_08-1-copiar-200x200.jpg 200w, https://adames.com.br/wp-content/uploads/2021/08/texto-técnico-13_08-1-copiar.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Bezerros cliente Adames, em outubro de 2020</figcaption></figure>
@@ -906,6 +1110,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 51,
+    image:image03,
+    // image:image51,
     title: 'Entenda os principais problemas causados pela seca',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="767" src="https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-03-at-11.00.57-1024x767.jpeg" alt="" class="wp-image-871" srcset="https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-03-at-11.00.57-1024x767.jpeg 1024w, https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-03-at-11.00.57-300x225.jpeg 300w, https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-03-at-11.00.57-768x575.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-03-at-11.00.57-500x375.jpeg 500w, https://adames.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-03-at-11.00.57.jpeg 1280w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Animais suplementados com Adames durante o período de seca severa. Região de Santa Rita do Pardo – MS.</figcaption></figure>
@@ -922,6 +1128,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 52,
+    image:image03,
+    // image:image52,
     title: 'Dicas para você ter uma engorda a pasto de sucesso',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="942" src="https://adames.com.br/wp-content/uploads/2021/07/DSC_2203-1-1024x942.jpg" alt="" class="wp-image-861" srcset="https://adames.com.br/wp-content/uploads/2021/07/DSC_2203-1-1024x942.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2203-1-300x276.jpg 300w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2203-1-768x706.jpg 768w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2203-1-1536x1413.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2203-1.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Animais acompanhados pela Adames. Coxim – junho/21</figcaption></figure>
@@ -939,6 +1147,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 53,
+    image:image03,
+    // image:image53,
     title: 'Suplementação proteica na seca. Por que fornecer?',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="684" src="https://adames.com.br/wp-content/uploads/2021/07/DSC_2219-1024x684.jpg" alt="" class="wp-image-855" srcset="https://adames.com.br/wp-content/uploads/2021/07/DSC_2219-1024x684.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2219-300x200.jpg 300w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2219-768x513.jpg 768w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2219-1536x1026.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2219.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Animais no início da seca. Junho 2021. Cliente Fazenda Juliana, em Coxim MS</figcaption></figure>
@@ -958,6 +1168,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 54,
+    image:image03,
+    // image:image54,
     title: 'Estratégias de nutrição no confinamento',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="621" src="https://adames.com.br/wp-content/uploads/2021/04/Thi-03-1024x621.jpg" alt="" class="wp-image-741" srcset="https://adames.com.br/wp-content/uploads/2021/04/Thi-03-1024x621.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/04/Thi-03-300x182.jpg 300w, https://adames.com.br/wp-content/uploads/2021/04/Thi-03-768x466.jpg 768w, https://adames.com.br/wp-content/uploads/2021/04/Thi-03.jpg 1503w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Animais em confinamento. Fazenda Retiro do Cervo. Cliente Habib Rezek Junior</figcaption></figure>
@@ -985,6 +1197,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 55,
+    image:image03,
+    // image:image55,
     title: 'Vale a pena utilizar sal mineral adensado na sua fazenda?',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="755" src="https://adames.com.br/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-09-at-09.10.43.jpeg" alt="" class="wp-image-847" srcset="https://adames.com.br/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-09-at-09.10.43.jpeg 1024w, https://adames.com.br/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-09-at-09.10.43-300x221.jpeg 300w, https://adames.com.br/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-09-at-09.10.43-768x566.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Animais de cliente Adames, em Anastácio – MS</figcaption></figure>
@@ -1002,6 +1216,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 56,
+    image:image03,
+    // image:image56,
     title: 'JBS antecipa em 5 anos metas de desmatamento ilegal zero',
     content: `<article class="view-article">
 <p>Foi anunciado pela JBS, a antecipação em 5 anos de sua meta de desmatamento ilegal zero. </p>
@@ -1017,6 +1233,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 57,
+    image:image03,
+    // image:image57,
     title: 'Importância do Escore de condição corporal (ECC) nas fêmeas',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="684" src="https://adames.com.br/wp-content/uploads/2021/07/DSC_2331-1024x684.jpg" alt="" class="wp-image-834" srcset="https://adames.com.br/wp-content/uploads/2021/07/DSC_2331-1024x684.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2331-300x200.jpg 300w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2331-768x513.jpg 768w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2331-1536x1026.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/07/DSC_2331.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Animais da Fazenda Primavera – VRJO. Adames (março/21)</figcaption></figure>
@@ -1036,6 +1254,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 58,
+    image:image03,
+    // image:image58,
     title: 'Como fazer uma Recria Intensiva a Pasto (RIP) rentável',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="684" src="https://adames.com.br/wp-content/uploads/2021/06/DSC_2213-1024x684.jpg" alt="" class="wp-image-829" srcset="https://adames.com.br/wp-content/uploads/2021/06/DSC_2213-1024x684.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2213-300x200.jpg 300w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2213-768x513.jpg 768w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2213-1536x1026.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2213.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Imagem da Fazenda Juliana, em Coxim – MS. Animais utilizando Adames Pro@ 30</figcaption></figure>
@@ -1050,6 +1270,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 59,
+    image:image03,
+    // image:image59,
     title: 'Recria Intensiva a Pasto: RIP',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="818" src="https://adames.com.br/wp-content/uploads/2021/06/DSC_2205-1-1024x818.jpg" alt="" class="wp-image-822" srcset="https://adames.com.br/wp-content/uploads/2021/06/DSC_2205-1-1024x818.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2205-1-300x240.jpg 300w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2205-1-768x613.jpg 768w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2205-1-1536x1226.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2205-1.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Animais do cliente Adames – Coxim/ MS (junho 2021)</figcaption></figure>
@@ -1068,6 +1290,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 60,
+    image:image03,
+    // image:image60,
     title: 'Preços do boi devem continuar em alta',
     content: `<article class="view-article">
 <p>Como consequência da oferta restrita de animais que segue no ano de 2021, se apresenta o constante movimento de alta nos preços da arroba, segundo Fernando Henrique Iglesias. O analista da Safras &amp; Mercado ainda complementa dizendo que, “A restrição de oferta é uma consequência da redução do confinamento de primeiro giro”.</p>
@@ -1078,6 +1302,8 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 61,
+    image:image03,
+    // image:image61,
     title: 'A importância da nutrição de vacas prenhas',
     content: `<article class="view-article">
 <figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="684" src="https://adames.com.br/wp-content/uploads/2021/06/DSC_2457-1024x684.jpg" alt="" class="wp-image-809" srcset="https://adames.com.br/wp-content/uploads/2021/06/DSC_2457-1024x684.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2457-300x200.jpg 300w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2457-768x513.jpg 768w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2457-1536x1026.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/06/DSC_2457.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Imagem capturada em março de 2021 na propriedade do cliente – Nelore VRJO. Caarapó – MS</figcaption></figure>
@@ -1096,21 +1322,656 @@ https://www.scotconsultoria.com.br/noticias/entrevistas/2023/09/605/
 },
 {
     id: 62,
-    title: '',
-    content: ''
+    image:image03,
+    // image:image62,
+    title: 'Suplementação Proteico Energética: Por que fazer?',
+    content: `<article class="view-article">
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="768" height="1024" src="https://adames.com.br/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-04-at-08.59.31.jpeg" alt="" class="wp-image-795" srcset="https://adames.com.br/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-04-at-08.59.31.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-04-at-08.59.31-225x300.jpeg 225w" sizes="(max-width: 768px) 100vw, 768px"><figcaption>Animais suplementados com Proteico energético Adames – Coxim MS</figcaption></figure>
+<p>A pastagem brasileira depende de variações climáticas e ambientais que irão determinar a qualidade e a quantidade de forragem durante as estações do ano.</p>
+<p>No período seca essa forragem apresenta baixo valor nutritivo e como consequência os animais diminuem o consumo.<br>Dessa forma, são necessárias estratégias que permitam o crescimento contínuo dos animais a fim de proporcionar redução da idade ao abate, qualidade de carcaça produzida, aumento da lucratividade liquida, aumento do ganho de peso.</p>
+<p>Existem muitas práticas de manejo utilizadas com o objetivo de diminuir as perdas ocorridas durante a escassez da forragem, de forma que o animal que tenha apresentado um bom desempenho na época das águas, não sofra queda de performance ou perda de peso, o chamado “boi sanfona”.</p>
+<p>Uma dessas estratégias é a suplementação, que pode ser feita em qualquer época do ano, mas no período seco é extremamente necessária, pois corrige a limitação das proteínas das pastagens e permite que o animal aumente o consumo da forrageira. </p>
+<p>O maior consumo e aproveitamento dos nutrientes da forragem levam a incrementos em vários índices zootécnicos, especialmente ganho de peso e taxas de concepção.</p>
+<p>Existem algumas formas de suplementação na seca, mas hoje vamos falar especificamente da suplementação proteico energética. Esse suplemento é a junção dos minerais, fontes de nitrogênio não proteicos e ingredientes farelados que fornecem proteína e energia na dieta dos animais.</p>
+<p>São produtos extremamente indicados para fornecimento quando se tem forragem de baixa qualidade, pois fornecem a maioria dos nutrientes necessários para a manutenção do organismo, podendo gerar ganho de peso interessante durante o período, e um ganho de peso adicional nas águas, com custo benefício ainda melhor.</p>
+<p style="font-size:14px">Artigo escrito por Gabriella Vitor de Souza.</p>
+<p>Aproveite para saber um pouco mais sobre <a href="https://adames.com.br/produtos/proteico-energetico/">Proteico Energético</a> em nosso catálogo de produtos</p>
+<p></p>
+</article>`
 },
 {
     id: 63,
-    title: '',
-    content: ''
+    image:image03,
+    // image:image63,
+    title: 'Como ter bons resultados na fase de recria',
+    content: `<article class="view-article">
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="576" src="https://adames.com.br/wp-content/uploads/2021/05/74c96d9b-52d3-4a94-926c-e18e34cafc6e-1024x576.jpg" alt="" class="wp-image-790" srcset="https://adames.com.br/wp-content/uploads/2021/05/74c96d9b-52d3-4a94-926c-e18e34cafc6e-1024x576.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/05/74c96d9b-52d3-4a94-926c-e18e34cafc6e-300x169.jpg 300w, https://adames.com.br/wp-content/uploads/2021/05/74c96d9b-52d3-4a94-926c-e18e34cafc6e-768x432.jpg 768w, https://adames.com.br/wp-content/uploads/2021/05/74c96d9b-52d3-4a94-926c-e18e34cafc6e.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>Fêmeas recém desmamadas, média de 260kg. Lote do cliente Rafael Gollo (Amambai – MS)</figcaption></figure>
+<p>A recria é a fase mais crítica e desafiadora de todo o ciclo de produção da bovinocultura de corte. Após a desmama, que na sua quase totalidade ocorre no período seco do ano com baixa oferta e qualidade de forragem, temos o desafio de recriar esses animais fazendo com que eles se desenvolvam e expressem ao máximo o seu potencial genético, seja para posteriormente entrarem na engorda ou para a reprodução.<br><br>O objetivo dessa fase é fazer com que os animais de desenvolvam de forma adequada, formando uma boa estrutura de composição corporal. Caso esse desenvolvimento não seja bem executado, a terminação ou reprodução desses animais mal recriados será prejudicada. <br><br>O bom desenvolvimento dos animais depende dos cuidados pós desmame que é um período de muito estresse e da alimentação fornecida durante toda a recria.<br>Em muitos cenários temos a recria como o gargalo de todo o ciclo produtivo, essa fase quando muito estendida reflete em uma demora para o abate e em uma idade ao primeiro parto de novilhas muito elevada.<br><br>Para uma pecuária mais competitiva e rentável temos que encurtar ao máximo essa fase, produzindo o maior número de arrobas, aproveitando o momento em que a conversão alimentar é muito positiva, só assim se consegue diminuir a idade de abate e a idade ao primeiro parto. <br><br>Sempre tomando cuidado com a composição do ganho, nessa fase da vida os animais estão em uma curva de crescimento com maior exigência de proteína, pois é quando está acontecendo a maior deposição muscular na carcaça.<br><br>A utilização de suplementos alimentares formulados para essa fase viabiliza toda a operação, evitando o “efeito sanfona” temos animais com ganho de peso crescente e o custo da arroba produzida mais barata ao final do ciclo. <br><br>A suplementação com proteinados ou proteico – energéticos independente da época do ano (seca ou águas) pode e deve ser utilizada, o fornecimento desses farelados além de representarem um adicional de proteína e energia também são fontes de macro e micro minerais e aditivos melhoradores de desempenho e auxiliam também no aumento do consumo de pasto, consequentemente refletindo no aumento do ganho de peso. <br><br>O principal ponto para uma recria eficiente e altamente produtiva, é a definição das metas que a fazenda quer atingir dentro da sua realidade. A adição de nutrientes por meio da suplementação pode trazer desde a mantença de peso até ganhos adicionais de<strong> 500 a 650 gramas/dia</strong>, quando as metas traçadas forem de reduzir o tempo de recria e otimizar os índices zootécnicos de todo o ciclo de produção.<br><br>Aproveite para ler nosso catálogo de produtos <a href="https://adames.com.br/produtos/proteico-energetico/">Proteico Energético</a> e entre em contato com nossa equipe para saber mais!</p>
+<p style="font-size:14px">Artigo escrito por Francisco Montanaro Neto</p>
+</article>`
 },
 {
     id: 64,
-    title: '',
-    content: ''
+    image:image03,
+    // image:image64,
+    title: 'Os efeitos da suspensão das exportações argentinas para os produtores brasileiros',
+    content: `<article class="view-article">
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="900" height="600" src="https://adames.com.br/wp-content/uploads/2021/05/carne_bloomberg.jpg" alt="" class="wp-image-784" srcset="https://adames.com.br/wp-content/uploads/2021/05/carne_bloomberg.jpg 900w, https://adames.com.br/wp-content/uploads/2021/05/carne_bloomberg-300x200.jpg 300w, https://adames.com.br/wp-content/uploads/2021/05/carne_bloomberg-768x512.jpg 768w" sizes="(max-width: 900px) 100vw, 900px"></figure>
+<p>Na segunda-feira, dia 17 de maio, foi comunicado pelo Ministério de Desenvolvimento Produtivo da Argentina a suspensão das exportações de carne bovina durante o período de um mês.</p>
+<p>A medida do governo argentino trata-se de uma consequência frente aos aumentos dos preços do produto no mercado interno, que nos últimos 30 dias bateu a marca de 65%. </p>
+<p>Não é a primeira vez que os produtores argentinos enfrentam esse cenário, em 2014 tal suspensão também foi decretada por Cristina Kirchner, e acabou gerando desestímulos à produção de carne e ao investimento em melhoramento genético, afetando diretamente os empregos gerados pela cadeia produtiva.</p>
+<p>Segundo Lygia Pimentel, diretora da Agrifatto, se a medida for postergada para além dos 30 dias propostos, poderá gerar um desestímulo à produção de carne em escala mundial. </p>
+<p>Lygia lembra também que a alta nos preços da carne não se trata de um fenômeno exclusivo da Argentina, mas sim da consequência de uma baixa oferta no mundo todo, e para que isso seja solucionado, primeiramente, o produtor deve ser bem remunerado para investir na atividade, e então os preços se regularizarão.</p>
+<p>Por outro lado, essa suspensão da exportação por parte da Argentina pode gerar consequências positivas para o Brasil. A Argentina foi responsável pela exportação de mais de 20% de toda a proteína importada pela China no ano passado, evidenciando assim a relevância de sua participação no mercado. </p>
+<p>Dessa forma, torna-se necessário, por parte da China, substituir a oferta argentina por outro exportador, sendo o Brasil o principal candidato a suprir essa carência deixada pelo governo de Alberto Fernández na demanda chinesa.</p>
+<p>Ao produtor brasileiro, Lygia Pimentel apresenta uma possibilidade de benefício em termos de preço, e ainda alerta sobre a importância de se atentar à constante busca de uma gestão de excelência.</p>
+<p>Fonte: Canal Rural</p>
+</article>`
 },
 {
     id: 65,
-    title: '',
-    content: ''
+    image:image03,
+    // image:image65,
+    title: 'Principais ocorrências em animais em confinamento',
+    content: `<article class="view-article">
+<figure class="wp-block-image size-large is-resized"><img fetchpriority="high" decoding="async" src="https://adames.com.br/wp-content/uploads/2021/05/THI_9868-1024x844.jpg" alt="" class="wp-image-779" width="666" height="548" srcset="https://adames.com.br/wp-content/uploads/2021/05/THI_9868-1024x844.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/05/THI_9868-300x247.jpg 300w, https://adames.com.br/wp-content/uploads/2021/05/THI_9868-768x633.jpg 768w, https://adames.com.br/wp-content/uploads/2021/05/THI_9868-1536x1266.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/05/THI_9868.jpg 1920w" sizes="(max-width: 666px) 100vw, 666px"><figcaption>Animais em confinamento – Cliente Adames</figcaption></figure>
+<p>Durante o período de confinamento podem surgir algumas ocorrências que comprometem a saúde e bem estar dos animais que podem ser facilmente observadas.</p>
+<p>Para identificação dos problemas, podemos seguir as seguintes dicas:</p>
+<p>Animais deitados que relutam em se levantar;</p>
+<p>Apatia;</p>
+<p>Orelha caída;</p>
+<p>Salivação excessiva;</p>
+<p>Animais com tosse;</p>
+<p>Aumento da frequência respiratória;</p>
+<p>Fezes duras e secas;</p>
+<p>Diarreia;</p>
+<p>Descargas nasais;</p>
+<p>Feridas;</p>
+<p>Animais inquietos;</p>
+<p>Os animais apresentaram algum dos ítens citados acima? Converse com nossa equipe técnica e saiba mais como resolver os problemas em seu confinamento!</p>
+<p>Aproveite para ler sobre <a href="https://adames.com.br/check-list-vantagens-do-confinamento-de-bovinos/" target="_blank" rel="noreferrer noopener">Check List Vantagens do Confinamento de bovinos</a></p>
+<p style="font-size:14px">Artigo escrito por Gabriella Vitor de Souza</p>
+<p><br></p>
+<p><br><br></p>
+</article>`
+},
+{
+    id: 66,
+    image:image03,
+    // image:image66,
+    title: 'Check List Vantagens do Confinamento de bovinos',
+    content: `<article class="view-article">
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="627" src="https://adames.com.br/wp-content/uploads/2021/05/THI_9844-1024x627.jpg" alt="" class="wp-image-774" srcset="https://adames.com.br/wp-content/uploads/2021/05/THI_9844-1024x627.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/05/THI_9844-300x184.jpg 300w, https://adames.com.br/wp-content/uploads/2021/05/THI_9844-768x470.jpg 768w, https://adames.com.br/wp-content/uploads/2021/05/THI_9844-1536x940.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/05/THI_9844.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+<p>Que o confinamento de bovinos traz diversos benefícios a gente já sabe, né?  Mas que tal ler mais um pouco a respeito? Já iniciamos a temporada de confinamentos, e estamos dispostos a te auxiliar da melhor forma. </p>
+<p><strong>Confira algumas dicas abaixo:  </strong><br>Aumento da eficiência produtiva do rebanho;<br><br>Oferta de gado durante o ano todo;<br><br>Uso de forragem excedente de verão;<br><br>Liberação de área de pastagem para outros sistemas de produção durante o período do confinamento;<br><br>Produção de carne de qualidade;<br><br>Viabilização de reforma de áreas degradadas de pastagens;<br><br>Produção de carne no período de maior escassez;<br><br>Produção de adubo orgânico de alta qualidade;<br><br>Uso eficiente de mão de obra;<br></p>
+<p>Gostou? Aproveita e vem ver um pouco sobre os confinamentos acompanhados pela Adames no último ano <a href="https://adames.com.br/confinamento-2021-voce-esta-preparado/" target="_blank" rel="noreferrer noopener">Confinamento 2021: Você já está se preparando?</a></p>
+<p><br><br></p>
+</article>`
+},
+{
+    id: 67,
+    image:image03,
+    // image:image67,
+    title: 'ILPF: Já existe demanda de mercado',
+    content: `<article class="view-article">
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="750" height="500" src="https://adames.com.br/wp-content/uploads/2021/05/ilpf.jpg" alt="" class="wp-image-770" srcset="https://adames.com.br/wp-content/uploads/2021/05/ilpf.jpg 750w, https://adames.com.br/wp-content/uploads/2021/05/ilpf-300x200.jpg 300w" sizes="(max-width: 750px) 100vw, 750px"><figcaption>Imagem: Embrapa </figcaption></figure>
+<p>Como forma de frear o aquecimento global, muitos países estão estimulados a adotar sistemas sustentáveis, como a integração lavoura-pecuária-floresta (ILPF).</p>
+<p>Assim como no Brasil políticas como o Plano ABC e Plano ABC+ buscam ampliar a área com tecnologias de baixa emissão de carbono. Países como Nova Zelândia e Austrália possuem políticas visando acabar com as emissões líquidas de carbono na agricultura e pecuária até 2030 e 2050, respectivamente.</p>
+<p>De acordo com Richard Eckard, da Universidade de Melbourne (AUS), para encontrar uma forma aumentar o sequestro de carbono. foi criado um incentivo para produtores plantarem árvores em áreas de lavoura e pastagens. O governo australiano, por exemplo, já vem realizando leilões de compra de créditos de carbono gerados por produtores.</p>
+<p>A demanda de mercado já existe, além de ser uma discussão política dos governos, a neutralização das emissões de carbono visa atender um mercado crescente por produtos com baixa emissão ou com emissão líquida zero de carbono.<strong>&nbsp;</strong>Grandes empresas já estão demandando esse tipo de produto, principalmente na Europa.</p>
+<p>Fonte: Portal DBO.</p>
+</article>`
+},
+{
+    id: 68,
+    image:image03,
+    // image:image68,
+    title: 'Período de desmama: O que devo saber?',
+    content: `<article class="view-article">
+<figure class="wp-block-image size-large is-resized"><img fetchpriority="high" decoding="async" src="https://adames.com.br/wp-content/uploads/2021/05/sale-1024x1024.jpg" alt="" class="wp-image-764" width="566" height="566" srcset="https://adames.com.br/wp-content/uploads/2021/05/sale-1024x1024.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/05/sale-300x300.jpg 300w, https://adames.com.br/wp-content/uploads/2021/05/sale-150x150.jpg 150w, https://adames.com.br/wp-content/uploads/2021/05/sale-768x768.jpg 768w, https://adames.com.br/wp-content/uploads/2021/05/sale-200x200.jpg 200w, https://adames.com.br/wp-content/uploads/2021/05/sale.jpg 1080w" sizes="(max-width: 566px) 100vw, 566px"><figcaption>Animais da Fazenda Sonhos – Cliente Adames. março/2021</figcaption></figure>
+<p>O período de desmame dos bezerros acontece dos 6 a 8 meses pós parto dos animais, onde estes já são considerados ruminantes e tem total capacidade de utilizar da forragem e da suplementação como exclusivas fontes de alimentos para suprir sua demanda de energia, proteína, minerais, vitaminas.</p>
+<p>De maneira geral, se considerarmos uma estação de monta de 3 meses (novembro, dezembro e janeiro) teremos a parição de agosto a outubro e consequentemente a desmama ocorrerá nos meses de abril a junho. Época essa onde temos um cenário de seca no Brasil, com baixa oferta de forragem.</p>
+<p>Após a separação os bezerros devem ser alocados em pastagens adequadas, afastados de suas mães.<br>Esse sistema de desmama “tradicional” pode trazer malefícios aos animais, vacas em baixa condição corporal demoram mais tempo para sair do anestro e manifestarem seu primeiro cio pós parto. O estresse causado pela separação, leva a uma queda na imunidade dos bezerros abrindo portas para doenças e fazendo com que esse animal perca peso nas primeiras semanas pós desmama.</p>
+<p>Temos algumas alternativas para amenizar esse estresse da separação, um deles é deixar mães e crias em piquetes lado a lado, o contato visual entre eles leva a uma maior tranquilidade para ambos os lotes. Todavia, tal manejo tem suas exigências, é necessário que se construa cercas apropriadas que evitem possíveis mamadas e eventuais “varadas” de cerca.</p>
+<p>O compartilhamento do cocho de suplementação e do bebedouro, ambos divididos pela cerca, também auxiliam no melhor desempenho dos bezerros.<br>A suplementação com minerais orgânicos e aditivos que são encontrados na nossa linha Potencial A (Prime Beef para animais de recria e Nutrigen para vacas) e no pro@ 20, melhoram a imunidade dos animais e diminuem o estresse da separação.</p>
+<p>Nos bezerros temos um melhor desempenho pós desmama e nas mães essa recarga de nutrientes tendem a diminuir o anestro levando as vacas a entrarem em cio mais rápido mesmo em baixa condição corporal.<br>Aproveitando do manejo de desmama, devem ser feitas também pesagem, identificação, vermifugação e vacinação para eventuais doenças que ocorram na região.</p>
+<p style="font-size:14px">Artigo escrito por Francisco Montanaro Neto</p>
+<p>Aproveite para conferir nossa linha de produtos para bezerros: <a href="https://adames.com.br/produtos/bezerros/">Bezerros</a></p>
+</article>`
+},
+{
+    id: 69,
+    image:image03,
+    // image:image69,
+    title: 'Dicas cruciais para confinamento de bovinos',
+    content: `<article class="view-article">
+<p>Na terminação de bovinos, o confinamento apresenta-se como uma<br>ótima estratégia para a intensificação da produção, onde permite-se<br>atingir maior ganho de peso de maneira mais rápida, além de<br>propiciar uma melhoria na padronização do acabamento da<br>carcaça.</p>
+<p>Entretanto é uma fase bastante complexa e de alto investimento,<br>onde torna-se imprescindível o planejamento e gestão eficaz da<br>produção.</p>
+<p>Nesse contexto, alguns detalhes são decisivos para o sucesso da<br>atividade e devem ser executados categoricamente. Assim, citamos<br>alguns pontos cruciais para o bom funcionamento da operação.</p>
+<p>Pensando-se no início do confinamento é imprescindível a divisão<br>criteriosa e homogênea dos lotes, considerando sexo, idade, peso,<br>escore e condição sexual por exemplo, o que refletirá diretamente<br>no desempenho do animal.</p>
+<p>Quanto melhores as condições para o animal, mais este poderá<br>expressar seu máximo potencial, assim, a estrutura de<br>confinamento deve apresentar área adequada bem como facilidade<br>de acesso ao cocho e bebedouro.</p>
+<p>É indispensável o fornecimento de água de qualidade de maneira<br>eficiente, a água corresponde a cerca de 60% da composição<br>corporal do bovino e seu consumo está diretamente ligado ao<br>processo digestivo. Em média um bovino consome de 4,5 litros de<br>água a cada 1kg de matéria seca ingerida, o que reflete e muito no<br>ganho de peso do animal.</p>
+<p>Tratando-se de nutrição, a mudança drástica da dieta pode<br>acarretar em sérios problemas metabólicos além de um alto<br>estresse ao animal, desse modo, é fundamental atenção na<br>formulação e adaptação dos animais à dieta de confinamento,<br>respeitando o tempo de modificação da microbiota ruminal para<br>digestibilidade eficiente da nova dieta.</p>
+<p>Sem dúvidas, o olhar atento na identificação e mensuração das<br>falhas e desafios nas operações diárias impactará no resultado<br>final, possibilitando através de indicadores o planejamento focado e<br>objetivo para otimização da produção. Dessa forma uma equipe<br>treinada e comprometida com o resultado, tem papel essencial para<br>o sucesso da atividade.</p>
+<p style="font-size:14px">Artigo escrito por Breno Betioli</p>
+</article>`
+},
+{
+    id: 70,
+    image:image03,
+    // image:image70,
+    title: 'Sustentabilidade no Agronegócio: entenda os benefícios',
+    content: `<article class="view-article">
+<p>Não é de hoje que o mundo busca pela  sustentabilidade, ela  é importante e se tornou pauta em diversos assuntos. E no agronegócio não é diferente, há diversos estudos e sistemas de produção com o objetivo de tornar o ambiente mais sustentável. </p>
+<p>Apesar de ser um desafio manter ecossistemas sustentáveis, com a tecnologia existente, o Brasil já conseguiu aumentar a produtividade sem aumentar a quantidade de áreas utilizadas para produzir, e um belo exemplo é o uso de sistemas de integração nas propriedades.</p>
+<p>Esses sistemas de integração que vem sendo implantado pelos produtores visa a sustentabilidade e trata-se de uma ótima estratégia econômica, além de obter bastante sucesso pelos resultados excelentes que vem alcançando no campo. </p>
+<p>A integração Lavoura Pecuária (ILP) pode ser aplicada em qualquer região do Brasil. Segundo a Embrapa se em metade dos pastos degradados no Brasil fosse inserido o sistema ILP, o país conseguiria triplicar a produção de grãos sem avançar sobre novas áreas agrícolas.</p>
+<p>Se você produtor rural tem dúvidas sobre como tornar sua propriedade mais sustentável, entre em contato com um  de nossos especialistas ADAMES. Aqui, nós alimentamos valores e apoiamos boas causas!</p>
+<p>Aproveite para ler também como o uso de aditivos podem contribuir para o meio ambiente e tornar seu rebanho ainda mais produtivo: <a href="https://adames.com.br/o-uso-de-aditivos-nas-dietas-de-ruminantes/">Uso de aditivos na dieta de ruminantes</a></p>
+<p style="font-size:14px">Artigo escrito por Gabriella Vitor de Souza</p>
+</article>`
+},
+{
+    id: 71,
+    image:image03,
+    // image:image71,
+    title: 'Primeira etapa de vacinação contra Febre Aftosa inicia dia 1º de maio',
+    content: `<article class="view-article">
+<p>A primeira etapa de vacinação contra febre aftosa inicia dia 1<strong>º</strong> de maio e deve prosseguir ao longo do mês. Ao todo devem ser vacinados cerca de 170 milhões de animais, sendo esses bovinos e bubalinos de todas as idades.</p>
+<p>São 21 estados que participam desta campanha de imunização neste período, no Amazonas e Mato Grosso participam somente aqueles municipios que ainda não suspederam a vacinação.</p>
+<p>Conforme orientações do governo, as vacinas devem ser adquiridas nas revendas autorizadas e mantidas entre 2 graus e 8 graus, desde a aquisição até o momento da utilização.</p>
+<p>Devem ser usadas agulhas novas para aplicação da dose de 2 ml na tábua do pescoço de cada animal, preferindo as horas mais frescas do dia, para fazer a contenção adequada dos animais e a aplicação da vacina.</p>
+<p>Além de realizar a vacinação, o produtor deverá declarar ao órgão de defesa sanitária animal de seu Estado. A declaração de vacinação deve ser realizada de forma online ou, quando não for possível, presencialmente nos postos designados pelo serviço veterinário estadual nos prazos estipulados.</p>
+<p style="font-size:12px">Fonte: Portal DBO</p>
+</article>`
+},
+{
+    id: 72,
+    image:image03,
+    // image:image72,
+    title: 'No mês de março, Mato Grosso registrou o menor volume de abates em 11 meses',
+    content: `<article class="view-article">
+<p>Segundo dados divulgados na terça-feira, 13 de abril, pelo Instituto de Defesa Agropecuária de Mato Grosso (Indea-MT), no último mês foi registrado que os frigoríficos abateram 346,37 mil bovinos, o que representou ligeira queda de 1,2% sobre o resultado obtido no mês anterior.</p>
+<p>Com a chegada da seca, o abate de fêmeas aumentou neste mesmo período, entretanto o abate de machos diminuiu, foram enviados ao gancho 184,21 mil machos, queda de 9,2% em relação ao resultado de fevereiro deste mesmo ano. </p>
+<p>O aumento do abate de fêmeas, mesmo que maior comparado ao de machos, teve sua menor marca histórica de março desde 2010. Diante disso, pode-se observar que “a retenção de fêmeas continua acontecendo de maneira intensa”, observa Travagini, consultor junior da consultoria Agrifatto, de São Paulo. </p>
+<p style="font-size:12px">Fonte: Portal DBO</p>
+<p></p>
+<p></p>
+</article>`
+},
+{
+    id: 73,
+    image:image03,
+    // image:image73,
+    title: 'Confinamento 2021: Você já está se preparando?',
+    content: `<article class="view-article">
+<p>O confinamento representa para a pecuária brasileira a modernização de técnicas que proporcionam vantagem competitivas, benefício na qualidade dos produtos e aumento na produção.</p>
+<p>A Adames participa diretamente com um time que assessora na produção desde o planejamento até o abate dos animais.</p>
+<p>Essa assessoria ocorre de forma presencial, com a visita do técnico no confinamento e também através de planilhas juntamente com o funcionário da fazenda.</p>
+<p>No ano de 2020 o Brasil bateu recorde de animais confinados e nós da Adames acompanhamos muitos confinamentos tanto no estado de MS quanto de MT. </p>
+<p>Confira abaixo um pouco do que rolou em 2020: </p>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="ADAMES | Confinamento 2021 - Você está preparado?" width="500" height="281" src="https://www.youtube.com/embed/1yCLE7fEgoo?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div></figure>
+<p>E para 2021? Você está preparado para iniciar o confinamento? Tem dúvidas sobre como fazer? </p>
+<p>Entre em contato com a gente, pois temos uma equipe preparada pra te auxiliar!</p>
+</article>`
+},
+{
+    id: 74,
+    image:image03,
+    // image:image74,
+    title: 'Período de transição água – seca. Qual a melhor estratégia?',
+    content: `<article class="view-article">
+<p>A produção de bovinos no Brasil se baseia em quase totalidade na utilização de pastagens como principal fonte de alimento. Com a chegada do outono temos a transição do período de águas para o período de seca, época onde temos a redução de fatores que estão diretamente ligados a produção forrageira: volume pluviométrico, comprimento dos dias e intensidade de radiação solar. </p>
+<p>Essa é a época onde começamos a perder qualidade da forragem, devido ao aumento do teor de fibras e queda no valor proteico. Afim de evitarmos grandes impactos causados por essas mudanças na qualidade e quantidade de forragem, é preciso se planejar. </p>
+<p>Para isso devemos ter em mente as categorias que irão passar a seca na fazenda, definir metas e assim traçar estratégias.</p>
+<p>A utilização de minerais aditivados para vacas de cria com inclusão de ureia em sua formulação, proporciona um melhor aproveitamento do pasto mais fibroso, não deixando que a vaca perca escore corporal. Proteinados de águas devem começar ser substituídos pelos de transição ou de seca com maiores teores de proteína bruta.</p>
+<p>Animais em fase de engorda merecem uma atenção especial, pois aqueles que não atingirem peso de abate ainda na transição e precisarem passar a seca na fazenda, estarão consumindo o estoque de forragem de categorias mais leves, se fazendo necessário grande aumento na quantidade de ração fornecida para efeito de substituição do pasto.</p>
+<p>Mas lembrem-se! A estratégia a ser adotada pela fazenda deve ser aquela que melhor se ajusta a sua realidade. Entre em contato com um técnico para definir qual a melhor estratégia para o rebanho. </p>
+<p class="has-small-font-size">Autor: Francisco Montanaro Neto</p>
+<p>Aproveite para ler também: <a href="https://adames.com.br/ureia/" target="_blank" rel="noreferrer noopener">A utilização da UREIA e como ela funciona</a></p>
+<p></p>
+</article>`
+},
+{
+    id: 75,
+    image:image03,
+    // image:image75,
+    title: 'Uso de aditivos na dieta de ruminantes',
+    content: `<article class="view-article">
+<p>No ambiente anaeróbico do rúmen, os microrganismos fermentam carboidratos e proteína para obter nutrientes necessários para seu crescimento. Muitos dos produtos finais dessa fermentação, funcionam como fontes de nutriente para o ruminante. </p>
+<p>Porém, outros produtos originários dessa fermentação, como o calor, metano e amônia, representam perda de energia e de proteína do alimento para o ambiente. Durante o processo de fermentação dos carboidratos, cerca de 2 a 12% de energia consumida pelos ruminantes pode ser perdida na forma de metano. </p>
+<p>Este metano, além de ser diretamente relacionado com a ineficiência de fermentação ruminal e consequente perda de energia nos sistemas de produção, caracteriza-se como um importante de gás de efeito estufa, que contribui para o aquecimento global. </p>
+<p>Há uma grande variedade de aditivos com potencial de manipular o ambiente ruminal em prol da diminuição na eliminação desses produtos, reduzindo o impactos dos sistemas de produção no ambiente.</p>
+<p>Além disso a manipulação ruminal, através do uso de aditivos inseridos nas dietas, tem oferecido alternativas para aumentar o desempenho do animal, melhorando a eficiência de conversão dos nutrientes consumidos. </p>
+<p>Os produtos Adames são formulados com alta tecnologia em aditivos, com o objetivo de garantir menor impacto ambiental e melhor desempenho dos animais.</p>
+<p> <img decoding="async" width="150" height="100" class="wp-image-726" style="width: 150px;" src="https://adames.com.br/wp-content/uploads/2021/04/IMG_5867.jpg" alt="" srcset="https://adames.com.br/wp-content/uploads/2021/04/IMG_5867.jpg 1920w, https://adames.com.br/wp-content/uploads/2021/04/IMG_5867-300x200.jpg 300w, https://adames.com.br/wp-content/uploads/2021/04/IMG_5867-1024x683.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/04/IMG_5867-768x512.jpg 768w, https://adames.com.br/wp-content/uploads/2021/04/IMG_5867-1536x1024.jpg 1536w" sizes="(max-width: 150px) 100vw, 150px"><img decoding="async" width="150" height="131" class="wp-image-548" style="width: 150px;" src="https://adames.com.br/wp-content/uploads/2021/01/imagem-pagina-inicial-1.jpg" alt="" srcset="https://adames.com.br/wp-content/uploads/2021/01/imagem-pagina-inicial-1.jpg 800w, https://adames.com.br/wp-content/uploads/2021/01/imagem-pagina-inicial-1-300x263.jpg 300w, https://adames.com.br/wp-content/uploads/2021/01/imagem-pagina-inicial-1-768x672.jpg 768w" sizes="(max-width: 150px) 100vw, 150px"><img decoding="async" width="150" height="112" class="wp-image-435" style="width: 150px;" src="https://adames.com.br/wp-content/uploads/2020/12/adames53.png" alt="" srcset="https://adames.com.br/wp-content/uploads/2020/12/adames53.png 1042w, https://adames.com.br/wp-content/uploads/2020/12/adames53-300x225.png 300w, https://adames.com.br/wp-content/uploads/2020/12/adames53-1024x768.png 1024w, https://adames.com.br/wp-content/uploads/2020/12/adames53-768x576.png 768w, https://adames.com.br/wp-content/uploads/2020/12/adames53-500x375.png 500w" sizes="(max-width: 150px) 100vw, 150px"></p>
+<p>Aproveite para ler também sobre <a href="https://adames.com.br/ureia/" target="_blank" rel="noreferrer noopener">A utilização da UREIA e como ela funciona</a>. </p>
+<p></p>
+<p></p>
+</article>`
+},
+{
+    id: 76,
+    image:image03,
+    // image:image76,
+    title: 'Suspensão de plantas na Argentina pode ser positivo para o Brasil',
+    content: `<article class="view-article">
+<p>O governo argentino suspendeu 15 empresas exportadoras de carne que tentaram fraudar o controle sanitário. &nbsp;O Ministério da Agricultura do país afirmou, em comunicado, que descobriu várias operações de exportação que sonegavam impostos por não serem registradas junto ao governo federal.</p>
+<p>Esse cenário pode ser positivo para o Brasil, visto que a Argentina é a segunda maior exportadora de carne para a China. Logo, poderemos exportar mais carnes, melhorando o preço, afirma o analista de mercado Yago Travagini.</p>
+<p>Mas como ainda não se sabe quais são essas  plantas e qual de fato é o volume delas, não podemos criar muitas expectativas.</p>
+<p style="font-size:14px">Fonte: Canal Rural</p>
+<p></p>
+<p></p>
+</article>`
+},
+{
+    id: 77,
+    image:image03,
+    // image:image77,
+    title: 'A utilização da UREIA e como ela funciona',
+    content: `<article class="view-article">
+<p>Tratando-se de ruminantes, sabemos que o rúmen apresenta determinadas<br>exigências para garantir seu bom funcionamento, e ação da população de<br>microrganismos nele presente. Dentre essas exigências, uma de suma<br>importância é o nitrogênio (N), que por sua vez, pode ser disponibilizado na<br>forma de proteína verdadeira, encontrada em farelo de soja e caroço de<br>algodão, por exemplo, bem como na forma de compostos nitrogenados não<br>proteicos, como a ureia.</p>
+<p>Assim, a utilização da ureia na nutrição de ruminantes tem como principal<br>função o fornecimento de nitrogênio não-proteico na dieta, que mediante a<br>ação simbiótica dos microrganismos ruminais é convertida em proteína<br>microbiana, sendo está tida como uma proteína de alta qualidade.</p>
+<p>Dessa maneira o uso da ureia na alimentação de ruminantes, torna-se uma<br>ótima fonte alternativa de oferta de proteína na dieta animal, possibilitando a não utilização de ingredientes utilizados diretamente na alimentação humana.</p>
+<p>Além disso apresenta-se como uma opção financeiramente viável para<br>substituição da proteína verdadeira, possibilitando um menor custo na<br>produção, é uma tecnologia simples e acessível a qualquer produtor, além de apresentar baixo custo também de implantação.</p>
+<p>Apesar de proporcionar variados benefícios quando bem empregada, seu uso exige muita atenção. Demanda cuidados em seu armazenamento, manejo e fornecimento, sendo indicado orientação técnica para seu uso.</p>
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<p class="has-text-align-center"><sup><img decoding="async" width="157" height="209" class="wp-image-715" style="width: 157px;" src="https://adames.com.br/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-23-at-15.34.27.jpeg" alt="" srcset="https://adames.com.br/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-23-at-15.34.27.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-23-at-15.34.27-225x300.jpeg 225w" sizes="(max-width: 157px) 100vw, 157px"></sup> <img decoding="async" width="150" height="137" class="wp-image-712" style="width: 150px;" src="https://adames.com.br/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-30-at-14.47.44.jpeg" alt="" srcset="https://adames.com.br/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-30-at-14.47.44.jpeg 1280w, https://adames.com.br/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-30-at-14.47.44-300x274.jpeg 300w, https://adames.com.br/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-30-at-14.47.44-1024x934.jpeg 1024w, https://adames.com.br/wp-content/uploads/2021/03/WhatsApp-Image-2021-03-30-at-14.47.44-768x701.jpeg 768w" sizes="(max-width: 150px) 100vw, 150px"><img decoding="async" width="150" height="112" class="wp-image-435" style="width: 150px;" src="https://adames.com.br/wp-content/uploads/2020/12/adames53.png" alt="" srcset="https://adames.com.br/wp-content/uploads/2020/12/adames53.png 1042w, https://adames.com.br/wp-content/uploads/2020/12/adames53-300x225.png 300w, https://adames.com.br/wp-content/uploads/2020/12/adames53-1024x768.png 1024w, https://adames.com.br/wp-content/uploads/2020/12/adames53-768x576.png 768w, https://adames.com.br/wp-content/uploads/2020/12/adames53-500x375.png 500w" sizes="(max-width: 150px) 100vw, 150px"> </p>
+</div></div>
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<p>Ficou com dúvida? Entre em contato com um de nossos especialistas <a href="https://adames.com.br/contato/" target="_blank" rel="noreferrer noopener">https://adames.com.br/contato/</a></p>
+</div></div>
+<p>Aproveite para ler também: <a href="https://adames.com.br/o-que-sao-minerais-e-quais-suas-funcoes/" target="_blank" rel="noreferrer noopener">O que são minerais e quais suas funções?</a> </p>
+</article>`
+},
+{
+    id: 78,
+    image:image03,
+    // image:image78,
+    title: 'Adames | Fazenda dos Sonhos',
+    content: `<article class="view-article">
+<p>Em mais um exemplo de parceria muito positiva, hoje compartilhamos um pouco da produção que acompanhamos na Fazenda dos Sonhos, em Anastácio – MS.</p>
+<p>Nossos técnicos decidem metas e objetivos junto com o pessoal da fazenda e assim chegamos a esse belo resultado no vídeo abaixo: </p>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="ADAMES | Fazenda dos Sonhos em Anastácio - MS" width="500" height="281" src="https://www.youtube.com/embed/2i9sWdOZq-4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div></figure>
+<p>Os protocolos nutricionais adotados utilizam produtos como Nutrigen e Pro@ 10. </p>
+<p>Aproveite para assistir também Fazenda Cervo – Parceria Adames: <a href="https://www.youtube.com/watch?v=-75YqGbdoR0" target="_blank" rel="noreferrer noopener">https://www.youtube.com/watch?v=-75YqGbdoR0</a></p>
+<p></p>
+<p></p>
+</article>`
+},
+{
+    id: 79,
+    image:image03,
+    // image:image79,
+    title: 'O que são minerais e quais suas funções?',
+    content: `<article class="view-article">
+<p>Sempre falamos a respeito de suplementação mineral, mas afinal para quê servem e o que são?</p>
+<p>Os elementos minerais são essenciais para correto funcionamento de todos os processos bioquímicos do corpo, e por serem inorgânicos não são sintetizados pelos animais. Estes animais em condições de pastejo podem apresentar deficiência de diversos desses elementos, visto que há baixa concentração desses nas plantas forrageiras.</p>
+<p>Os minerais estão envolvidos em quase todas as vias metabólicas do organismo, com funções importantes no desempenho reprodutivo dos animais, na manutenção do crescimento, metabolismo energético, imunidade e outras tantas funções fisiológicas importantes para aumento da produtividade animal.</p>
+<p>As exigências nutricionais são altamente dependentes do nível de produtividade, ou seja, maiores taxas de crescimento exigem também maiores quantidades de minerais. Portanto, o melhoramento genético e as práticas de manejo que aumentam a taxa de crescimento dos animais exigem maior atenção quanto à nutrição mineral.</p>
+<p>Classificação</p>
+<p>Os minerais são classificados de acordo com a quantidade exigida no organismo, dessa forma, separados em<strong> macro e microelementos.</strong></p>
+<p><strong>Macroelementos</strong></p>
+<p><strong>Cálcio (Ca)</strong>: Formação de ossos e dentes.</p>
+<p><strong>Fósforo (P)</strong>: Possui participação essencial no desenvolvimento e manutenção dos tecidos esqueléticos.</p>
+<p><strong>Magnésio (Mg)</strong>: Essencialmente envolvido no metabolismo de carboidratos e lipideos como catalisador de árias enzimas que atuam na digestão e absorção desses nutrientes.</p>
+<p><strong>Sódio (Na)</strong>: Envolvido na manutenção da pressão osmótica, contração muscular, transmissão de impulsos nervosos e transporte de glicose e aminoácidos.</p>
+<p><strong>Potássio (K)</strong>: Envolvido nas mesmas funções que o sódio.</p>
+<p><strong>Cloro (Cl)</strong>: Faz parte do suco gástrico, formando o ácido clorídrico para degradação das proteínas no abomaso.</p>
+<p><strong>Enxofre (S)</strong>: Se encontra no organismo como aminoácidos, vitaminas e enzimas importantes para organismo.</p>
+<p><strong>Microelementos</strong></p>
+<p><strong>Ferro (Fe):</strong> Componente fundamental da hemoglobina e está presente em algumas enzimas do sistema respiratório.</p>
+<p><strong>Cobre (Cu)</strong>: Importante na produção de células dos sistema imune.</p>
+<p><strong>Iodo (I)</strong>: Participa na síntese de hormônios T3 e T4, que afetam o metabolismo de lipídeos, carboidratos e proteínas.</p>
+<p><strong>Zinco (Zn)</strong>: Encontrado principalmente na pele, pêlos, lãs, fígados, ossos, rins, músculos e pâncreas. Além disso há relação de zinco no desenvolvimento testicular e espermatogênese. </p>
+<p><strong>Cobalto (Co)</strong>: Participação na molécula de vitamina B12, que é sintetizado pelos microrganismos do rúmen.</p>
+<p><strong>Manganês (Mn)</strong>: Importante na síntese de hormônios esteroides (reprodução e crescimento), e para gliconeogênese e utilização da glicose. </p>
+<p><strong>Selênio (Se)</strong>: Possui função antioxidante, na prevenção de mastite bovina, proteção da pele contra raios ultravioletas, entre outras.</p>
+<p><strong>Cromo (Cr)</strong>: Potencializa a interação entre insulina e receptores celulares.</p>
+<p>Para saber mais detalhes entre em contato! <a href="https://adames.com.br/contato/" target="_blank" rel="noreferrer noopener">https://adames.com.br/contato/</a> .</p>
+<p></p>
+<p></p>
+</article>`
+}, {
+    id: 80,
+    image:image03,
+    // image:image80,
+    title: 'Agronegócio brasileiro é boa alternativa para investimento',
+    content: `<article class="view-article">
+<p>A ministra Tereza Cristina apresentou em evento internacional o avanço da agropecuária sustentável e defendeu que agronegócio brasileiro é uma boa alternativa para investimento privado em títulos verdes.</p>
+<p>Em um evento sobre finanças verdes, que reuniu representantes de vários países e de multinacionais, a ministra destaca: “<strong>Nossa produção é cada vez mais sustentável. Graças às condições naturais e climáticas favoráveis, temos capacidade de colher duas safras ao ano em uma mesma área, podendo chegar a três com o emprego de tecnologias sustentáveis. Algo impossível para agricultura em países com clima temperado</strong>.“</p>
+<p>Ela citou ainda que programas nacionais trabalham na recuperação de milhões de hectares de pastagens ociosas e degradadas para expansão agropecuária, como exemplo os sistemas de integração lavoura-pecuária-floresta (<strong>ILPF</strong>).</p>
+<p>Em sua apresentação, a ministra disse que o Brasil quer “aproveitar os mercados financeiros e domésticos ainda com muita liquidez”. “Existem trilhões de dólares e reais em busca de boas alternativas de investimento, melhores retornos e riscos menores. O nosso agronegócio oferece, com certeza, essas oportunidades”</p>
+<p>Para responder à demanda anual de alimentos, fibras e energias renováveis, a agropecuária brasileira precisará de bastante recursos. Para isso, os títulos verdes são importante ferramenta de financiamento do setor.</p>
+<p class="has-small-font-size">Fonte: Portal DBO</p>
+<p></p>
+</article>`
+}, {
+    id: 81,
+    image:image03,
+    // image:image81,
+    title: 'Suplementação nas águas: Por que é importante?',
+    content: `<article class="view-article">
+<p style="font-size:17px">Contrário ao período de seca, com a chegada das chuvas os pastos voltam a brotar e conseguem expressar todo seu potencial de desenvolvimento. </p>
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<figure class="wp-block-image is-resized"><img fetchpriority="high" decoding="async" src="https://adames.com.br/wp-content/uploads/2021/03/JOE_9992-1024x869.jpg" alt="" class="wp-image-691" width="528" height="448" srcset="https://adames.com.br/wp-content/uploads/2021/03/JOE_9992-1024x869.jpg 1024w, https://adames.com.br/wp-content/uploads/2021/03/JOE_9992-300x255.jpg 300w, https://adames.com.br/wp-content/uploads/2021/03/JOE_9992-768x652.jpg 768w, https://adames.com.br/wp-content/uploads/2021/03/JOE_9992-1536x1303.jpg 1536w, https://adames.com.br/wp-content/uploads/2021/03/JOE_9992.jpg 1920w" sizes="(max-width: 528px) 100vw, 528px"><figcaption>Animais suplementados com Adames nas águas em Anastácio – MS</figcaption></figure>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<p style="font-size:17px">Temos então a fase mais favorável à produção animal, onde o pasto por si só consegue conferir bom ganho de peso aos animais. Entretanto nada é perfeito, mesmo com esse aumento na produção de forragem, a suplementação ainda é imprescindível, e funciona como forma de fornecer macro e micro minerais, energia, proteína e aditivos que são indispensáveis ao desenvolvimento animal.</p>
+<p style="font-size:17px">Assim como na seca, no período das águas, temos também que traçar planos alimentares, levando em consideração a categoria animal a ser suplementada, a qualidade e oferta do pasto.</p>
+<p style="font-size:17px">De modo geral encontramos forragens de alta qualidade nesse período, com elevado teor de proteína bruta (PB). Entretanto, para que possa potencializar o ganho de peso devemos complementar a composição da PB ingerida pelos animais.</p>
+<p style="font-size:17px">Os minerais aditivados, além de fornecer todo aporte mineral essencial ao animal, também carregam em sua formulação fontes de nitrogênio não proteico (NNP) e aditivos que vão atuar diretamente no rúmen, melhorando a digestibilidade da fibra e a fermentação ruminal.</p>
+<p style="font-size:17px">Podemos também progredir o tipo de suplementação, os proteinados e proteicos energéticos nos permitem ajustar o perfil proteico da forragem, contém fontes energéticas (NDT é um limitante de desempenho nesse período) e fontes de NNP em sua formulação, além de macro e micro minerais e aditivos. </p>
+<p style="font-size:17px">A adoção desse tipo de suplementação pode trazer resultados entorno de 20 a 30% a mais no ganho de peso diário, dependendo do perfil de produto escolhido.</p>
+<p style="font-size:17px">A terminação no período das águas é também uma ótima estratégia, pois com uma maior e melhor oferta de forragem podemos diminuir a oferta de ração, sempre respeitando a categoria a ser tratada.</p>
+<p style="font-size:17px">O uso adequado da suplementação nas águas é uma maneira de maximizar a produtividade da fazenda, com ela conseguimos encurtar o ciclo de vida do animal, levar animais mais jovens ao abate e diminuir a idade ao primeiro parto de novilhas.</p>
+<p style="font-size:14px">Artigo escrito por Francisco Montanaro Neto</p>
+<p style="font-size:17px">Confira nossa linha de minerais e minerais aditivados em nosso catálogo aqui no site: <a href="https://adames.com.br/produtos/bovinos-de-corte/" target="_blank" rel="noreferrer noopener">https://adames.com.br/produtos/bovinos-de-corte/</a></p>
+</article>`
+}, {
+    id: 82,
+    image:image03,
+    // image:image82,
+    title: 'Aumento da demanda pelo boi China valoriza preços',
+    content: `<article class="view-article">
+<p style="font-size:18px">O mercado físico do boi gordo teve preços  mais altos nesta semana. Os negócios estão  pautados pela restrição de oferta, o que leva a uma grande dificuldade na composição das escalas de abate por parte dos frigoríficos.</p>
+<p style="font-size:18px">Os negócios estão sendo fechados com preços entre R$5 e R$10 acima dos animais destinados ao mercado doméstico, e dessa forma os requisitos de exportação para a China seguem muito demandados.</p>
+<p style="font-size:18px"> “A oferta de boiadas pode apresentar algum avanço no final do mês, com potencial entrada de animais terminados a pasto no mercado”, explica o analista de Safras &amp; Mercado, Fernando Henrique Iglesias.</p>
+<p style="font-size:12px">Fonte: Canal Rural.</p>
+<p></p>
+</article>`
+}, {
+    id: 83,
+    image:image03,
+    // image:image83,
+    title: 'Desmama precoce: Quando e Por que fazer?',
+    content: `<article class="view-article">
+<p style="font-size:18px">Uma desmama convencional dura entre sete e oito meses, já a precoce cai para aproximadamente 4 meses e os outros 4 meses os animais são tratados.<br>A estratégia tem como principal vantagem que a vaca pare de produzir leite e mobilize energia para recuperar escore corporal, e assim antecipa sua retomada no ganho de peso.</p>
+<p style="font-size:18px">Mas em quais categorias posso utilizar essa estratégia?</p>
+<p style="font-size:18px"><strong>Vacas descarte</strong><br>São vacas que já apresentam algum problema, então porquê manter essa vaca por mais tempo na fazenda? Após desmamar o bezerro essa vaca precisaria de aproximadamente mais alguns 4 meses pra recuperar peso, então é mais viável antecipar a desmama.</p>
+<p style="font-size:18px"><strong>Vacas com escore corporal baixo</strong><br>Na estação de monta vacas de escore corporal baixo não vão emprenhar nem na 1ª nem na 2ª IATF, somente no final da estação, então uma vaca que antecipa a desmama, chega com condição corporal ideal no inicio da estação.</p>
+<p style="font-size:18px"><strong>Vacas primíparas</strong><br>Além de amamentar o bezerro, esta vaca está em fase de desenvolvimento, portanto requer muita energia para desenvolvimento. Com a desmama precoce, essa vaca pode se recuperar mais cedo.</p>
+<p style="font-size:18px">Uma estratégia nutricional bastante interessante na desmama precoce é o Adames Desmama Precoce, que é utilizado dos 3 aos 8 meses de vida do animal. Ou ainda podemos utilizar este produto dos 3 aos 6 meses e continuar a suplementação após esse período, e iniciar o uso de proteico energético, como o pro@20, que é um produto rico em minerais orgânicos e narasina que pode ser tratado por todo o período da recria garantindo um ótimo desempenho aos animais.</p>
+<p style="font-size:18px"><strong>Faz desmama precoce na sua fazenda? Entre em contato para discutirmos essas estratégias!</strong> <a href="https://adames.com.br/contato/" target="_blank" rel="noreferrer noopener">https://adames.com.br/contato/</a></p>
+</article>`
+}, {
+    id: 84,
+    image:image03,
+    // image:image84,
+    title: 'Água e sua importância no desempenho do rebanho',
+    content: `<article class="view-article">
+<p>A maioria das ações e melhorias buscadas nas dietas são quase sempre focadas somente em fontes de volumosos e concentrados, porém um fator determinante para o bom desempenho dos animais acaba ficando de lado: <strong>a água!</strong>                                                                                                                                         Ainda é bastante comum encontrarmos fontes de água inadequadas para o consumo dos animais. </p>
+<p>Fontes de água contaminadas, seja em açudes ou em bebedouros sem manutenção representam sérios riscos à saúde do rebanho, afetando negativamente a produção e o desempenho dos animais.</p>
+<p>O consumo de matéria seca é diretamente proporcional ao consumo de água. Se a fonte de água está suja, contaminada e ou com barreiras os animais não irão beber água e isso afetará diretamente o consumo de alimentos e também o desempenho. </p>
+<p>Os sintomas de baixo consumo podem ser observados na urina e nas fezes. Quando vemos fezes duras, secas e uma queda na produção de urina, consequentemente haverá uma desestabilização de consumo e também na produção dos animais.</p>
+</article>`
+}, {
+    id: 85,
+    image:image03,
+    // image:image85,
+    title: 'Água e sua importância no desempenho do rebanho',
+    content: `<article class="view-article">
+<p>A maioria das ações e melhorias buscadas nas dietas são quase sempre focadas somente em fontes de volumosos e concentrados, porém um fator determinante para o bom desempenho dos animais acaba ficando de lado: <strong>a água!</strong>                                                                                                                                         Ainda é bastante comum encontrarmos fontes de água inadequadas para o consumo dos animais. </p>
+<p>Fontes de água contaminadas, seja em açudes ou em bebedouros sem manutenção representam sérios riscos à saúde do rebanho, afetando negativamente a produção e o desempenho dos animais.</p>
+<p>O consumo de matéria seca é diretamente proporcional ao consumo de água. Se a fonte de água está suja, contaminada e ou com barreiras os animais não irão beber água e isso afetará diretamente o consumo de alimentos e também o desempenho. </p>
+<p>Os sintomas de baixo consumo podem ser observados na urina e nas fezes. Quando vemos fezes duras, secas e uma queda na produção de urina, consequentemente haverá uma desestabilização de consumo e também na produção dos animais.</p>
+</article>`
+}, {
+    id: 86,
+    image:image03,
+    // image:image86,
+    title: 'Preço do bezerro e exportação: Confira últimas notícias',
+    content: `<article class="view-article">
+<p>O indicador do bezerro do Cepea, subiu e marcou uma nova máxima histórica.&nbsp;O preço passou de R$ 2.831,21 para R$ 2.857,18 por cabeça e já registra alta de 14,3% em 2021.</p>
+<p>De acordo com os dados da Secretaria de Comércio Exterior (Secex) foram exportados 26,33 mil toneladas de carne bovina na terceira semana  de fevereiro, registrando um aumento de 22,8% nos embarques.</p>
+<p>Na China, com o feriado do ano novo Chinês, houve um aumento nas exportações, demonstrando uma melhora comparado ao inicio do mês que ainda assim registrou um volume abaixo do que observado em fevereiro de 2020.</p>
+<p style="font-size:14px">Fonte: Canal Rural</p>
+<p></p>
+</article>`
+}, {
+    id: 87,
+    image:image03,
+    // image:image87,
+    title: 'Terminação Intensiva a Pasto: O que preciso saber?',
+    content: `<article class="view-article">
+<p>O semi confinamento e a TIP (terminação intensiva a pasto) são estratégias de engorda ou de terminação. Diferente do confinamento convencional onde a dieta (volumoso + concentrado) é toda fornecida no cocho, 100% do que o animal come é via cocho, na terminação a pasto fornecemos o concentrado (ração) para os animais e o volumoso ele busca no pasto.</p>
+<p>Por isso a forragem é de grande importância nesse sistema, além dela ser a fonte de fibra para ruminação ela também vai compor parte do que é ingerido pelo animal e funciona como um “norte” para saber a quantidade de ração que deve ser fornecida.</p>
+<p>Partindo disso podemos fazer uma analogia com o confinamento, quando temos uma silagem de milho de ótima qualidade usamos menos concentrado do que comparado a uma dieta com bagaço de cana que não tem nutrientes nenhum então precisamos aumentar significativamente a quantidade de concentrado da dieta.</p>
+<p>Com o pasto acontece da mesma forma, se temos uma forragem no período das águas, ou um pasto bem manejado, adubado podemos trabalhar com níveis menores de suplementação algo entorno de 1,5% do PV do animal. Já se temos um pasto de seca, uma forragem passada de baixo valor nutricional, já temos que partir para 1,8 – 2% do PV.</p>
+<p class="has-medium-font-size"><strong>Qual a vantagem?</strong></p>
+<p>A principal vantagem é reduzir o tempo de abate dos animais, elevar o peso e a qualidade da carcaça (dar um melhor acabamento).</p>
+<p class="has-medium-font-size"><strong>Dificuldade</strong></p>
+<p>Algumas dificuldades podem ser encontradas, como por exemplo a mão de obra. Os animais precisam ser tratados todos os dias, preferencialmente 2 vezes ao dia e devemos tomar cuidado com as chuvas, pois se molhar perde a ração que foi servida no cocho.</p>
+<p class="has-medium-font-size"><strong>O que mais podemos observar?</strong></p>
+<p>Podemos destacar a importância da oferta de pasto, é necessário fazer um planejamento bem assertivo de oferta de forragem para não faltar, que pode levar a distúrbios metabólicos.</p>
+<p>Importante também fazer um acompanhamento de escore de fezes e comportamento de alimentação dos animais para saber se está tudo caminhando bem. Fezes muito moles, com bolha e muco são indicativos de acidose ruminal e consumo depravado de ração pode ser um indicativo de falta de forragem que pode levar a distúrbios metabólicos.                           Você pode conferir um material sobre escore fecal aqui no site: <a href="https://adames.com.br/escore-de-fezes-avaliando-desempenho-e-saude-ruminal/">https://adames.com.br/escore-de-fezes-avaliando-desempenho-e-saude-ruminal/</a></p>
+<p>Água limpa de qualidade também é imprescindível para melhorar o resultado da terminação, quando o animal ingere grandes quantidades de material altamente fermentável (ração) a temperatura do rúmen sobe muito, então ele precisa tomar água para abaixar a temperatura e assim melhorar o ambiente ruminal só assim ele consegue voltar a comer.<br>Se o bebedouro estiver sujo o animal não vai beber água e por consequência vai diminuir o consumo de ração, o que leva a uma queda no desempenho esperado.</p>
+<p>Aqui na nossa linha de produtos você pode encontrar produtos formulados especialmente para esse sistema de produção, como o <strong>Adames Confina a Pasto</strong>. Entre em contato para saber mais! </p>
+</article>`
+}, {
+    id: 88,
+    image:image03,
+    // image:image88,
+    title: 'Importação de gado vivo: O que está em jogo?',
+    content: `<article class="view-article">
+<p style="font-size:18px">No início de fevereiro houve uma solicitação do&nbsp;Sindicato das Indústrias de Frios, Carnes e Derivados de Mato Grosso do Sul,  para importação de gado vivo do Paraguai, devido a baixa oferta de bovinos prontos para abate.</p>
+<p style="font-size:18px">Quem demonstrou certa preocupação foi a Associação dos Criadores do Mato Grosso (Acrimat) e disse que o estado possui 30 milhões de cabeças e já está há 25 anos sem caso de febre aftosa. Há a preocupação de que os países originadores não sejam tão criteriosos quanto o Brasil em relação à sanidade animal.</p>
+<p style="font-size:18px">O comentarista Benedito Rosa relata que o Brasil evoluiu muito no padrão sanitário e aborda que há um convênio para ação conjunta com o setor privado, secretarias e ministério da agricultura. “O programa está avançando bem e não vale a pena correr riscos como esse para aumentar a oferta de carne bovina”, disse.</p>
+<p style="font-size:12px">Fonte: Canal Rural</p>
+</article>`
+}, {
+    id: 89,
+    image:image03,
+    // image:image89,
+    title: 'Creep Feeding – Uma boa alternativa para obter bezerros mais pesados ao desmame',
+    content: `<article class="view-article">
+<p style="font-size:18px">O creep Feeding nada mais é do que fornecer suplementação com a utilização de um cocho privativo, dentro de um cercado, ao qual somente o bezerro tem acesso.</p>
+<p class="has-medium-font-size">Mas por quê utilizar?</p>
+<p style="font-size:18px">São muitas as vantagens: É uma ótima alternativa para desmamar bezerros mais pesados, podendo chegar até 1@+ que em sistemas sem creep feeding.</p>
+<p style="font-size:18px">Esse sistema ajuda a tornar o bezerro menos dependente da mãe, contribuindo para a melhora da condição corporal da vaca e possível retorno ao cio, tornando o ciclo mais rápido.</p>
+<p style="font-size:18px">O bezerro se torna um ruminante mais cedo, pois com o fornecimento do concentrado as papilas ruminais dos animais se tornam bem mais desenvolvidas.</p>
+<p class="has-medium-font-size">Além dessas vantagens, podemos citar:</p>
+<p style="font-size:18px">– Menor estresse na desmama<br>– Opção para antecipar desmama<br>– Reduz idade ao abate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p class="has-medium-font-size">Fornecimento</p>
+<p style="font-size:18px">O fornecimento do creep feeding é trabalhoso. Os animais são estimulados desde que haja mistura fresca no cocho, logo é importante fornecer o alimento diariamente.</p>
+<p style="font-size:18px"><strong>Mas atenção! </strong>O bezerro que recebe creep feeding se torna mais exigente em suplementação por toda a sua vida, portanto, se for usar essa tecnologia, tenha em mente continuar com uma suplementação de qualidade no pós desmama!</p>
+<p style="font-size:18px">Temos produtos formulados especialmente para esse sistema de produção. Confira aqui em nosso site nossa linha de produtos <strong>Adames Creep VT5 e Adames Creep Master</strong> para garantir ainda mais desempenho dos bezerros de seu rebanho!</p>
+</article>`
+}, {
+    id: 90,
+    image:image03,
+    // image:image90,
+    title: 'Relações exteriores: Possibilidades de novos mercados para o agronegócio',
+    content: `<article class="view-article">
+<p>O assunto sobre meio ambiente voltou a ter foco dos Estados Unidos com o governo de Joe Biden. Além do retorno dos americanos ao Acordo de Paris,  existe uma propostas de U$ 20 bilhões para a conservação de florestas. Como a agricultura brasileira vem trabalhando intensamente para uma produção cada vez mais sustentável, essas medidas podem ser bastante positivas.</p>
+<p>O analista da Safras &amp; Mercado Fernando Iglesias também acredita neste benefício e afirma que já trabalhamos para ter uma pecuária sustentável. Nós temos aqui normas de rastreabilidade que garantem a origem e procedência dos animais para compradores exigentes”.</p>
+<p>Com isso, o analista também afirma que é possível uma melhor relação entre União Europeia e Mercosul, além da aproximação com novos mercados.</p>
+<p>Fonte: Canal Rural</p>
+</article>`
+}, {
+    id: 91,
+    image:image03,
+    // image:image91,
+    title: 'Pré confinamento: Já devo me planejar?',
+    content: `<article class="view-article">
+<p style="font-size:18px">Acredito que nós encerramos um período de confinamento já pensando no próximo, não é mesmo?</p>
+<p style="font-size:22px">Mas por que já devemos começar a pensar no período pré confinamento?</p>
+<p style="font-size:18px">O período de transição águas-seca já está quase aí e nessa época normalmente o pasto passa por um processo de redução de qualidade, há aumento nos teores de fibra e redução de folhas. Diante disso, uma alternativa muito interessante e que é bastante utilizada é o aumento no nível de suplementação dos animais.</p>
+<p style="font-size:22px">E para que essa prática serve?</p>
+<p style="font-size:18px">Essa prática tem o objetivo de compensar a queda da qualidade do capim, pois a suplementação possibilita corrigir essa deficiência de nutrientes do pasto, logo é possível minimizar a perda de desempenho do animal neste período.</p>
+<p style="font-size:18px">No período pré confinamento essa estratégia se mostra eficaz pois permite que o animal preserve o que foi estruturado na recria, e assim não demanda energia cara do confinamento para recuperar as perdas pré cocho.</p>
+<p style="font-size:18px">E aí? Já começou a se preparar? Entre em contato para saber mais detalhes!</p>
+<p style="font-size:12px">Fonte: Nafazenda.com</p>
+</article>`
+}, {
+    id: 92,
+    image:image03,
+    // image:image92,
+    title: 'O Agro não para: Melhor taxa de geração de emprego em 10 anos',
+    content: `<article class="view-article">
+<p>Há quem critique, mas o agronegócio, apesar da pandemia do Covid-19 certamente é um dos setores que mais gerou empregos no último ano.</p>
+<p>Segundo a CNA, o agronegócio abriu 61.637 mil vagas de trabalho de janeiro a dezembro do ano passado, sendo o melhor desempenho desde 2011.</p>
+<p>Entre as&nbsp;atividades&nbsp;que mais se destacam com carteira assinada em 2020, a&nbsp;soja&nbsp;liderou o ranking, com 13.396 vagas. Na&nbsp;pecuária, na&nbsp;criação de bovinos, foram mais de 11 mil vagas, enquanto de aves, mais de 5 mil. Foram as atividades que mais contribuíram no mercado.&nbsp;</p>
+<p>De acordo com os dados,&nbsp;a grande maioria dessas vagas foram criadas no setor agropecuário estão na região Sudeste, especialmente em São Paulo.</p>
+<p style="font-size:12px">Fonte: Portal DBO</p>
+<p><a href="https://www.portaldbo.com.br/author/redacao1/"></a></p>
+</article>`
+}, {
+    id: 93,
+    image:image03,
+    // image:image93,
+    title: 'O uso de Leveduras na nutrição de bovinos de corte',
+    content: `<article class="view-article">
+<p class="has-text-align-left">Melhorando o desempenho dos animais devido a maximização da eficiência da fermentação ruminal, as leveduras são utilizadas há alguns anos na dieta de bovinos de corte.</p>
+<p>Além de ser fontes de proteína de alta qualidade, possuir vitaminas do complexo B, conter minerais como Zinco e Selênio, as leveduras, por possuírem a capacidade de captar oxigênio, funcionam como fator de crescimento de bactérias viáveis e celulolíticas. Este aumento no número de bactérias é responsável pelo aumento na degradação de fibras, melhorando a taxa de passagem dos alimentos.</p>
+<p>A soma de todos estes fatores contribui para maior consumo e melhor aproveitamento da dieta, pois há um aumento na eficiência de utilização de energia e também dos nutrientes no rúmen, causando resultados positivos no metabolismo e trazendo melhor desempenho dos animais.</p>
+<p>Pensando em todos estes benefícios, formulamos suplementos minerais com adição de leveduras, como as <strong>linhas Sacc e Potencial A</strong>, que atendem às necessidades dos animais em todas as fases de produção.</p>
+<p class="has-text-align-left">Entre em contato com nossa equipe e saiba qual o melhor produto dessas linhas pode ser indicado ao seu rebanho!</p>
+<p class="has-text-align-right"><a href="https://adames.com.br/contato/" target="_blank" rel="noreferrer noopener">https://adames.com.br/contato/</a><br>(67) 3378-2100<br>(65) 3366-1110</p>
+<p style="font-size:12px">Autor: Gabriella Souza</p>
+</article>`
+}, {
+    id: 94,
+    image:image03,
+    // image:image94,
+    title: 'Vendas aquecidas no mercado interno de boi gordo',
+    content: `<article class="view-article">
+<p>Na última terça-feira (26) o mercado do boi gordo apresentou aquecimento nos negócios. A tendência a curto prazo é que não tenha espaço para reajustes.</p>
+<p>Segundo o analista de Safras &amp; Mercado, Fernando Henrique Iglesias, os frigoríficos já estão operando com margem apertada e há uma forte tendência de oferta de animais de safra ser mais abundante em março, e até lá o mercado terá de operar com limite de oferta.</p>
+<p>Em São Paulo, a arroba do boi ficou em R$ 298/299 Em Goiânia (GO), a arroba teve preço estável de R$ 290. Em Dourados (MS), a arroba passou de R$ 289/290 para R$ 287. Em Cuiabá, a arroba ficou indicada em R$ 280. Em Uberaba, Minas Gerais, o valor ficou estável em R$ 295 a arroba.</p>
+<p style="font-size:12px">Fonte: Canal Rural</p>
+</article>`
+}, {
+    id: 95,
+    image:image03,
+    // image:image95,
+    title: 'Saiba mais: K1 Águas',
+    content: `<article class="view-article">
+<p>Mesmo no verão com as chegadas das chuvas e melhora das pastagens, se faz necessária a suplementação dos animais sempre se levando em conta a estratégia de cada fazenda.</p>
+<p>Por meio da nutrição conseguimos corrigir deficiências de minerais, fornecer aditivos e complementar proteína e energia necessários para cada ganho esperado.</p>
+<p>As pastagens de verão são ótimas para produzir @ barata e pensando nisso, temos então uma fase propícia para terminação dos animais.<br>Nessa fase tanto machos quanto fêmeas necessitam de muita energia para que ocorra a deposição de gordura e cheguem a um acabamento uniforme de carcaça.</p>
+<p>A K1 Águas é um proteico energético que atende muito bem as exigências de machos castrados e fêmeas nesse cenário, pode ser utilizada também em machos inteiros, porém estes necessitam de um incremento energético maior para ter um ótimo acabamento.</p>
+<p style="font-size:12px">Autor: Francisco Montanaro </p>
+</article>`
+}, {
+    id: 96,
+    image:image03,
+    // image:image96,
+    title: 'Carne Bovina: Exportação vs Consumo Interno',
+    content: `<article class="view-article">
+<p>Segundo dados da Conab (Companhia Nacional de Abastecimento) em 2019, o consumo brasileiro de carne bovina foi de 30,7 quilos por habitante, o que já mostrou um recuo de 9% em relação ao ano anterior. E no ano de 2020 o consumo por habitante foi de 29,3 quilos, demonstrando então outra queda, sendo essa de 5% em relação a 2019.</p>
+<p>Em contrapartida, mesmo com a restrita oferta de boi, a demanda na China se mantém forte e a participação do país asiático nos embarques brasileiros de carne bovina para o país chegou a 40,9% no ano passado, comparado a 25,3% em 2019</p>
+<p>Devido a este aumento, a atuação das exportações na produção total de proteína vermelha brasileira chegou a 28% em 2020, comparado a 24% em 2019 e 19,3% em 2015. </p>
+<p style="font-size:12px">Fonte: BBC News Brasil</p>
+<p></p>
+<p></p>
+</article>`
+}, {
+    id: 97,
+    image:image03,
+    // image:image97,
+    title: 'Adames 3D Pro@. Por que utilizar?',
+    content: `<article class="view-article">
+<p>Com uma pastagem predominantemente nativa no Pantanal, não podemos lançar mão de estratégias nutricionais para melhor desempenho do rebanho.<br>Diante deste cenário, a primeira escolha que fazemos é a plantação da Brachiaria Humidícola, já que esta é uma pastagem que aguenta enchentes por longos dias, que é a realidade do cenário que estamos acostumados a ver no Pantanal.</p>
+<p>Porém, por ser uma pastagem com valor nutricional baixo e também com baixa produção, ainda podemos enxergar um desempenho menor dos animais que vivem nesta região, e como consequência disso a grande dificuldade da cria no Pantanal é a recria das novilhas para alta concepção.</p>
+<p>Pensando nisso, o Adames 3D Pro@ veio para potencializar o ganho destes animais. Como este produto fornece uma carga de Nitrogênio ideal que ativa o rúmen, possui a Narasina que além de trazer benefícios que atuam como medida preventiva em relação a problemas que esse excesso de água pode trazer para o animal, como a Coccidiose por exemplo, ela traz um baita ganho de peso, transformando o rebanho.</p>
+<p>Abaixo temos um belo registro de um cliente muito satisfeito na região. Nosso parceiro e representante Chiquinho, da BoiChic em Rio Verde – MS foi quem iniciou e acompanha este protocolo nutricional.</p>
+<p><img fetchpriority="high" decoding="async" width="800" height="600" class="wp-image-601" style="width: 800px;" src="https://adames.com.br/wp-content/uploads/2021/01/recria-3D-pro@.jpeg" alt="" srcset="https://adames.com.br/wp-content/uploads/2021/01/recria-3D-pro@.jpeg 1280w, https://adames.com.br/wp-content/uploads/2021/01/recria-3D-pro@-300x225.jpeg 300w, https://adames.com.br/wp-content/uploads/2021/01/recria-3D-pro@-1024x768.jpeg 1024w, https://adames.com.br/wp-content/uploads/2021/01/recria-3D-pro@-768x576.jpeg 768w, https://adames.com.br/wp-content/uploads/2021/01/recria-3D-pro@-500x375.jpeg 500w" sizes="(max-width: 800px) 100vw, 800px"></p>
+<p></p>
+</article>`
+}, {
+    id: 98,
+    image:image03,
+    // image:image98,
+    title: 'Segundo Scot Consultoria, mercado de reposição deve continuar firme em 2021',
+    content: `<article class="view-article">
+<p style="font-size:19px">Em um ano, O preço da vaca gorda para abate subiu de R$175,50 para R$261,00, ou seja, subiu mais mais de 50% de acordo com a&nbsp;Scot Consultoria.&nbsp;De acordo com o analista da empresa Hyberville Neto, essa valorização é consequência de uma maior retenção de matrizes, diante de um mercado de reposição com bons preços.</p>
+<p style="font-size:19px">Hyberville Neto acredita que este movimento de retenção de fêmeas tende a refletir uma maior oferta de animais para reposição neste ano, mas não acredita que teremos uma oferta suficiente para mudar a cara de ‘mercado firme’.</p>
+<p style="font-size:15px">Fonte: Canal Rural </p>
+</article>`
+}, {
+    id: 99,
+    image:image03,
+    // image:image99,
+    title: 'Case de Sucesso – Pro@ 20',
+    content: `<article class="view-article">
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="Fazenda Primavera - Protocolo Pro@ 20" width="500" height="281" src="https://www.youtube.com/embed/WOpaCWOYcNk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div></figure>
+<p>O nosso pro@ 20 é o carro chefe para animais desmamados e de recepção nas fazendas.</p>
+<p>Contendo Narasina como aditivo e rico em nutrientes como Minerais orgânicos e Proteína verdadeira, este produto proporciona uma ótima recuperação de animais que passaram por situação de estresse ou aquele bezerro desmamado que acaba não consumindo o proteinado da maneira ideal.</p>
+<p>O pro@ 20 além de possuir maior consumo, apresenta um padrão de alimentação que traz um baita resultado.</p>
+<p>O nosso cliente da Fazenda Primavera aprovou e nos mandou este registro de animais desmamados em maio de 2020, pesando em média 318kg.</p>
+<p>Gostou do resultado?</p>
+<p>Entre em contato com a gente para saber mais!</p>
+</article>`
+}, {
+    id: 100,
+    image:image03,
+    // image:image100,
+    title: 'Adames – Por dentro da fábrica',
+    content: `<article class="view-article">
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="Adames - Por dentro da fábrica" width="500" height="281" src="https://www.youtube.com/embed/-tnhBLUx5og?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div></figure>
+<p class="has-medium-font-size">Com alta tecnologia e qualidade nossos produtos são desenvolvidos seguindo rigorosos controles de qualidade desde a produção à entrega, tendo como ingrediente principal a confiança para alcançar produtividade máxima do seu rebanho.</p>
+</article>`
+}, {
+    id: 101,
+    image:image03,
+    // image:image101,
+    title: 'Escore de fezes: Avaliando desempenho e saúde ruminal',
+    content: `<article class="view-article">
+<p style="font-size:21px">Quando falamos em desempenho e saúde ruminal de bovinos de corte, temos um importante aliado, o <strong>escore de fezes</strong>. Uma análise visual, rápida e prática de ser feita.</p>
+<p style="font-size:21px"><br>O escore de fezes é realizado analisando a consistência e formato de uma quantidade representativa do lote. Fezes muito aneladas e ressecadas indicam uma lenta taxa de passagem do alimento pelo rúmen. Geralmente alimentos muito fibrosos como um capim passado e de baixo valor nutricional, o que reflete em um animal com baixo ganho de peso. Em contrapartida, fezes muito líquidas (diarreia) muitas vezes com bolhas, nos mostram que o animal está passando por um distúrbio metabólico como a acidose ruminal por exemplo que pode levar ao óbito. O escore ideal é aquele onde o bolo fecal fica em formato de “vulcãozinho”, nos mostram taxa de passagem adequada, ou seja, máximo aproveitamento do alimento pelos animais. </p>
+<p style="font-size:21px">Escores muito altos ( fezes aneladas e ressecadas) podem ser corrigidos por meio da suplementação, que fornecendo aditivos, proteína verdadeira e uréia, irão ajudar a melhorar a saúde ruminal e adequar a taxa de passagem fazendo com que esse animal tenha um melhor desempenho.</p>
+<figure class="wp-block-image"><img fetchpriority="high" decoding="async" width="1024" height="1024" src="https://adames.com.br/wp-content/uploads/2020/12/125d85ba-81b1-4d3a-8d9c-0f86025029c0-1024x1024.jpg" alt="" class="wp-image-422" srcset="https://adames.com.br/wp-content/uploads/2020/12/125d85ba-81b1-4d3a-8d9c-0f86025029c0-1024x1024.jpg 1024w, https://adames.com.br/wp-content/uploads/2020/12/125d85ba-81b1-4d3a-8d9c-0f86025029c0-300x300.jpg 300w, https://adames.com.br/wp-content/uploads/2020/12/125d85ba-81b1-4d3a-8d9c-0f86025029c0-150x150.jpg 150w, https://adames.com.br/wp-content/uploads/2020/12/125d85ba-81b1-4d3a-8d9c-0f86025029c0-768x768.jpg 768w, https://adames.com.br/wp-content/uploads/2020/12/125d85ba-81b1-4d3a-8d9c-0f86025029c0-200x200.jpg 200w, https://adames.com.br/wp-content/uploads/2020/12/125d85ba-81b1-4d3a-8d9c-0f86025029c0.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="1024" src="https://adames.com.br/wp-content/uploads/2020/12/67c4997c-69f0-4809-a4dc-109341d772e1-1024x1024.jpg" alt="" class="wp-image-423" srcset="https://adames.com.br/wp-content/uploads/2020/12/67c4997c-69f0-4809-a4dc-109341d772e1-1024x1024.jpg 1024w, https://adames.com.br/wp-content/uploads/2020/12/67c4997c-69f0-4809-a4dc-109341d772e1-300x300.jpg 300w, https://adames.com.br/wp-content/uploads/2020/12/67c4997c-69f0-4809-a4dc-109341d772e1-150x150.jpg 150w, https://adames.com.br/wp-content/uploads/2020/12/67c4997c-69f0-4809-a4dc-109341d772e1-768x768.jpg 768w, https://adames.com.br/wp-content/uploads/2020/12/67c4997c-69f0-4809-a4dc-109341d772e1-200x200.jpg 200w, https://adames.com.br/wp-content/uploads/2020/12/67c4997c-69f0-4809-a4dc-109341d772e1.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="1024" src="https://adames.com.br/wp-content/uploads/2020/12/4e61a09c-9285-48e8-810f-31ad90b264a3-1-1024x1024.jpg" alt="" class="wp-image-424" srcset="https://adames.com.br/wp-content/uploads/2020/12/4e61a09c-9285-48e8-810f-31ad90b264a3-1-1024x1024.jpg 1024w, https://adames.com.br/wp-content/uploads/2020/12/4e61a09c-9285-48e8-810f-31ad90b264a3-1-300x300.jpg 300w, https://adames.com.br/wp-content/uploads/2020/12/4e61a09c-9285-48e8-810f-31ad90b264a3-1-150x150.jpg 150w, https://adames.com.br/wp-content/uploads/2020/12/4e61a09c-9285-48e8-810f-31ad90b264a3-1-768x768.jpg 768w, https://adames.com.br/wp-content/uploads/2020/12/4e61a09c-9285-48e8-810f-31ad90b264a3-1-200x200.jpg 200w, https://adames.com.br/wp-content/uploads/2020/12/4e61a09c-9285-48e8-810f-31ad90b264a3-1.jpg 1080w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+<p style="font-size:15px">Autor: Francisco Montanaro Neto</p>
+</article>`
+}, {
+    id: 102,
+    image:image03,
+    // image:image102,
+    title: 'Utilização de tamponantes na nutrição de bovinos',
+    content: `<article class="view-article">
+<p class="has-medium-font-size">Os tamponantes são aditivos que servem para evitar e prevenir a acidose em bovinos preservando a saúde dos animais. De maneira simples a acidose nos animais seria como uma azia em nós humanos, pois o pH do rúmen do animal baixa muito devido a grande quantidade de grãos na dieta, principalmente o milho, e também devido a baixa quantidade de fibras nessas dietas, que são responsáveis por permitir a mastigação e ruminação nos bovinos, assim produzindo saliva, que é o tamponante natural dos bovinos.</p>
+<p class="has-medium-font-size"><br>A acidose causa uma espécie de úlcera no animal, levando a sangramento na parede do rúmen podendo, em casos graves, causar a morte. Existem duas formas de tratar: A primeira é assim como nós quando queremos uma sensação de alivio da azia e tomamos um sal de frutas, já nos bovinos utilizamos os tamponantes que são bicarbonato de sódio, carbonato de cálcio, oxido de magnésio entre outros. Agora se você quer tratar a causa, precisamos atacar as bactérias que causam essa baixa no pH. Para os bovinos, os melhoradores de desempenho atuam prevenindo a acidose controlando a produção de ácido lático pelas bactérias, os mais utilizados por nós em dietas cujo risco de acidose é alto, são monensina e virginiamicina.</p>
+<p>Autor: Vinicios Tomé</p>
+</article>`
+}, {
+    id: 103,
+    image:image03,
+    // image:image103,
+    title: 'Benefícios linha Potencial A Prime Beef',
+    content: `<article class="view-article">
+<p style="font-size:21px">A linha potencial A Prime Beef é um suplemento mineral enriquecido com minerais orgânicos que contém em sua formulação levedura e fontes de nitrogênio não proteico (NNP).</p>
+<p style="font-size:21px">Seus benefícios incluem:<br>✅ Melhora absorção dos nutrientes;<br>✅ Acelera o metabolismo;<br>✅ Melhora a imunidade dos animais;<br>✅ Promove maior atividade bacteriana no rúmen;<br>✅ Melhora o aproveitamento da forragem;<br>✅ Melhora a taxa de passagem do alimento, promovendo maior consumo de forragem e consequentemente melhor desempenho dos animais.</p>
+<p style="font-size:21px">Além disso, o produto oferece menos operacional, devido a menor frequência de fornecimento, então é uma ótima escolha para um desempenho melhor sem necessidade de mudança na estrutura da fazenda.</p>
+</article>`
+}, {
+    id: 104,
+    image:image03,
+    // image:image104,
+    title: 'Período das águas, qual a melhor estratégia?',
+    content: `<article class="view-article">
+<p class="has-medium-font-size">Com a chegada das chuvas, as forragens começam a se recuperar e os pastos voltam a ter “vida”. O pasto verde traz mais nutrientes e maior oferta de forragem para os animais, porém não podemos lançar mão da suplementação mesmo no período das águas. </p>
+<p class="has-medium-font-size">Costumeiramente temos maiores ganhos de peso durante as águas, isso implica em maior exigência dos animais em minerais para que este não seja um limitante no desempenho desses animais.</p>
+<p class="has-medium-font-size">A pastagem começa a apresentar maiores teores de proteína bruta, entretanto nessa situação o fator energia se torna limitante ao maior desempenho dos animais, sendo assim a suplementação proteico-energética é uma importante ferramenta para aumento no ganho de peso.</p>
+<p class="has-medium-font-size">Durante essa época do ano devemos monitorar os pastos quanto a presença de invasoras e realizar o controle. Também indica-se realizar a adubação nesse período, pois existe quantidade de agua necessária para que as plantas consigam absorver os nutrientes.</p>
+<p class="has-medium-font-size">Agora é o momento onde o pecuarista deve começar a planejar a próxima seca: aproveitando uma área para fazer silagem, feno ou praticando o diferimento de um pasto.<br>O Diferimento nada mais é que rebaixar o pasto ate altura mínima indicada para cada forragem, com as últimas chuvas deixar a brotação vir e vedar esse pasto, afim de garantir uma forragem de qualidade para os animais na seca.</p>
+<p class="has-text-align-left">Autor: Francisco Montanaro Neto</p>
+</article>`
 }]

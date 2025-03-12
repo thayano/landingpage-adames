@@ -4,9 +4,10 @@ import { Button } from "@/components/ui/button";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { cn } from "@/lib/utils";
 import { CalendarIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaPlay } from "react-icons/fa";
+import animation from '../../../../public/animation.gif'
 
 interface Item {
     indice: string;
@@ -66,16 +67,16 @@ export const CommoditiesComponent = () => {
 
     return (
         <div className="w-full px-8 bg-black h-12 fixed z-50 flex items-center justify-between">
-            <div className=" border-r">
-                <FaPlay className="fill-white" />
+            <div className="">
+                <Image src={animation} alt="" width={40} />
             </div>
             <div className="flex ">
                 {commodities && commodities.map((item) => (
                     <div className="text-gray-200 text-xs px-8 flex gap-4 font-semibold uppercase" key={item.percent + item.value}>
                         <span>{item.indice == 'boi-gordo' ? `@${item.indice}` : item.indice}</span>
                         <span>{item.value}</span>
-                        <span className={cn(item.color == 'red' ? 'text-red-500 rotate-180' : 'text-green-500')}>&#9652;</span>
-                        <span className={cn(item.color == 'red' ? 'text-red-500' : 'text-green-500')}>{item.percent}</span>
+                        <span className={cn(item.color == 'red' ? 'rotate-180' : '')}>&#9652;</span>
+                        <span className='text-white'>{item.percent}</span>
                     </div>
                 ))}
             </div>
@@ -91,7 +92,7 @@ export const CommoditiesComponent = () => {
                             <div className="flex justify-between space-x-4">
                                 <div className="space-y-1">
                                     <div className="text-xs font-semibold">
-                                        Fonte: 
+                                        Fonte:
                                         <Link
                                             href="https://www.cepea.esalq.usp.br/br"
                                             target="_blank"

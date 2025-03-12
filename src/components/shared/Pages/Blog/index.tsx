@@ -10,7 +10,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BlogContext } from "@/app/(pages)/blog/context/blog.context";
 import { news } from "@/app/(pages)/blog/_data/data";
-
+import image from '../../../../../public/blog/image03.svg'
 interface InstagramPost {
     id: string;
     caption: string;
@@ -99,8 +99,14 @@ export const CardBlogComponent = () => {
                         <div>Imagens indisponíveis no momento.</div>
                     ) :
                     news.map((item, index) => (
-                        <Link href={`blog/${item.id}`} key={index} className="p-6 hover:bg-gray-100 rounded-2xl">
+                        <Link href={`blog/news/${item.id}`} key={index} className="p-6 hover:bg-gray-100 rounded-2xl">
                             <div >
+                                <Image
+                                    src={item.image ? item.image : image}
+                                    alt={item.title}
+                                    width={400}
+                                    height={300}
+                                    />
                                 <div className="text-lg font-semibold py-2">{item.title}</div>
                                 <div dangerouslySetInnerHTML={{ __html: item.content }}
                                     className="line-clamp-2 text-muted-foreground"></div>

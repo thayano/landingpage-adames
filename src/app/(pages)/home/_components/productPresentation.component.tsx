@@ -14,7 +14,7 @@ export const ProductPresentationComponent = () => {
             <header className="py-2">
                 <Title
                     text="Nossos Produtos"
-                    subTitle="Lorem ipsum dolor sit amet consectetur."
+                    subTitle="Tecnologias avançadas e soluções personalizadas para atender às necessidades específicas do seu rebanho."
                     align="center"
                     className="text-4xl"
                 />
@@ -34,7 +34,7 @@ export const ProductPresentationComponent = () => {
                     </ImageCardComponent>
                 </div>
                 <div className="flex flex-col gap-6">
-                    <ImageCardComponent title="Bezerro" link={'product?prod=bezerros'}>
+                    <ImageCardComponent title="Bezerros" link={'product?prod=bezerros'}>
                         <Image src={bezerro} alt="bezerro" fill style={{ objectFit: 'cover' }} />
                     </ImageCardComponent>
                     <div className="flex-grow relative rounded-2xl hidden md:block">

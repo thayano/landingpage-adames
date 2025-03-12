@@ -29,7 +29,7 @@ export const FooterComponent = () => {
     return (
         <footer className="mt-40 bg-gray-900 text-gray-400 w-full px-10">
             <div className="container mx-auto max-w-screen-2xl">
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-10 py-20">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-10 py-28">
                     <div className="flex flex-col justify-center md:justify-start">
                         <Image src={logo} alt="logo" width={200} height={50} />
                         <p className="text-sm mt-4 w-52">Tradição, inovação e confiança em nutrição animal</p>

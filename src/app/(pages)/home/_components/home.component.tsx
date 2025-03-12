@@ -23,7 +23,9 @@ export const HomeComponent = () => {
                 <ProductAdvantagesComponent />
                 <CookieConsent />
                 <div>
-                    <Title text="Destaques" align="center" className="text-4xl mb-32" />
+                    <header className='mb-24'>
+                        <Title text="Adames Conecta!" subTitle='O Mundo da Nutrição Animal e Gestão Pecuária.' align="center" className="text-4xl" />
+                    </header>
                     <BlogProvider>
                         <CardBlogComponent />
                     </ BlogProvider>

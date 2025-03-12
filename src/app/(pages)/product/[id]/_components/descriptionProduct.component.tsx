@@ -27,23 +27,22 @@ const titleCategory: Record<typesProducts, string> = {
 
 export const DescriptionProductComponent: React.FC<DescriptionProductComponentProps> = ({ title, image, description, badge, list, indication }) => {
     return (
-        <main className="grid grid-cols-1 lg:grid-cols-3 bg-white rounded-3xl shadow-lg border-neutral-100 py-16">
+        <main className="grid grid-cols-1 lg:grid-cols-3 bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl shadow-2xl py-16">
             <div className="flex px-2 items-center justify-center md:px-10">
-                <article className="flex flex-col gap-6 w-4/5 py-4">
+                <article className="flex flex-col gap-6 w-4/5 py-4 text-gray-300">
                     <div>
-                        <Badge variant="default" className="bg-red-500">{titleCategory[badge]}</Badge>
+                        <Badge variant="default" className="bg-blue-500">{titleCategory[badge]}</Badge>
                     </div>
-                    <Title text={title} className="md:text-5xl text-4xl" />
+                    <Title text={title} className="md:text-5xl text-4xl text-gray-200" />
                     <p className="text-justify">{description}</p>
-                    <span className="border"></span>
+                    <span className="border border-gray-500"></span>
                     {indication && (
                         <p className="text-justify text-sm"><span className="font-semibold">Indicado para:</span> {indication}</p>
                     )}
                 </article>
             </div>
-            <div className="flex justify-center items-center bg-gradient-to-r from-slate-100 to-slate-200 rounded-3xl h-[560px]">
+            <div className="flex justify-center items-center bg-gradient-to-b from-blue-50 to-blue-100 rounded-3xl h-[560px]">
                 <Image src={image} width={400} height={400} alt="product description" className="absolute"></Image>
-                <div className="w-[400px] h-[400px] bg-gray-100 rounded-full"></div>
             </div>
             <div className="flex px-2 items-center justify-center md:px-10">
                 <article className="flex flex-col gap-6 w-4/5 py-4">

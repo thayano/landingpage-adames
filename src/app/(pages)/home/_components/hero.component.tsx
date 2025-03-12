@@ -19,8 +19,9 @@ export const HeroComponent = () => {
             <header className='flex flex-1 items-center max-w-3xl'>
                 <Title
                     align='center'
-                    text='Tradição, inovação e confiança em nutrição animal'
-                    subTitle='Desde 1985 apoiando a pecuária que alimenta, nós, da Adames, temos o compromisso em atender nossos parceiros por meio da nutrição animal'
+                    text='Nutrição de Alta Performance para Pecuária'
+                    className='text-5xl'
+                    subTitle='Soluções inovadoras e de qualidade para impulsionar a produtividade e os resultados do seu negócio.'
                 />
             </header>
             <Carousel className="w-full mx-auto py-14">

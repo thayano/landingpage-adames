@@ -44,20 +44,20 @@ export const HeroProductComponent = () => {
         }
     }, [selectedProduct, selectedCategory, showAll]);
 
-    function handlerOptionProductSelect(option : string){
-        if(option == selectedProduct.key){
+    function handlerOptionProductSelect(option: string) {
+        if (option == selectedProduct.key) {
             return 'scale-110 -translate-y-1 text-gray-700 font-semibold'
         }
     }
 
-    function handlerBtnProduct(option : string){
-        if(option == selectedProduct.key){
+    function handlerBtnProduct(option: string) {
+        if (option == selectedProduct.key) {
             return 'border-2 border-gray-300'
         }
     }
 
-    function handlerOptionCategorySelect(option: string){
-        if(option == selectedCategory.key && !showAll){
+    function handlerOptionCategorySelect(option: string) {
+        if (option == selectedCategory.key && !showAll) {
             return 'bg-blue-950 text-white'
         }
     }
@@ -66,7 +66,7 @@ export const HeroProductComponent = () => {
         <div>
             <Title
                 text="Nossos Produtos"
-                subTitle="Lorem ipsum dolor sit amet consectetur"
+                subTitle="Tecnologias avançadas e soluções personalizadas para atender às necessidades específicas do seu rebanho."
                 align="center"
                 className="text-4xl"
             />
@@ -98,17 +98,17 @@ export const HeroProductComponent = () => {
                         </div>
                     ))}
                     <div className="flex justify-center">
-                        <Button className={cn("rounded-full w-full px-4 font-semibold hover:text-white", 
-                            showAll ? 'bg-[#B62234]' : 'bg-gray-300 text-gray-800')} 
-                            variant={"default"} 
+                        <Button className={cn("rounded-full w-full px-4 font-semibold hover:text-white",
+                            showAll ? 'bg-[#B62234]' : 'bg-gray-300 text-gray-800')}
+                            variant={"default"}
                             onClick={() => setShowAll(true)}>
-                                Ver Todos
+                            Ver Todos
                         </Button>
                     </div>
                 </div>
             </section>
             <Title text={showAll ? 'Todos' : selectedCategory.name} align="center" className="mt-20 text-2xl" />
-            <section className="mt-20 grid md:grid-cols-4 grid-cols-1 lg:gap-20 gap-4">
+            <section className="mt-20 grid md:grid-cols-4 grid-cols-1 lg:gap-10 gap-4">
                 {filteredProducts.map(product => (
                     <CardProductComponent
                         link={`product/${product.id}?type=${selectedProduct.key}&id=${product.id}&category=${product.type}`}

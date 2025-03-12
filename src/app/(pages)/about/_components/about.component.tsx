@@ -18,11 +18,17 @@ export const AboutComponent = () => {
                     <p className="text-sm text-gray-400">
                         Endereço: Av. Edgar Lopes de Farias, 87
                     </p>
+                    <p className="text-sm text-gray-400">
+                        Telefone: (67) 3378-2100
+                    </p>
                 </ClientMap>
                 <ClientMap location={locationMT} order='order-2'>
                     <Title text="Adames MT" subTitle="Pontes e Lacerda, MT" className='text-4xl'></Title>
                     <p className="text-sm text-gray-400">
                         Endereço: Rodovia BR 174-B
+                    </p>
+                    <p className="text-sm text-gray-400">
+                        Telefone: (65) 3266-1110 / 3266-1957
                     </p>
                 </ClientMap>
             </div>

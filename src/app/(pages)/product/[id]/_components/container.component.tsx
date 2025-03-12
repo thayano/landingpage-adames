@@ -43,7 +43,7 @@ export const ContainerComponent = () => {
                 badge={category}
             />
             <div className="w-full h-fit flex justify-center">
-            <Image src={banner} alt="banner" />
+                <Image src={banner} width={1000} alt="banner" />
             </div>
             <RelatedProductComponent productList={relatedProducts} />
         </div>

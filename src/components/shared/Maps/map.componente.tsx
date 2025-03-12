@@ -33,7 +33,7 @@ export default function Map({ location, order = '', children }: mapProps) {
                 {children}
             </div>
             <div className="bg-yellow-300 rounded-2xl">
-                <div ref={mapRef} style={{ height: '200px', width: '100%', borderRadius: '16px' }} />
+                <div ref={mapRef} style={{ height: '100%', width: '100%', borderRadius: '16px' }} />
             </div>
         </div>
     )
