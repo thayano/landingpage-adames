@@ -43,8 +43,8 @@ export const NavBar = () => {
                                     <p className="">
                                         <strong className='font-semibold'>Vamos conversar! </strong>Escolha sua forma preferida de contato
                                     </p>
-                                    <p className='pt-2'><strong>Telefone:</strong> 67 3378-2100</p>
-                                    <p><strong>Email:</strong> contato_adames@gmail.com</p>
+                                    <p className='pt-2'><strong>WhatsApp:</strong> 67 3378-2100</p>
+                                    <p><strong>Email:</strong> comercial@adames.com.br</p>
                                 </div>
                                 <div className="grid gap-2">
                                     <div className="grid grid-cols-3 items-center gap-4">

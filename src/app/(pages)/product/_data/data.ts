@@ -537,7 +537,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
             list: ['Suplemento mineral.'],
             indication: '',
             type: 'todos',
-            image: embalagem,
+            image: racao_cavalo,
             id: 62
         },
         {
@@ -546,7 +546,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
             list: ['Suplemento mineral.'],
             indication: '',
             type: 'todos',
-            image: embalagem,
+            image: racao_cavalo,
             id: 63
         },
     ],

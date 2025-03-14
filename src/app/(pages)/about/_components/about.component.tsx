@@ -9,7 +9,7 @@ export const AboutComponent = () => {
     const locationMS: LatLngExpression = [-20.55191267569932, -54.669450350283306]
     const locationMT: LatLngExpression = [-15.260242926646013, -59.322473097666204]
     return (
-        <div className='mt-44 flex flex-col md:px-16 lg:px-32 px-4 gap-32'>
+        <div className='mt-24 flex flex-col px-4 gap-32'>
             <HeroAboutComponent/>
             <ContentAboutComponent />
             <div className='flex flex-col gap-4'>

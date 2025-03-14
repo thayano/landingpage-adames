@@ -19,7 +19,7 @@ export const ContentAboutComponent = () => {
                 <div className=''>
                     <Title text='O Que Nos Define: Nossa Razão de Ser '></Title>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-3 mt-20 gap-20'>
+                <div className='grid grid-cols-1 md:grid-cols-3 mt-20 gap-4 md:gap-28'>
                     <div>
                         <Title text='Missão' className='text-2xl mb-2'></Title>
                         <p className='text-justify'>Contribuir para o resultado financeiro dos nossos clientes por meio das soluções nutricionais de excelência, criando uma relação de respeito e confiança.

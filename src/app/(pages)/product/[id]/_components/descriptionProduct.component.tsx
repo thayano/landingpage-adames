@@ -42,7 +42,7 @@ export const DescriptionProductComponent: React.FC<DescriptionProductComponentPr
                 </article>
             </div>
             <div className="flex justify-center items-center bg-gradient-to-b from-blue-50 to-blue-100 rounded-3xl h-[560px]">
-                <Image src={image} width={400} height={400} alt="product description" className="absolute"></Image>
+                <Image src={image} width={300} height={200} alt="product description" className="absolute"></Image>
             </div>
             <div className="flex px-2 items-center justify-center md:px-10">
                 <article className="flex flex-col gap-6 w-4/5 py-4">

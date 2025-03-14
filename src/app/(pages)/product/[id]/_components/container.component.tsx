@@ -5,8 +5,7 @@ import { DescriptionProductComponent } from "./descriptionProduct.component";
 import { RelatedProductComponent } from "./relatedProducts.component";
 import { products, typesCategory, typesProducts } from '../../_data/data'
 import { useMemo } from "react";
-import Image from "next/image";
-import banner from '../../../../../../public/banner.png'
+
 
 export const ContainerComponent = () => {
     const searchParams = useSearchParams();
@@ -42,10 +41,10 @@ export const ContainerComponent = () => {
                 indication={product.indication}
                 badge={category}
             />
-            <div className="w-full h-fit flex justify-center">
+            {/* <div className="w-full h-fit flex justify-center">
                 <Image src={banner} width={1000} alt="banner" />
-            </div>
-            <RelatedProductComponent productList={relatedProducts} />
+            </div> */}
+            <RelatedProductComponent productList={relatedProducts} type={type} />
         </div>
     );
 };
