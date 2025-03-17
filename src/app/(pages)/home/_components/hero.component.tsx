@@ -1,6 +1,6 @@
 "use client"
 
-import { Title } from '@/components/shared/Title'
+// import { Title } from '@/components/shared/Title'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import React, { useEffect, useRef, useState } from 'react'
 import logo from '../../../../../public/pasto.png'
@@ -42,46 +42,53 @@ export const HeroComponent = () => {
 
     return (
         <div className='w-full flex flex-col flex-1 items-center'>
-            <header className='flex flex-1 items-center max-w-3xl'>
-                <Title
+            <header className='flex flex-1 flex-col items-center max-w-5xl'>
+                {/* <Title
                     align='center'
-                    text='Nutrição de Alta Performance para Pecuária'
-                    className='text-5xl'
+                    text={`Nutrição de Alta <spam className='text-red-100'>Performance</spam> para Pecuária`}
+                    className='text-7xl'
                     subTitle='Soluções inovadoras e de qualidade para impulsionar a produtividade e os resultados do seu negócio.'
-                />
+                /> */}
+                <div>
+
+                </div>
+                <h1 className='md:text-7xl text-4xl font-semibold text-center -tracking-wider'>
+                    Nutrição de Alta <span className='text-[#B62234]'>Performance</span> para Pecuária
+                </h1>
+                <p className='py-10 text-lg max-w-2xl text-center font-medium text-muted-foreground tracking-wide'>Soluções inovadoras e de qualidade para impulsionar a produtividade e os resultados do seu negócio.</p>
             </header>
 
-                <Carousel
-                    opts={{
-                        loop: true,
-                    }}
-                    setApi={setApi}
-                    className="w-full mx-auto py-14"
-                >
-                    <CarouselContent>
-                        {images.map((image, index) => (
-                            <CarouselItem key={index}>
-                                <div className="">
-                                    <Card className="border-0">
-                                        <CardContent className="flex justify-center h-[800px]">
-                                            <Image
-                                                src={image.src || "/placeholder.svg"}
-                                                alt="hero image"
-                                                width={1500}
-                                                height={800}
-                                                sizes="(max-width: 768px) 100vw, (max-width: 1400px) 50vw, 33vw"
-                                                className="rounded-3xl"
-                                                style={{ objectFit: "cover" }}
-                                            />
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
+            <Carousel
+                opts={{
+                    loop: true,
+                }}
+                setApi={setApi}
+                className="w-full mx-auto py-14"
+            >
+                <CarouselContent>
+                    {images.map((image, index) => (
+                        <CarouselItem key={index}>
+                            <div className="">
+                                <Card className="border-0">
+                                    <CardContent className="flex justify-center h-[800px]">
+                                        <Image
+                                            src={image.src || "/placeholder.svg"}
+                                            alt="hero image"
+                                            width={1500}
+                                            height={800}
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1400px) 50vw, 33vw"
+                                            className="rounded-3xl"
+                                            style={{ objectFit: "cover" }}
+                                        />
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
 
-                </Carousel>
-      
+            </Carousel>
+
         </div>
     )
 }

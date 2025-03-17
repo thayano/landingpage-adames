@@ -42,6 +42,7 @@ export default function CookieConsent({ variant = "default", demo = false, onAcc
         catch (e) {
             console.log("Error: ", e);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

@@ -25,7 +25,7 @@ export const ProductPresentationComponent = () => {
                         <Image src={cavalo} alt="Cavalo" fill style={{ objectFit: 'cover' }} className="h-24" />
                     </ImageCardComponent>
                     <ImageCardComponent title="bovinos de leite" link={'product?prod=boi_leite'}>
-                        <Image src={mini_vaca} alt="mini_vaca" fill style={{ objectFit: 'cover' }} className="h-24" />
+                        <Image src={bezerro} alt="mini_vaca" fill style={{ objectFit: 'cover' }} className="h-24" />
                     </ImageCardComponent>
                 </div>
                 <div className="h-full flex">
@@ -35,7 +35,7 @@ export const ProductPresentationComponent = () => {
                 </div>
                 <div className="flex flex-col gap-6">
                     <ImageCardComponent title="Bezerros" link={'product?prod=bezerros'}>
-                        <Image src={bezerro} alt="bezerro" fill style={{ objectFit: 'cover' }} />
+                        <Image src={mini_vaca} alt="bezerro" fill style={{ objectFit: 'cover' }} />
                     </ImageCardComponent>
                     <div className="flex-grow relative rounded-2xl hidden md:block">
                         <Image src={red_card} alt="todos" fill style={{ objectFit: 'cover' }} className=" rounded-2xl" />

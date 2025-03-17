@@ -1,17 +1,27 @@
+'use client'
 import { HeroAboutComponent } from '@/components/shared/Pages/About'
 import React from 'react'
 import { ContentAboutComponent } from './content.component'
 import { LatLngExpression } from 'leaflet'
 import { Title } from '@/components/shared/Title'
 import ClientMap from '../../../../components/shared/Maps/DynamicMap'
+import YouTube from 'react-youtube'
 
 export const AboutComponent = () => {
     const locationMS: LatLngExpression = [-20.55191267569932, -54.669450350283306]
     const locationMT: LatLngExpression = [-15.260242926646013, -59.322473097666204]
+    const opts = {
+        height: '390',
+        width: '640',
+        playerVars: {
+            autoplay: 0,
+        },
+    };
     return (
         <div className='mt-24 flex flex-col px-4 gap-32'>
             <HeroAboutComponent/>
             <ContentAboutComponent />
+            <YouTube videoId="Ao_gC3xjyH8" opts={opts} />
             <div className='flex flex-col gap-4'>
                 <ClientMap location={locationMS} >
                     <Title text="Adames MS" subTitle="Campo Grande, MS" className='text-4xl'></Title>
