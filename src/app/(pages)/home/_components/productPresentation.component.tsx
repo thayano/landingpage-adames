@@ -3,7 +3,7 @@ import { Title } from "@/components/shared/Title"
 import cavalo from "../../../../../public/cavalo.jpg"
 import bezerro from "../../../../../public/bezerro.jpg"
 import mini_vaca from "../../../../../public/mini_vaca.jpg"
-import red_card from "../../../../../public/Subtract.svg"
+import blue_card from "../../../../../public/blue_card.svg"
 import clube_das_vacas from "../../../../../public/clube_das_vacas.jpg"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -25,7 +25,7 @@ export const ProductPresentationComponent = () => {
                         <Image src={cavalo} alt="Cavalo" fill style={{ objectFit: 'cover' }} className="h-24" />
                     </ImageCardComponent>
                     <ImageCardComponent title="bovinos de leite" link={'product?prod=boi_leite'}>
-                        <Image src={bezerro} alt="mini_vaca" fill style={{ objectFit: 'cover' }} className="h-24" />
+                        <Image src={mini_vaca} alt="mini_vaca" fill style={{ objectFit: 'cover' }} className="h-24" />
                     </ImageCardComponent>
                 </div>
                 <div className="h-full flex">
@@ -35,10 +35,10 @@ export const ProductPresentationComponent = () => {
                 </div>
                 <div className="flex flex-col gap-6">
                     <ImageCardComponent title="Bezerros" link={'product?prod=bezerros'}>
-                        <Image src={mini_vaca} alt="bezerro" fill style={{ objectFit: 'cover' }} />
+                        <Image src={bezerro} alt="bezerro" fill style={{ objectFit: 'cover' }} />
                     </ImageCardComponent>
                     <div className="flex-grow relative rounded-2xl hidden md:block">
-                        <Image src={red_card} alt="todos" fill style={{ objectFit: 'cover' }} className=" rounded-2xl" />
+                        <Image src={blue_card} alt="todos" fill style={{ objectFit: 'cover' }} className=" rounded-2xl" />
                         <div className="absolute px-4 py-2 md:p-8">
                             <p className="md:text-2xl text-md font-semibold text-white">Veja todos nossos</p>
                             <p className="md:text-2xl text-md font-semibold text-white">produtos</p>

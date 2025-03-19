@@ -158,6 +158,7 @@ export const DescriptionBlogContentComponent = ({ post_id }: DescriptionBlogCont
                                         alt={selectedImage}
                                         fill
                                         className="object-contain"
+                                        unoptimized={true}
                                         onLoadingComplete={() => setImageLoading(false)}
                                         onLoad={() => setImageLoading(false)}
                                         sizes="100vw"

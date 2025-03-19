@@ -69,7 +69,7 @@ export const FooterComponent = () => {
                         ))}
                     </div>
                 </div>
-                <div className="text-center grid gird-cols-1 md:grid-cols-3 gap-10 border-t border-gray-800 text-xs py-4 text-muted-foreground">
+                <div className="text-center grid gird-cols-1 md:grid-cols-2 gap-10 border-t border-gray-800 text-xs py-4 text-muted-foreground">
                     <p>© 2025-2025 Adames. Todos os direitos reservados.</p>
                     <div className="flex gap-6 justify-center">
                         {links_socials.map(link => (
@@ -78,7 +78,7 @@ export const FooterComponent = () => {
                             </Link>
                         ))}
                     </div>
-                    <p className="text-gray-600"><Link href={'https://www.linkedin.com/in/ttdavalo/?originalSubdomain=br'} target="_blank">Developed by <span className="hover:text-white">@thayano</span></Link></p>
+                   
                 </div>
             </div>
         </footer>

@@ -11,7 +11,7 @@ export const ContentAboutComponent = () => {
                 <Image src={images_adames} alt='imagens da empresa' />
                 <div className='flex flex-col gap-10'>
                     <Title text='Adames: Excelência em Nutrição Animal'></Title>
-                    <p className='text-pretty'>A Adames é uma empresa comprometida com o desenvolvimento da pecuária por meio de soluções nutricionais de alta performance. Com expertise em nutrição animal, tecnologia e inovação, entregamos produtos que impulsionam a eficiência produtiva, garantindo melhores índices zootécnicos e maior retorno sobre o investimento para nossos clientes.
+                    <p className='text-justify'>A Adames é uma empresa comprometida com o desenvolvimento da pecuária por meio de soluções nutricionais de alta performance. Com expertise em nutrição animal, tecnologia e inovação, entregamos produtos que impulsionam a eficiência produtiva, garantindo melhores índices zootécnicos e maior retorno sobre o investimento para nossos clientes.
                     Nossa atuação é pautada pela qualidade, pela ciência e pelo compromisso com a sustentabilidade, sempre priorizando soluções que agreguem valor à cadeia produtiva. Mais do que fornecer suplementos, trabalhamos para otimizar a nutrição, fortalecer a produtividade no campo e contribuir para o crescimento sustentável do setor.</p>
                 </div>
             </div>

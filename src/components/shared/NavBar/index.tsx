@@ -24,7 +24,7 @@ export const NavBar = () => {
                         <Link
                             key={item.menu}
                             href={item.href}
-                            className="font-semibold text-slate-600 border-b-2 border-transparent hover:border-[#0e34635d] p-1 transition duration-300"
+                            className="text-xl font-medium text-slate-600 border-b-2 border-transparent hover:border-[#0e34635d] p-1 transition duration-300"
                         >
                             {item.menu}
                         </Link>

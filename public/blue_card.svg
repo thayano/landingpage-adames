@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="317"
+   height="290"
+   viewBox="0 0 317 290"
+   fill="none"
+   version="1.1"
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M 25,0 C 11.1929,0 0,11.1929 0,25 v 240 c 0,13.807 11.1929,25 25,25 h 95.713 l 38.982,-117.728 c 5.448,-16.455 26.008,-21.885 38.871,-10.267 l 70.082,63.302 c 12.659,11.435 9.683,32.055 -5.694,39.443 L 210.4,290 H 292 c 13.807,0 25,-11.193 25,-25 V 25 C 317,11.1929 305.807,0 292,0 Z m 148.453,290 82.572,-39.672 c 5.126,-2.462 6.118,-9.336 1.898,-13.147 l -70.082,-63.302 c -4.288,-3.873 -11.141,-2.063 -12.957,3.422 L 137.568,290 Z"
+     fill="url(#paint0_linear_237_844)"
+     id="path1"
+     style="fill:url(#linearGradient5);fill-opacity:1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient4">
+      <stop
+         style="stop-color:#0e3463;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+      <stop
+         style="stop-color:#2367ba;stop-opacity:1;"
+         offset="0.98000002"
+         id="stop5" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient4"
+       id="linearGradient5"
+       x1="46.42358"
+       y1="32.923553"
+       x2="270.57645"
+       y2="257.07642"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+</svg>
