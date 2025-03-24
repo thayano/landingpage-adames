@@ -135,7 +135,8 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
             type: 'mineral_aditivado',
             image: embalagem,
             id: 4,
-
+ 
+ 
         },
         {
             name: 'ADAMES BEEF SACC',
@@ -147,18 +148,18 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
             id: 5
         },
         {
-            name: 'ADAMES AMIREIA ENGORDA',
+            name: 'ADAMES AMIRÉIA ENGORDA',
             description: 'Nutrição estratégica para engorda.',
-            list: ['Suplemento mineral enriquecido com ureia extrusada.'],
+            list: ['Suplemento mineral enriquecido com uréia extrusada.'],
             indication: 'Bovinos em fase de terminação.',
             type: 'mineral_aditivado',
             image: embalagem,
             id: 6
         },
         {
-            name: 'ADAMES AMIREIA CRIA',
+            name: 'ADAMES AMIRÉIA CRIA',
             description: 'Nutrição estratégica para cria',
-            list: ['Suplemento mineral enriquecido com ureia extrusada.'],
+            list: ['Suplemento mineral enriquecido com uréia extrusada.'],
             indication: 'Bovinos em fase de cria.',
             type: 'mineral_aditivado',
             image: embalagem,
@@ -176,7 +177,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
         {
             name: 'ADAMES 3D INVERT CRIA',
             description: 'Nutrição estratégica para cria.',
-            list: ['Suplemento mineral enriquecido com próbioticos e uma mistura exclusiva de fontes de nitrogênio.'],
+            list: ['Suplemento mineral enriquecido com probióticos e uma mistura exclusiva de fontes de nitrogênio.'],
             indication: 'Bovinos em fase de cria.',
             type: 'mineral_aditivado',
             image: embalagem,
@@ -185,7 +186,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
         {
             name: 'ADAMES 3D INVERT',
             description: 'Nutrição estratégica para recria e engorda.',
-            list: ['Suplemento mineral enriquecido com próbioticos e uma mistura exclusiva de fontes de nitrogênio.'],
+            list: ['Suplemento mineral enriquecido com probióticos e uma mistura exclusiva de fontes de nitrogênio.'],
             indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'mineral_aditivado',
             image: embalagem,
@@ -228,63 +229,63 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
             id: 15
         },
         {
-            name: 'ADAMES NUCLEO PRO@',
+            name: 'ADAMES NÚCLEO PRO@',
             description: 'Nutrição estratégica para recria e engorda.',
-            list: ['Núcleo ideal para produção de suplementos proteicos e proteicos energeticos.', 'Enriquecido com blend de aditivos que garantem o melhor aproveitamento do alimento e a maximização do ganho de peso.'],
+            list: ['Núcleo ideal para produção de suplementos proteicos e proteicos energéticos.', 'Enriquecido com blend de aditivos que garantem o melhor aproveitamento do alimento e a maximização do ganho de peso.'],
             indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 22
         },
         {
-            name: 'ADAMES NUCLEO CONFINAMENTO 300 MV',
+            name: 'ADAMES NÚCLEO CONFINAMENTO 300 MV',
             description: 'Nutrição estratégica para engorda.',
-            list: ['Nucleo ideal para produção de dietas de confinamento e rações de terminação.', 'TIP', 'Enriquecido com blend de aditivos e vitaminas que garantem o máximo desempenho com segurança.'],
+            list: ['Núcleo ideal para produção de dietas de confinamento e rações de terminação.', 'TIP', 'Enriquecido com blend de aditivos e vitaminas que garantem o máximo desempenho com segurança.'],
             indication: 'Bovinos em fase de terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 23
         },
         {
-            name: 'ADAMES NUCLEO CONFINAMENTO 300',
+            name: 'ADAMES NÚCLEO CONFINAMENTO 300',
             description: 'Nutrição estratégica para engorda.',
-            list: ['Nucleo ideal para produção de dietas de confinamento e rações de terminação.', 'Enriquecido com blend de aditivos e vitaminas que garantem o máximo desempenho com segurança.', 'TIP'],
+            list: ['Núcleo ideal para produção de dietas de confinamento e rações de terminação.', 'Enriquecido com blend de aditivos e vitaminas que garantem o máximo desempenho com segurança.', 'TIP'],
             indication: 'Bovinos em fase de terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 24
         },
         {
-            name: 'ADAMES NUCLEO CONFINA A PASTO',
+            name: 'ADAMES NÚCLEO CONFINA A PASTO',
             description: 'Nutrição estratégica para engorda.',
-            list: ['Nucleo que contém minerais, aditivos e fonte proteica para produção de ração usando apenas fonte energética.'],
+            list: ['Núcleo que contém minerais, aditivos e fonte proteica para produção de ração usando apenas fonte energética.'],
             indication: 'Bovinos em fase de terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 25
         },
         {
-            name: 'ADAMES NUCLEO CONFINA A PASTO 300',
+            name: 'ADAMES NÚCLEO CONFINA A PASTO 300',
             description: 'Nutrição estratégica para engorda.',
-            list: ['Nucleo ideal para produção de dietas de confinamento e rações de terminação.', 'Enriquecido com blend de aditivos que garantem o maximo desempenho com segurança.', 'TIP'],
+            list: ['Núcleo ideal para produção de dietas de confinamento e rações de terminação.', 'Enriquecido com blend de aditivos que garantem o máximo desempenho com segurança.', 'TIP'],
             indication: 'Bovinos em fase de terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 26
         },
         {
-            name: 'ADAMES NUCLEO BEEF MIX N',
+            name: 'ADAMES NÚCLEO BEEF MIX N',
             description: 'Nutrição estratégica para recria e engorda. ',
-            list: ['Nucleo que contém minerais, aditivos e ureia para a formulação de rações para bovinos de corte.'],
+            list: ['Núcleo que contém minerais, aditivos e ureia para a formulação de rações para bovinos de corte.'],
             indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'nucleos',
             image: embalagem,
             id: 27
         },
         {
-            name: 'ADAMES NUCLEO BEEF MIX',
+            name: 'ADAMES NÚCLEO BEEF MIX',
             description: 'Nutrição estratégica para recria e engorda. ',
-            list: ['Nucleo que contém minerais e aditivos para a formulação de rações para bovinos de corte.'],
+            list: ['Núcleo que contém minerais e aditivos para a formulação de rações para bovinos de corte.'],
             indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'nucleos',
             image: embalagem,
@@ -293,7 +294,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
         {
             name: 'ADAMES PROTEICO CREEP-FEEDING MASTER',
             description: 'Nutrição estratégica para bezerros em aleitamento.',
-            list: ['Suplemento proteico energetico para auxiliar o aumento de peso na desmama.'],
+            list: ['Suplemento proteico energético para auxiliar o aumento de peso na desmama.'],
             indication: 'Bovinos em fase de cria (bezerros).',
             type: 'proteico_energetico',
             image: energetico,
@@ -302,7 +303,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
         {
             name: 'ADAMES PROTEICO 35',
             description: 'Nutrição estratégica para recria e engorda.',
-            list: ['Suplemento proteico energetico para maximizar o ganho de peso em época de seca.'],
+            list: ['Suplemento proteico energético para maximizar o ganho de peso em época de seca.'],
             indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
@@ -311,7 +312,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
         {
             name: 'ADAMES PROENERG 20',
             description: 'Nutrição estratégica para recria e engorda.',
-            list: ['Suplemento proteico energetico para maximizar o ganho de peso.'],
+            list: ['Suplemento proteico energético para maximizar o ganho de peso.'],
             indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
@@ -320,7 +321,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
         {
             name: 'ADAMES PRO@30',
             description: 'Nutrição estratégica para recria e engorda.',
-            list: ['Suplemento proteico energetico para maximizar o ganho de peso.'],
+            list: ['Suplemento proteico energético para maximizar o ganho de peso.'],
             indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
@@ -329,7 +330,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
         {
             name: 'ADAMES PRO@20',
             description: 'Nutrição estratégica para recria e engorda.',
-            list: ['Suplemento proteico energetico enriquecido com minerais orgânicos para maximizar o ganho de peso.'],
+            list: ['Suplemento proteico energético enriquecido com minerais orgânicos para maximizar o ganho de peso.'],
             indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
@@ -347,7 +348,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
         {
             name: 'ADAMES K1 ÁGUAS',
             description: 'Nutrição estratégica para recria e engorda.',
-            list: ['Suplemento proteico energetico para maximizar o ganho de peso.'],
+            list: ['Suplemento proteico energético para maximizar o ganho de peso.'],
             indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
@@ -356,7 +357,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
         {
             name: 'ADAMES K1 ENERGY',
             description: 'Nutrição estratégica para recria e engorda.',
-            list: ['Suplemento proteico energetico enriquecido com gordura protegida para maximizar o ganho de peso.'],
+            list: ['Suplemento proteico energético enriquecido com gordura protegida para maximizar o ganho de peso.'],
             indication: 'Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
@@ -365,7 +366,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
         {
             name: 'ADAMES K1 TRANS',
             description: 'Nutrição estratégica para recria e engorda.',
-            list: ['Suplemento proteico energetico para maximizar o ganho de peso em épocas de transição.'],
+            list: ['Suplemento proteico energético para maximizar o ganho de peso em épocas de transição.'],
             indication: ' Bovinos em fase de crescimento e terminação.',
             type: 'proteico_energetico',
             image: energetico,
@@ -491,7 +492,8 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
             type: 'todos',
             image: embalagem,
             id: 53
-
+ 
+ 
         },
         {
             name: 'ADAMES BEZERRO',
@@ -548,7 +550,7 @@ export const products: Record<typesCategory, ICategoryProduct[]> = {
             type: 'todos',
             image: racao_cavalo,
             id: 63
-        },
+        }, 
     ],
 
 }

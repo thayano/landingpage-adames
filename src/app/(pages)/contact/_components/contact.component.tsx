@@ -1,6 +1,6 @@
 import { GenericHero } from "@/components/shared/GenericHero"
 import { ContentContactComponent } from "./contentContact.component"
-import vaca_retangular from "../../../../../public/vaca_retangular.png"
+import vaca_retangular from "../../../../../public/cattle-5683463_1280.jpg"
 
 export const ContactComponent = () => {
     return (

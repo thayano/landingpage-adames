@@ -9,7 +9,7 @@ import { useMemo } from "react";
 
 export const ContainerComponent = () => {
     const searchParams = useSearchParams();
-    const id = Number(searchParams.get('id')); // Convert to number directly
+    const id = Number(searchParams.get('id')); 
     const category = searchParams.get('category') as typesProducts;
     const type = searchParams.get('type') as typesCategory;
 

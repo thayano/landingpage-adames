@@ -68,7 +68,7 @@ export const CommoditiesComponent = () => {
     return (
         <div className="w-full px-8 bg-black h-12 fixed z-50 flex items-center justify-between">
             <div className="">
-                <Image src={animation} alt="" width={40} />
+                <Image src={animation} alt="" width={20} />
             </div>
             <div className="flex ">
                 {commodities && commodities.map((item) => (
