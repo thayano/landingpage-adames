@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-// import image_empresa from '../../../../../public/image1.png'
+// import image_empresa from '@/public/image1.png'
 import { Title } from '../../Title'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'

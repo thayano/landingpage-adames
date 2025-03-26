@@ -9,13 +9,13 @@ import { DoubtComponent } from './doubt.component'
 import { HeroAboutComponent } from '@/components/shared/Pages/About'
 import { Title } from '@/components/shared/Title'
 import CookieConsent from '@/components/shared/CookieConsent'
-import { BlogProvider } from '../../blog/context/blog.context'
+import { BlogProvider } from '@/app/(pages)/(secondaryLayout)/blog/context/blog.context' 
 
 export const HomeComponent = () => {
     return (
-        <div className='mt-20'>
+        <div className=''>
             <HeroComponent />
-            <main className='flex flex-col gap-36 mt-20'>
+            <main className="my-16 container mx-auto flex-1 px-4 md:px-8 lg:px-4 max-w-screen-2xl md:my-36 flex flex-col gap-36" >
                 <div className='px-4 md:16'>
                     <HeroAboutComponent />
                 </div>
@@ -30,8 +30,8 @@ export const HomeComponent = () => {
                         <CardBlogComponent />
                     </ BlogProvider>
                 </div>
-                <DoubtComponent />
             </main>
+            <DoubtComponent />
         </div>
     )
 }

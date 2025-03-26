@@ -4,7 +4,7 @@ import React from 'react'
 import { ContentAboutComponent } from './content.component'
 import { LatLngExpression } from 'leaflet'
 import { Title } from '@/components/shared/Title'
-import ClientMap from '../../../../components/shared/Maps/DynamicMap'
+import ClientMap from '../../../../../components/shared/Maps/DynamicMap'
 
 export const AboutComponent = () => {
     const locationMS: LatLngExpression = [-20.55191267569932, -54.669450350283306]

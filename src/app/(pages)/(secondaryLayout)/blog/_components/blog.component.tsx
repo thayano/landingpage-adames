@@ -4,7 +4,7 @@
 import { GenericHero } from "@/components/shared/GenericHero"
 import { ContentBlogComponent } from "./contentBlog.component"
 import { BlogProvider } from "../context/blog.context"
-import vaca_retangular from "../../../../../public/blog.jpg"
+import vaca_retangular from "@/public/blog.jpg"
 
 
 export const BlogComponent = () => {

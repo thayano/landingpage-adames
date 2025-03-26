@@ -1,6 +1,6 @@
 import { GenericHero } from "@/components/shared/GenericHero"
 import { DescriptionBlogContentComponent } from "./descriptionBlogContent.component"
-import vaca_retangular from "../../../../../../public/blog.jpg"
+import vaca_retangular from "@/public/blog.jpg"
 
 interface DescriptionBlogComponentProps {
     post_id: string

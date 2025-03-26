@@ -4,7 +4,7 @@ import { Title } from "@/components/shared/Title"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import insta_logo_color from '../../../../../../public/insta_logo_color.png'
+import insta_logo_color from '@/public/insta_logo_color.png'
 import { X } from "lucide-react"
 
 interface DescriptionBlogContentComponentProps {

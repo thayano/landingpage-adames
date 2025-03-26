@@ -8,9 +8,9 @@ import axios from "axios";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { BlogContext } from "@/app/(pages)/blog/context/blog.context";
-import { news } from "@/app/(pages)/blog/_data/data";
-import image from '../../../../../public/blog/image03.svg'
+import { BlogContext } from "@/app/(pages)/(secondaryLayout)/blog/context/blog.context";
+import { news } from "@/app/(pages)/(secondaryLayout)/blog/_data/data";
+import image from '@/public/blog/image03.svg'
 interface InstagramPost {
     id: string;
     caption: string;

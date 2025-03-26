@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
-import images_adames from '../../../../../public/adames_images.png'
+import images_adames from '@/public/adames_images.png'  
 import { Title } from '@/components/shared/Title'
 import { Check } from 'lucide-react'
-import image1 from '../../../../../public/image11.png'
-import image2 from '../../../../../public/image2.png'
-import image3 from '../../../../../public/image3.png'
+import image1 from '@/public/image11.png'
+import image2 from '@/public/image2.png'
+import image3 from '@/public/image3.png'
 
 export const ContentAboutComponent = () => {
     return (

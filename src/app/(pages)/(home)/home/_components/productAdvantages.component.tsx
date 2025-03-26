@@ -1,10 +1,10 @@
 import { Title } from "@/components/shared/Title"
 import { Card } from "@/components/ui/card"
 import Image from "next/image"
-import suporte from '../../../../../public/2.png'
-import tecnologia from '../../../../../public/4.png'
-import sustentabilidade from '../../../../../public/5.png'
-import diamante from '../../../../../public/3.png'
+import suporte from '@/public/2.png'
+import tecnologia from '@/public/4.png'
+import sustentabilidade from '@/public/5.png'
+import diamante from '@/public/3.png'
 
 export const ProductAdvantagesComponent = () => {
     return (

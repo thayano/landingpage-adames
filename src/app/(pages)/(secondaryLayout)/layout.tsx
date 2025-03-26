@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "../../styles/globals.css";
+import "../../../styles/globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { NavBar } from "@/components/shared/NavBar";
 import ErrorBoundary from "@/components/utils/error-boundary";
@@ -47,7 +47,7 @@ export default function RootLayout({
 							<div className="hidden md:block">
 								<CommoditiesComponent />
 							</div>
-							<main className="container mx-auto flex-1 px-4 md:px-8 lg:px-4 max-w-screen-2xl md:mt-12">
+							<main className="container mx-auto flex-1 px-4 md:px-8 lg:px-4 max-w-screen-2xl md:my-12">
 								<NavBar />
 								{children}
 							</main>
