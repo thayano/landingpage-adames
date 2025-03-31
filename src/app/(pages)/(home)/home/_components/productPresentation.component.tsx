@@ -7,6 +7,7 @@ import blue_card from "@/public/blue_card.svg"
 import clube_das_vacas from "@/public/clube_das_vacas.jpg"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export const ProductPresentationComponent = () => {
     return (
@@ -42,7 +43,9 @@ export const ProductPresentationComponent = () => {
                         <div className="absolute px-4 py-2 md:p-8">
                             <p className="md:text-2xl text-md font-semibold text-white">Veja todos nossos</p>
                             <p className="md:text-2xl text-md font-semibold text-white">produtos</p>
-                            <Button className="mt-2 rounded-full px-6 bg-[#0E3463] font-medium">Veja mais</Button>
+                            <Link href={'/product'}>
+                                <Button className="mt-2 rounded-full px-6 bg-[#0E3463] font-medium">Veja mais</Button>
+                            </Link>
                         </div>
                     </div>
                     <div className="md:hidden py-4">

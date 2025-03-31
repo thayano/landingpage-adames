@@ -44,7 +44,7 @@ export const HeroAboutComponent = () => {
                 )}
 
             </div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center none md:block'>
                 <YouTube videoId="Ao_gC3xjyH8" opts={opts} />
             </div>
         </div>

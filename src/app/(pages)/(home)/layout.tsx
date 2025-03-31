@@ -48,7 +48,9 @@ export default function HomeLayout({
 								<CommoditiesComponent />
 							</div>
 							<main className="flex-1 md:mt-12">
-								<NavBar />
+								<div className="flex justify-center">
+									<NavBar />
+								</div>
 								{children}
 							</main>
 							<FooterComponent />

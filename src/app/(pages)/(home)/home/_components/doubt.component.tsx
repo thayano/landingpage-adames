@@ -18,14 +18,14 @@ export const DoubtComponent = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
             <div className="absolute inset-0 flex items-end justify-center py-10 md:py-20 px-5 md:px-20"> 
-                <div className="bg-[#222222] w-full md:w-3/4 rounded-3xl p-5 md:p-10 lg:p-20 flex flex-col lg:flex-row gap-5 md:gap-8"> 
+                <div className="bg-[#222222] rounded-3xl p-5 md:p-10 lg:p-20 flex flex-col lg:flex-row gap-5 md:gap-8"> 
                     <div className=" flex justify-center md:justify-start items-center"> 
                         <Image src={simgleLogo} alt="logo" width={200} height={50} className="md:h-28 h-14 w-16 md:min-w-32" /> 
                     </div>
                     <div className="md:px-8"> 
                         <div className="flex-1 flex flex-col text-white gap-4">
                             <h3 className="text-2xl text-start font-semibold">Precisa de mais informações? Fale com a gente! </h3>
-                            <p className=" text-sm md:text-base text-justify text-gray-400">
+                            <p className=" text-sm md:text-base text-justify text-gray-400 md:max-w-lg">
                             Se quer saber mais sobre nossos produtos, soluções ou qualquer outro assunto, estamos à disposição! Nossa equipe terá o prazer em ajudar. Entre em contato pelos nossos canais e vamos conversar!
                             </p>
                             <div className="flex flex-col lg:flex-row gap-3 md:gap-6"> 

@@ -12,7 +12,7 @@ import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover
 export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <nav className="w-full px-4 md:px-8 lg:px-4 py-4">
+        <nav className="w-full px-4 md:px-8 lg:px-4 py-4 container">
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
                     <Link href='/home'>
