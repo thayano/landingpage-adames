@@ -5,13 +5,14 @@ import Image from "next/image"
 import { useState, useMemo } from "react"
 import { Button } from "@/components/ui/button"
 import { CardProductComponent } from "@/components/shared/CardProduct"
-import { listTypesProduct, IHeroProduct, typesDescript, products } from '../_data/data'
+import { listTypesProduct, IHeroProduct, typesDescript, products, ICategoryProduct } from '../_data/data'
 import { useSearchParams } from "next/navigation"
 import { cn } from "@/lib/utils"
 
 export const HeroProductComponent = () => {
     const searchParams = useSearchParams();
     const initialProductKey = searchParams.get('prod');
+    const [searchedProducts, setSearchedProducts] = useState<ICategoryProduct[]>([]);
 
     const initialProduct = useMemo(() => {
         return initialProductKey
@@ -23,6 +24,7 @@ export const HeroProductComponent = () => {
     const [selectedProduct, setSelectedProduct] = useState<IHeroProduct>(initialProduct);
     const [selectedCategory, setSelectedCategory] = useState<typesDescript>({ name: '', key: 'todos' });
     const [showAll, setShowAll] = useState(true);
+    const [search, setSearch] = useState('');
 
     const handleProductSelect = (product: IHeroProduct) => {
         setShowAll(true);
@@ -32,6 +34,7 @@ export const HeroProductComponent = () => {
     const handleCategorySelect = (category: typesDescript) => {
         setShowAll(false);
         setSelectedCategory(category);
+        cleanSearch()
     };
 
     const filteredProducts = useMemo(() => {
@@ -62,6 +65,22 @@ export const HeroProductComponent = () => {
         }
     }
 
+    function cleanSearch(){
+        setSearch('');
+    }
+
+    function changeInputSearch(e: React.ChangeEvent<HTMLInputElement>){
+        const searchTerm = e.target.value.toUpperCase();
+        setSearch(searchTerm);
+
+        const result = filteredProducts.filter((item) =>
+            item.name.toUpperCase().includes(searchTerm)
+        );
+        setSearchedProducts(result);
+    }
+
+    const productsToRender = search ? searchedProducts : filteredProducts;
+
     return (
         <div>
             <Title
@@ -85,7 +104,7 @@ export const HeroProductComponent = () => {
                         </button>
                     ))}
                 </div>
-                <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 mt-20 md:gap-4 gap-2">
+                <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 md:gap-4 gap-2 mt-20">
                     {selectedProduct.types.map((item) => (
                         <div key={item.name} className="flex justify-center">
                             <Button
@@ -106,10 +125,19 @@ export const HeroProductComponent = () => {
                         </Button>
                     </div>
                 </div>
+                <div className="py-16 flex items-center justify-center">
+                    <div className="md:flex gap-2">
+                        <input type="text" placeholder="Buscar produtos por categoria" value={search} onChange={(e) => changeInputSearch(e)}
+                        className="px-4 border w-full rounded-lg py-2 md:py-0"/>
+                        <Button variant={"secondary"} className="px-4 bg-blue-950 hover:bg-blue-900 text-white font-semibold md:w-24 w-full mt-4 md:mt-0" onClick={() => cleanSearch()}>
+                            Limpar
+                        </Button>
+                    </div>
+                </div>
             </section>
-            <Title text={showAll ? 'Todos' : selectedCategory.name} align="center" className="mt-20 text-2xl" />
+            <Title text={showAll ? 'Todos' : selectedCategory.name} align="center" className="mt-10 text-2xl" />
             <section className="mt-20 grid md:grid-cols-4 grid-cols-1 lg:gap-10 gap-4">
-                {filteredProducts.map(product => (
+                {productsToRender.map(product => (
                     <CardProductComponent
                         link={`product/${product.id}?type=${selectedProduct.key}&id=${product.id}&category=${product.type}`}
                         key={product.name}

@@ -16,8 +16,8 @@ const usefulLinks = [
 const productsLinks = [
     { href: '/product?prod=equinos', label: 'Equinos' },
     { href: '/product?prod=bezerros', label: 'Bezerros' },
-    { href: '/product?prod=boi_corte', label: 'Gado de Corte' },
-    { href: '/product?prod=boi_leite', label: 'Gado de Leite' },
+    { href: '/product?prod=boi_corte', label: 'Bovino de Corte' },
+    { href: '/product?prod=boi_leite', label: 'Bovino de Leite' },
 ];
 
 const links_socials = [
